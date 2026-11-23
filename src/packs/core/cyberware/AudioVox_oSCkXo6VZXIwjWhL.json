@@ -1,0 +1,188 @@
+{
+  "_id": "oSCkXo6VZXIwjWhL",
+  "effects": [
+    {
+      "_id": "74gFz2rJ7G0uBkgx",
+      "changes": [
+        {
+          "key": "bonuses.acting",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/audiovox.svg",
+      "name": "AudioVox Acting",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460874,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460874,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!oSCkXo6VZXIwjWhL.74gFz2rJ7G0uBkgx"
+    },
+    {
+      "_id": "dqjjjMsDuHu1WoiE",
+      "changes": [
+        {
+          "key": "bonuses.playInstrument",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/audiovox.svg",
+      "name": "AudioVox Singing (Play Instrument)",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460874,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460874,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!oSCkXo6VZXIwjWhL.dqjjjMsDuHu1WoiE"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/audiovox.svg",
+  "name": "AudioVox",
+  "system": {
+    "ammoVariety": [],
+    "attackmod": 0,
+    "brand": "",
+    "canIgnoreArmor": true,
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "core": false,
+    "damage": "1d6",
+    "description": {
+      "value": "<p>Autotune synthesizer. Provides +2 to Acting and Play Instrument checks.</p>\n"
+    },
+    "dvTable": "",
+    "favorite": false,
+    "fireModes": {
+      "autoFire": 0,
+      "suppressiveFire": false
+    },
+    "humanityLoss": {
+      "roll": "1d6",
+      "static": 3
+    },
+    "ignoreArmorPercent": 50,
+    "installLocation": "clinic",
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "isFoundational": false,
+    "isRanged": false,
+    "isWeapon": false,
+    "magazine": {
+      "ammoData": null,
+      "max": 0,
+      "value": 0
+    },
+    "price": {
+      "market": 500
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "rof": 1,
+    "size": 1,
+    "source": {
+      "book": "Core",
+      "page": 362
+    },
+    "type": "cyberwareInternal",
+    "unarmedAutomaticCalculation": true,
+    "usage": "installed",
+    "usesType": "magazine",
+    "weaponSkill": "Archery",
+    "weaponType": "assaultRifle"
+  },
+  "type": "cyberware",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460839,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460839,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!oSCkXo6VZXIwjWhL"
+}

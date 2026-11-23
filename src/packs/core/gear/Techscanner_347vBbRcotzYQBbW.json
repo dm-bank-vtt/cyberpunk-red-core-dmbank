@@ -1,0 +1,174 @@
+{
+  "_id": "347vBbRcotzYQBbW",
+  "effects": [
+    {
+      "_id": "tvqakDnmQ3P9ncWm",
+      "changes": [
+        {
+          "key": "bonuses.airVehicleTech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.basicTech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.cybertech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.electronicsAndSecurityTech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.landVehicleTech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.seaVehicleTech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        },
+        {
+          "key": "bonuses.weaponstech",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill",
+              "1": "skill",
+              "2": "skill",
+              "3": "skill",
+              "4": "skill",
+              "5": "skill",
+              "6": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "1": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "2": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "3": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "4": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "5": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "6": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/tech_scanner.svg",
+      "name": "Techscanner",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460886,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460886,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!347vBbRcotzYQBbW.tvqakDnmQ3P9ncWm"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/gear/tech_scanner.svg",
+  "name": "Techscanner",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>+2 to multiple TECH-based skills.</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 0,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "price": {
+      "market": 1000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 355
+    },
+    "usage": "carried"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460894,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460894,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!347vBbRcotzYQBbW"
+}

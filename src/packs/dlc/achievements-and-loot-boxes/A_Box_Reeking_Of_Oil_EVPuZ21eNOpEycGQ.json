@@ -1,0 +1,393 @@
+{
+  "_id": "EVPuZ21eNOpEycGQ",
+  "description": "Source: Achievements and Loot Boxes pg.6\nAll weapons come fully loaded with a compatible ammo type of the GM's choosing.",
+  "displayRoll": true,
+  "formula": "1d6",
+  "img": "icons/containers/boxes/box-gift-white.webp",
+  "name": "A Box Reeking Of Oil",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "c8kczOYMAPkdJJZu",
+      "documentCollection": "cyberpunk-red-core.black-chrome_weapons",
+      "documentId": "IxXIb9gFdbjUCPZW",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/Shotgun_poor.svg",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Bubba Buster",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460976,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460976,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.c8kczOYMAPkdJJZu"
+    },
+    {
+      "_id": "sMGT5QJTr2JoaHgO",
+      "documentCollection": "cyberpunk-red-core.black-chrome_weapons",
+      "documentId": "DroG3PMwgQcJ3hmk",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/heavyPistol_poor.svg",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Overlord Handcannon",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460980,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460980,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.sMGT5QJTr2JoaHgO"
+    },
+    {
+      "_id": "kz89JnQ3RCyhFbVY",
+      "documentCollection": "cyberpunk-red-core.core_clothing",
+      "documentId": "CcIZ23rub5QtcOHJ",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_footwear.svg",
+      "range": [
+        3,
+        3
+      ],
+      "text": "Nomad Leathers Footwear",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460980,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460980,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.kz89JnQ3RCyhFbVY"
+    },
+    {
+      "_id": "K3bztoOWw2ezSKmM",
+      "documentCollection": "cyberpunk-red-core.core_weapons-branded",
+      "documentId": "fUo0HrfEC83Wb7wj",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/SniperRifle_poor.svg",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Snipe-Star",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460984,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460984,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.K3bztoOWw2ezSKmM"
+    },
+    {
+      "_id": "a2XoRw49dC8Dt2IJ",
+      "documentCollection": "cyberpunk-red-core.core_upgrades",
+      "documentId": "Ryex0KHeeDzPQwmN",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/upgrades/sniping_scope.svg",
+      "range": [
+        5,
+        5
+      ],
+      "text": "Sniping Scope",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460984,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460984,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.a2XoRw49dC8Dt2IJ"
+    },
+    {
+      "_id": "Lgih56AQ2Ri3pdIp",
+      "documentCollection": "cyberpunk-red-core.core_upgrades",
+      "documentId": "BC8S1sdK0QGdyHNC",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/upgrades/smartgun_link.svg",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Smartgun Link",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460984,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460984,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.Lgih56AQ2Ri3pdIp"
+    },
+    {
+      "_id": "wh6KYBkGZw27bFbm",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "qRKLIX7yU2n83JKJ",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/shotgun_slug_rubber.png",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Shotgun Slug (Rubber)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460983,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460983,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.wh6KYBkGZw27bFbm"
+    },
+    {
+      "_id": "gpfHm54HW5ObDwZ4",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "WOJD6hQVUVEK8AsJ",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolheavy_rubber.png",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Heavy Pistol (Rubber)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460978,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460978,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.gpfHm54HW5ObDwZ4"
+    },
+    {
+      "_id": "N9ekZIXIfInTrPpW",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "qA9wmNHuGLsxBtRB",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_rubber.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Rubber)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460981,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460981,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.N9ekZIXIfInTrPpW"
+    },
+    {
+      "_id": "T2hNqzWfHWOwFkMu",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "YFnV9OetCCRru5Ky",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/shotgun_slug_basic.png",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Shotgun Slug (Basic)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460983,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460983,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.T2hNqzWfHWOwFkMu"
+    },
+    {
+      "_id": "lVprHXowLxjCn19x",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "mkI1KpjAOUz9PxRM",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/shotgun_shell_basic.png",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Shotgun Shell (Basic)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460982,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460982,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.lVprHXowLxjCn19x"
+    },
+    {
+      "_id": "UxRULDYLMrncy00U",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "jmia1vHSv6bdQEVP",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolheavy_basic.png",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Heavy Pistol (Basic)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460978,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460978,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.UxRULDYLMrncy00U"
+    },
+    {
+      "_id": "gOnjhynVoYirZk59",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "J3NfMgRdqoUwFDDs",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_basic.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Basic)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460981,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460981,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.gOnjhynVoYirZk59"
+    },
+    {
+      "_id": "SvLnvAPXVREj9wYw",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "BEj2oUj2UOKgBFDz",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_armorpiercing.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Armor-Piercing)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460981,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460981,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.SvLnvAPXVREj9wYw"
+    },
+    {
+      "_id": "8RgqsaxOfx94sg4g",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "mDk8gPTM1ENRcB0K",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_expansive.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Expansive)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460981,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460981,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.8RgqsaxOfx94sg4g"
+    },
+    {
+      "_id": "aK7ISDmsutmrgUzX",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "U6VMjZRYgJMlMSsg",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_incendiary.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Incendiary)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460981,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460981,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.aK7ISDmsutmrgUzX"
+    },
+    {
+      "_id": "kS0gv3dhDDFIavj5",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "n3AunwSvl6L44MRF",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_smart.png",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Rifle (Smart)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460982,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460982,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!EVPuZ21eNOpEycGQ.kS0gv3dhDDFIavj5"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460988,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460988,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!EVPuZ21eNOpEycGQ"
+}

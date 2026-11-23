@@ -1,0 +1,803 @@
+{
+  "_id": "Z1THhnTcqax4pFJA",
+  "name": "Changelog Español",
+  "pages": [
+    {
+      "name": "v0.92.2",
+      "type": "text",
+      "_id": "A3VVtVqBBg6rGZ7X",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Action Needed</h3>\n<h4>Weapon Quality/Attack Mod</h4>\n<p>We have fixed a number of Quality/Attack Mod mismatches on weapons in the Compendia for the below weapons. If any of your Characters/Mooks/Containers use any of these weapons the quickest way to fix them is to remove the old weapons from their sheet and replace them from the Compendia.</p>\n<ul>\n<li>Arasaka Weeping Reaver Katana</li>\n<li>SlamDance FangFist</li>\n<li>SlamDance Tasmanskiy Klô</li>\n<li>Malorian Arms 3516</li>\n<li>Arasaka Minami 10</li>\n<li>Arasaka WSSA Sniper System</li>\n<li>Chadran Arms City Reaper</li>\n<li>Chadran Arms Jungle Reaper</li>\n<li>Dai Lung Magnum</li>\n<li>Dai Lung Streetmaster</li>\n<li>Eagletech Bearcat</li>\n<li>Eagletech Scorpion</li>\n<li>Federated Arms Super Chief</li>\n<li>Federated Arms Tech-Assault III</li>\n<li>GunMart Home Defender</li>\n<li>GunMart Snipe-Star</li>\n<li>Militech Avenger</li>\n<li>Militech Boomer Buster</li>\n<li>Militech Bulldog</li>\n<li>Militech Dragon</li>\n<li>Militech Hotshot</li>\n<li>Militech Viper</li>\n<li>Nova Cityhunter</li>\n<li>Towa Manufacturing Type-G</li>\n<li>Towa Manufacturing Type-R</li>\n<li>Tsunami Arms Type-18</li>\n<li>Chainknife</li>\n<li>Sub-Flechette Gun</li>\n<li>Archimedes</li>\n<li>TearJerker</li>\n</ul>\n<h3>Nuevas Características</h3>\n<ul>\n<li>Add Ukrainian Language support</li>\n</ul>\n<h3>Corrección de Errores</h3>\n<ul>\n<li>Fix term &quot;Optional Slots&quot; to &quot;Option Slots&quot;</li>\n<li>Fix small layout bug with Item Sheet: Source/Page display</li>\n<li>Corrected armor penetration settings for Federated Arms X-9mm</li>\n<li>Fix Weapon Quality/Attack Mod mismatches</li>\n<li>Fix <code>Techtronica Russia BMG 500</code> price/hands</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461166,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461166,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.A3VVtVqBBg6rGZ7X"
+    },
+    {
+      "name": "v0.92.1",
+      "type": "text",
+      "_id": "1E6i7scpRnGXQ1rf",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#1134 - Fix HP/Humanity interacting with the mouse scrollwheel</li>\n<li>#1137 - Fix bug preventing extended magazines from modifying weapon ammo count</li>\n<li>#1149 - Set correct <code>ammoVariety</code> on Westwood Pistol, Hello Cutie 1TruLuv, and Timeless WW1 Rifle to Pistol Conversion</li>\n<li>#1152 - Fix creating weapon item on <code>CPRActorSheet</code> crashing that Actor&#39;s sheet and migrate to fix currently broken weapons</li>\n<li>#1146 - Fix all container items that contain &quot;programs&quot; in <code>system.installedItems.allowedTypes</code> to correctly be &quot;program&quot;</li>\n<li>#1161 - Fix shop container config not saving</li>\n<li>#1139 - Remove items from weapons that do not exist in the game and in the actor owner of the item</li>\n<li>#1162 - Fix Condition Lab and Triggler configutation styling in Dark Mode</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461166,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461166,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.1E6i7scpRnGXQ1rf"
+    },
+    {
+      "name": "v0.89.2",
+      "type": "text",
+      "_id": "sYHmJ2bnZPRfJqRB",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#1130 - Fixed loading ammo into weapon upgrades.</li>\n<li>#1131 - Fixed issue where migration app would not scroll when many compendia caused overflow.</li>\n<li>Migration error reports now redact host information.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461165,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461165,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.sYHmJ2bnZPRfJqRB"
+    },
+    {
+      "name": "v0.89.1",
+      "type": "text",
+      "_id": "zVqwPlRbTSbbB5CP",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#1128 - Fixed visual bug related to weapon firemodes not showing state correctly.</li>\n<li>Fix uprade weapons (e.g., underbarrel weapons) not rolling.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461165,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461165,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.zVqwPlRbTSbbB5CP"
+    },
+    {
+      "name": "v0.89.0",
+      "type": "text",
+      "_id": "PAhcbuAE8ZbVVYhf",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Action Needed</h3>\n<h4>Item Quality</h4>\n<p>We have (re)added item quality data points to Weapons, Cyberdecks, etc. we have migrated items with a best effort (checking for poor/exellent in item names/descriptions) but this migration may not catch 100% of items.</p>\n<p>Please manually review any items in your world/custom compendia/on actors that may need to be adjusted.</p>\n<h4>Skill Types</h4>\n<h5>Removing Old Generic Skills</h5>\n<p>We have removed the old (incorrect) generic skills <code>Science</code>, <code>Play Instrument</code>, <code>Martial Arts</code>, <code>Local Expert</code>, and <code>Language</code> from being added to new Characters/Mooks and We have added new system compendia for <code>Skills (Languages)</code>, <code>Skills (Local Expert)</code>, <code>Skills (Martial Arts)</code>, <code>Skills (Science)</code>, and <code>Skills (Science)</code> which you can use to populate these specific skills for new actors.</p>\n<p>As we do not want to lose any of your data we have not removed these Skills from your actors, we have instead made them deletable so you can add the add the correct specific skills and remove the old ones from character sheets as in your own time.</p>\n<h5>Modifying existing Specific Skills</h5>\n<p>For some functionality in the system we have added a <code>Skill Type</code> to each skill, while we have made a best effort to migrate all skills to the correct type there may be some instances where we were unable to detect the correct Skill Type of a skill. If you have any actors with custom skills for <code>Science</code>, <code>Play Instrument</code>, <code>Martial Arts</code>, <code>Local Expert</code>, and <code>Language</code> you may need to set it&#39;s Skill Type of the skill manually in that skill&#39;s Settings page. You can follow the process on the <a href=\"https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/wikis/System-Documentation/Items/Skills#settings-tab\">wiki page</a>.</p>\n<h4>Weapons Ignoring Armor</h4>\n<p>We have added the ability to allow weapons to ignore a percentage of armor or armor under a certian SP. We have migrated all melee weapons to include the new datapoints to ignore 50% armor by default.</p>\n<p>If your players or mooks have any weapons that ignore a different percentage or armor under a certian SP that is not 50%/0SP then you will need to update these manually (or replace from a copy in the system compendia).</p>\n<h4>Get EMP&#39;d Macro</h4>\n<p>If you have imported the <code>Get EMP&#39;d Macro</code> you will need to delete the copy in your world and re-import it from the <code>Other/Macros</code> Compendium as we have updated this Macro.</p>\n<h3>Nuevas Características</h3>\n<ul>\n<li>Added compatibility for Foundry v12.</li>\n<li>Removed compatibility for Foundry v11.</li>\n<li>Add Compendia for:<ul>\n<li>Skills (Local Expert)</li>\n<li>Skills (Science)</li>\n<li>Skills (Martial Arts)</li>\n<li>Skills (Play Instrument)</li>\n<li>DLC: 12 Days of Gearmas (thanks to @LordCheesusCrust)</li>\n</ul>\n</li>\n<li>Add a check to characters to see if they are considered &quot;Hardened&quot;<ul>\n<li>Based on the rules in Danger Gal Dossier pg. 150</li>\n<li>Displays an overlay Icon on the Character Sheet Image which lists the reasons a character is considered hardened when hovered</li>\n<li>Programmatically available under the <code>system.derivedStats.isHardened</code> datapoint</li>\n</ul>\n</li>\n<li>Add Quality to Weapons/Cyberdecks</li>\n<li>Add new translations:<ul>\n<li>Chinese (Simplified)</li>\n<li>Chinese (Traditional)</li>\n<li>Japanese</li>\n</ul>\n</li>\n<li>#653 - Enable support for dddice</li>\n<li>Adjust font size of Handle/Name in Character sheets if the name overflows</li>\n<li>Skill Items now have a <code>skillType</code> for programmatic access</li>\n<li>Remove <code>Science</code>, <code>Play Instrument</code>, <code>Martial Arts</code> skills<ul>\n<li>These will remain on existing Characters</li>\n<li>They will not be added to new Characters</li>\n</ul>\n</li>\n<li>Rename default <code>Local Expert</code> skill to <code>Local Expert (Your Home)</code></li>\n<li>Add CSS theme support for Monks Active Tile Triggers Module</li>\n<li>Add Speedheal Macro</li>\n<li>Add &quot;Long-Barrel Pistol&quot; DV Table from 12 Days of REDmas DLC</li>\n<li>Add ability to set weapon ignore percentage</li>\n<li>Add ability to set weapon to ignore armor below set SP amount</li>\n<li>#235 - Added ability to change resource bars for armor from item sheet</li>\n<li>Add Critical Effect Failue datapoint for Weapons</li>\n<li>Display Net Architectures in Character&#39;s gear tab</li>\n<li>Add Basic system API<ul>\n<li>Add <code>GetEMPableItems</code> function to API</li>\n</ul>\n</li>\n<li>Add Q-Workshop dice presets for Dice-So-Nice</li>\n<li>Add a default Black ICE actor when first launching a world</li>\n</ul>\n<h3>Cambios</h3>\n<ul>\n<li>Fix actor lookup in Get EMP Macro</li>\n<li>Weapons in fight tab now categorized by Ranged/Melee</li>\n<li>Scrolling with the mousewheel no longer adjusts stats/skills on the Character sheet</li>\n<li>Change Pause Font to Tektur for better internationalization support<ul>\n<li>Remove Orbitron font</li>\n</ul>\n</li>\n<li>Change the styling of <code>&lt;code&gt;</code> elements</li>\n<li>Header elements in text input areas are now styled in a similar way to the core book</li>\n<li>Update netrunning tiles with new tiles from Solution</li>\n<li>Update Macro icons to fit system style</li>\n<li>Update Demon sheet layout to be less wonky</li>\n<li>Change how we handle Branded Items<ul>\n<li>Rename branded items to use the full item name from the source book</li>\n<li>Remove the programatic band name handler</li>\n</ul>\n</li>\n<li>Ensure all SVGs have <code>width</code>/<code>height</code> set corectly to prevent known Firefox/PIXI bug</li>\n</ul>\n<h3>Corrección de Errores</h3>\n<ul>\n<li>#933 - Fix multiple compendium errors/missing values, thanks @Alexander Fokin</li>\n<li>#950 - Bolded DV checks in various items of the compendia</li>\n<li>Fix NET Arch image path seperators</li>\n<li>#951 - Fix duplicate page references on item description that are already present in manual/page properties for items</li>\n<li>#979 - Fix styling of inline rolls in chat</li>\n<li>Fix Medtech translation stering on Role Item</li>\n<li>Added several small updates to descriptions to understand various items better</li>\n<li>Fix image overflow on Item Sheets</li>\n<li>Fix typos in some items</li>\n<li>Fix Computer not being isElectronic</li>\n<li>Fix filepicker favorites styling</li>\n<li>#1017 - Fix duplicate effect bonuses being applied to attacks</li>\n<li>Fix program damage type in Chat messages for Programs</li>\n<li>Fix not being able to creat effects on owned items.</li>\n<li>Fix Black ICE actions/skills not being properly translated</li>\n<li>Change description of Warlocks Book to be RTal Homebrew Policy compliant</li>\n<li>Fix more typos in items</li>\n<li>#1089 - Fix missing effects on items split from stacks</li>\n<li>#1077 - Fix DV Ruler button on character sheets not working correctly.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461165,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461165,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.PAhcbuAE8ZbVVYhf"
+    },
+    {
+      "name": "v0.88.2",
+      "type": "text",
+      "_id": "LrrY7pOdi70y0VFU",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Cambios</h3>\n<ul>\n<li>Switched to using DataModels to enforce data types (#316, #723)</li>\n<li>Fix roll processing to accept lowercase and upper case roll formulas<ul>\n<li>EG: 1d6 &amp; 1D6</li>\n</ul>\n</li>\n<li>Add setting to disable warning when rolling damage without targets</li>\n<li>The fumble recovery skill for Solos is now accounted for</li>\n</ul>\n<h3>Action Needed</h3>\n<p>Our v11 Migrations of Active Effects introduced a bug where modifiers to STATs (and only STATs). Caused them to be multiplied by 3.</p>\n<p>For example, if you had the Grafted Bone and Muscle Lace (BODY +2) on an actor with a base BODY of 6, instead of having a BODY of 8, the actor would now have a BODY of 12.</p>\n<p>Unfortunately we cannot revert this automatically so you will need to fix these issues manually. Either restore from a pre-<code>0.88</code> backup and remgirate or adjust the actors back. This affects all Characters/Mooks who had STAT modifiers.</p>\n<p>**If you are currently migrating from a version prior to <code>0.88</code>, the above does not apply (as the migration script has been fixed).</p>\n<h3>Corrección de Errores</h3>\n<ul>\n<li>#856 - Fix token targeting chat cards spoiling actor names, use token names instead.</li>\n<li>Fix weapons moved to stash not applying correct amount of ammo stack</li>\n<li>Fix incorrect Black Chrome Grenade Names</li>\n<li>Fix <code>Heavy Pistol (ArmorPiercing)</code> icon</li>\n<li>Fix Mood Eye Cyberware not being fashionware</li>\n<li>Fix Perfect Fit Cyberfoot not requiring foundational</li>\n<li>Fix HP and Humanity resetting to 40 HP/60 Humanity every time that world and current scene reloaded.</li>\n<li>Fix unlinked character and mook actors resetting back to default 40 HP, 60 Humanity</li>\n<li>Fix being unable to edit/toggle the same AE from multiple copies of the same item.</li>\n<li>Fix BlackICE actor program link list not in alphabetical order</li>\n<li>Fix issue where items did not have their dv tables translated.</li>\n<li>Fixed rare issue where container actor would fail migration.</li>\n<li>Fix issue where orphaned effects on actors were causing migrations to fail.</li>\n<li>Fix migration issue where AEs on stats were causing them to be incorrectly recalculated.</li>\n<li>Fix translation issues with translated skills via Babele</li>\n</ul>\n<h3>Nuevas Características</h3>\n<ul>\n<li>The Changelog is now a Journal allowing:<ul>\n<li>The entire Changelog to be shown</li>\n<li>Re-opening at any time</li>\n</ul>\n</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461164,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461164,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.LrrY7pOdi70y0VFU"
+    },
+    {
+      "name": "v0.85.2",
+      "type": "text",
+      "_id": "TobmB4B2fd1KZItH",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>Corrected a capitalisation error that was causing the included Dystopian City Streets map to disappear. Thanks to Latcher for spotting this!</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461164,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461164,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.TobmB4B2fd1KZItH"
+    },
+    {
+      "name": "v0.85.1",
+      "type": "text",
+      "_id": "czFLul0CUgSzX8QO",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>Fixed #624 - NET architecture sheet can&#39;t click generation button</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461164,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461164,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.czFLul0CUgSzX8QO"
+    },
+    {
+      "name": "v0.84.1",
+      "type": "text",
+      "_id": "zM9lgxDElw73mifb",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>Fix HTML Stripping in item descriptions on character sheets</li>\n<li>Fix Create/Edit Role Ability dialog not submitting.</li>\n<li>#583 - Using ledger re-applies all Active Effects</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461163,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461163,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.zM9lgxDElw73mifb"
+    },
+    {
+      "name": "v0.83.1",
+      "type": "text",
+      "_id": "FxcyvoCcxJg9cA1X",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#529 - Fix non-shop containers having the wrong button</li>\n<li>#536 - Spelling mistake: &quot;Ememies&quot; (English)</li>\n<li>#495 - Ability to use UUID links in Character sheets or Item sheets</li>\n<li>Fixed location of Lifestyle Data for Tragic Love Affairs and Affectations</li>\n<li>Fix rolling initiative before combat has started</li>\n<li>Fix weapon upgrades that are secondary weapons to work correctly</li>\n<li>Fix cyberdeck program installation where it was adding the item._id under item.system</li>\n<li>Fixed regression where filteredItems was re-introduced back into the system. This was replaced with actor.itemTypes in 0.82.0</li>\n<li>Fixed an issue where attempting to delete a ledger line would throw an error</li>\n<li>Fixed a couple migration issues:<ul>\n<li>When a migration failed for any reason, on the next run through it could corrupt upgraded items</li>\n<li>When running migration through multiple levels of migration, it was possible that the world data model version would be set incorrectly because the code did not await the update of the world data model version. This would cause migration to execute a second time which may cause problems.</li>\n</ul>\n</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461163,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461163,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.FxcyvoCcxJg9cA1X"
+    },
+    {
+      "name": "v0.82.1",
+      "type": "text",
+      "_id": "ZdAevXN9jfV0yvuP",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Fix an issue where the mook sheet notes were not writeable</li>\n<li>#494 - Cyberware weapons were corrupting data points</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461163,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461163,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.ZdAevXN9jfV0yvuP"
+    },
+    {
+      "name": "v0.81.5",
+      "type": "text",
+      "_id": "WNRULyFHlYvTeFtC",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>467 - Fix shield ablation arrow in Fight Tab to be functional</li>\n<li>461 - Throw an exception if someone enters a decimal point when modifying eurobucks</li>\n<li>477 - Autofire functionality is not working from the Fight Tab</li>\n<li>468 - Actor image goes outside border over text</li>\n<li>Item Upgrades &amp; Cyberware which are weapons no longer get their item data corrupted when opening the item sheet</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461163,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461163,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.WNRULyFHlYvTeFtC"
+    },
+    {
+      "name": "v0.81.4",
+      "type": "text",
+      "_id": "ENWb5qEdM0Cf41xP",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>464 - Fix issue where containers corrupt eurobucks amount for non-stackable items</li>\n</ul>\n<h3>Nuevas Características</h3>\n<ul>\n<li>Polish support available!</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461162,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461162,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.ENWb5qEdM0Cf41xP"
+    },
+    {
+      "name": "v0.81.3",
+      "type": "text",
+      "_id": "BG4ePOF7tz2UuEdW",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>When installing cyberware and selecting <code>None</code> for the Humanity Loss, the maximum humanity was not being decremented forcing one to re-calculate it using the calculator.</li>\n<li>Corrected an issue with Compendium Migration where <code>Scene</code> type Compendia was not properly being migrated.</li>\n<li>#437 - Chat Card shows armor ablation even if target has no armor</li>\n<li>#419 - Invert function of CTRL Rolls creates an issue with Primary Role Abilities</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461162,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461162,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.BG4ePOF7tz2UuEdW"
+    },
+    {
+      "name": "v0.81.2",
+      "type": "text",
+      "_id": "B079EETtBaJxz8uX",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#458 - The rulers for the DV Calculation is broken for tables with regexp characters in the name [such as (Autofire)]</li>\n<li>#455 - Containers/Vendors issues (non-English settings)</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461162,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461162,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.B079EETtBaJxz8uX"
+    },
+    {
+      "name": "v0.81.1",
+      "type": "text",
+      "_id": "of1Ag7X96oQiEIiu",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Corrección de Errores</h3>\n<ul>\n<li>#456 - Selling non-stackable items to vendors results in a NaN offer from the vendor</li>\n<li>#454 - Kendachi Mono-Three has Incorrect Attack Bonus</li>\n<li>#452 - Migrated Excellent Quality Weapons have no Bonus to Attack</li>\n<li>#451 - All Migrated Weapon Icons Changed to Heavy Pistol</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461161,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461161,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.of1Ag7X96oQiEIiu"
+    },
+    {
+      "name": "v0.80.1",
+      "type": "text",
+      "_id": "n90CFNzBtuqZTVl5",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Cambios</h3>\n<ul>\n<li>Addressed #352: Removed the fixed height CSS for the &quot;Player Notes&quot; section in the lifepath tab for a better writing/reading experience</li>\n<li>Fixed #354 - Item Upgrades should be removable again and additional upgrades can be installed</li>\n<li>Fixed #355 - Drag and drop to hotbar restored</li>\n<li>Corrected many French translation strings</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461161,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461161,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.n90CFNzBtuqZTVl5"
+    },
+    {
+      "name": "v0.79.1",
+      "type": "text",
+      "_id": "Q96auPnHyviZ4Sjh",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Fixed #325 - DV ruler broken. Restored by naming the function.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461161,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461161,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.Q96auPnHyviZ4Sjh"
+    },
+    {
+      "name": "v0.78.2",
+      "type": "text",
+      "_id": "iDT3wm61EqL9VPQv",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Fix missing import statement in macro code, which prevented all macros generated by dragging items to the hotbar from functioning.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461161,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461161,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.iDT3wm61EqL9VPQv"
+    },
+    {
+      "name": "v0.78.1",
+      "type": "text",
+      "_id": "JpHvQGiFerSzuN9s",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Fixes issue #289: There was a naming conflict on Handlebar helpers between <code>CPR</code> and the module <code>Better Roll Tables</code>. This hotfix prefixes our helper with <code>cpr</code> to avoid this conflict. A more permanent solution will be implemented for all helpers next release.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461160,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461160,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.JpHvQGiFerSzuN9s"
+    },
+    {
+      "name": "v0.77.1",
+      "type": "text",
+      "_id": "cI4Wl3dsl77UI64D",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Corrected localization issue of text on chat cards when rolling NET Damage</li>\n<li>Added Zap as a rollable interface ability as it was missing from the list (Zap damage will be handled in a future release)</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461160,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461160,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.cI4Wl3dsl77UI64D"
+    },
+    {
+      "name": "v0.76.2",
+      "type": "text",
+      "_id": "WS2yDXX0XOlnjzp3",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Non owned actor sheets (Limited and Observer permissions) render again, the content is also shown now.</li>\n<li>Borgware items are now configured correctly as foundational in compendium.</li>\n<li>Borgware no longer displays &quot;0/0 Optional slots&quot; when installed on character sheet.</li>\n<li>Observer/limited view permissions for character sheets now work correctly.</li>\n<li>Core skills/cyberware now cannot be added to unlinked tokens.</li>\n<li>Auto-install cyberware prompt now correctly shows based on sheet type rather than actor type.</li>\n<li>Auto-install cyberware prompt for mook sheets now only displays to the user who initiated the prompt.</li>\n<li>Internal, external, and fashionware cyberware now display correctly on mook sheets.</li>\n<li>Deleting/uninstalling optional cyberware from mook sheets now works correctly.</li>\n<li>Cleaned up of many (but not all) trailing commas in mook sheet.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461160,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461160,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.WS2yDXX0XOlnjzp3"
+    },
+    {
+      "name": "v0.76.1",
+      "type": "text",
+      "_id": "IsXtUHnvmwi661WT",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Programs can now be displayed in gear tab and on mook sheets for easier tracking.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461160,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461160,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.IsXtUHnvmwi661WT"
+    },
+    {
+      "name": "v0.75.4",
+      "type": "text",
+      "_id": "BzKHcgjbNclvW0RB",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Fixed release manifest to not lock users into version 0.75.2 without possibility to update</li>\n</ul>\n<h3>Please Note</h3>\n<ul>\n<li>Version 0.74.2 had an error in the release manifest causing issues with updating. This was attempted to be fixed a first time but sadly that fix contain a further issue. A second attempt was made and this was successful. During this however the version numbers appear to have got confused slightly, leading to the strange jump between the version number below (0.74.2) and above (0.75.4).</li>\n<li>In more specific terms:<ul>\n<li>Hotfix 0.74.2 is created with the fix below. The version number in <code>system.json</code> is changed, but the manifest and download links aren&#39;t updated</li>\n<li>Another hotfix is created numbered 0.75.3. This changes the manifest and download links to be that of 0.75.3, but contains a typo in the download link</li>\n<li>The typo is then fixed, but without a bump in the version number</li>\n<li>0.75.4 is created, with a new version agnostic manifest link but the download link from 0.75.3</li>\n</ul>\n</li>\n<li>This history was initially preserved in a branch containing the various release manifests, but in April 2023 Zankoas deleted that branch in a clean-up. In doing so this note was added to avoid losing the record entirely</li>\n<li>Three commits from that branch containing the <code>system.json</code> changes between 0.74.2 and 0.75.4 hadn&#39;t been merged in, and as such were deleted</li>\n<li>0.74.2 wasn&#39;t tagged, but can be found at commit hash <code>1fdb27abbcfbf57152690e76992c109a464d57f7</code> on date <code>03/05/21 16:48:36</code></li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461159,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461159,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.BzKHcgjbNclvW0RB"
+    },
+    {
+      "name": "v0.74.2",
+      "type": "text",
+      "_id": "qSq9A19UNSPhPx1o",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Role ability settings were lost when changing other data on the sheet. <a href=\"https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/issues/203\">issue #203</a></li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461159,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461159,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.qSq9A19UNSPhPx1o"
+    },
+    {
+      "name": "v0.74.1",
+      "type": "text",
+      "_id": "LisoSEyHXcxyW70l",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Macros were not working due to a change in the way rolls were handled.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461159,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461159,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.LisoSEyHXcxyW70l"
+    },
+    {
+      "name": "v0.74.0",
+      "type": "text",
+      "_id": "0buINbcPZk3bqrjz",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>UI/UX</h3>\n<ul>\n<li>FnWeather made a great video demonstrating some of the following changes which you can find here: <a href=\"https://www.youtube.com/watch?v=Q8DP0qcR4AU\">https://www.youtube.com/watch?v=Q8DP0qcR4AU</a>. Thanks to him!</li>\n<li>Added the ability to show DV for ranged weapons when using the ruler for measurement<ul>\n<li>Right clicking a token, you can select a DV table to use and after setting this, any ruler measurements will show the DV along with the measured range.</li>\n<li>Ranged Weapons can be also configured to use a specific DV table in the item settings. Weapons with DV Tables associated with them will have a ruler in their Fight Tab which can be clicked to set the DV Table for the associated token to quickly switch DV tables when using the Ruler Measurement Tool.</li>\n</ul>\n</li>\n<li>Added a Compendium with Roll Tables for Core Ranged DV Measurements from the book also providing a page reference in the description field. Compendium contains a &quot;DV Generic&quot; table that has a description explaining how to create custom DV tables and how they work with the system.</li>\n<li>Added a &quot;MOD&quot; column to the Skills section of the character sheet and as a field on the Skill Item. When skills (or attacks) are rolled, the dialog will auto-populate with the mod. Skill mods on the character sheet only show non-zero values.</li>\n<li>Introduced some code so that the core skills on the character sheet are localized, which will help with current and future translations.</li>\n<li>Added a &quot;Clothing&quot; item for those stylish chooms (per feature request #165).</li>\n<li>Localized the new item and actor drop-down menus so that they appear more professional.</li>\n<li>Critical Injuries are now items so that injuries can be premade, dragged to the character sheet, and used more easily in critical injury tables.<ul>\n<li>Even better, once you have critical injury tables, you can roll right from the character sheet and it will automatically add a randomized critical injury.</li>\n</ul>\n</li>\n<li>Wound State penalties automatically apply as mods on the roll (e.g. if the token is Seriously Wounded all actions will automatically have a -2 penalty)</li>\n<li>You can now change the amount of ammo in a weapon&#39;s clip right from the fight tab. In addition, you can type &quot;+X&quot; or &quot;-Y&quot; (where X and Y are numbers) into the input and it will perform the math.</li>\n<li>Mook sheet introduced. Please use <a href=\"https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/issues/181\">issue #181</a> to suggest improvements or point out rough edges.</li>\n<li>Added &quot;Source&quot; field to item sheets to keep track of where items came from (e.g. Core Rules Pg. 351)</li>\n<li>&quot;Thrown Weapon&quot; is now a weapon type and &quot;Athletics&quot; is now a weapon skill for throwing grenades, etc. Weapons that use the athletics skill also use DEX as the stat, which is consistent with the rules.</li>\n<li>Weapon section of the Fight Tab has been slightly redesigned.</li>\n<li>Shields have been implemented (they are an armor type item).</li>\n<li>Added the ammunition type to the attack and damage roll cards.</li>\n<li>Added &quot;N/A&quot; as a choice for cyberware install location.</li>\n<li>New beautiful artwork for the d6s and d10s (thank you to Flintwyrm!)</li>\n<li>Cleaned up display of chat cards. Most of the data is now by-default hidden and can be opened by clicking on the roll total.</li>\n<li>Rolls now indicate if they are whispered, blind, or self.</li>\n<li>Can now roll damage from the chat card for attack rolls.</li>\n<li>Added ability to unload a weapon.</li>\n<li>Added a field for a static attack modifier on weapons.</li>\n<li>Added a warning on cyberware install to remind users that installing cyberware also deducts from maximum humanity.</li>\n</ul>\n<h3>Corrección de Errores</h3>\n<ul>\n<li>&#39;Basic&#39; skills (the ones that all characters have points in) now display as bold again (no issue to reference)</li>\n<li>Token name now correctly displays in chat when rolling from a macro.</li>\n<li>Fixed a bug which caused unlinked tokens to erroneously pull certain data from the parent actor.</li>\n<li>Fixed a bug which caused collapsed gear categories to not retain their state upon character sheet update.</li>\n</ul>\n<h3>Plumbing</h3>\n<ul>\n<li>Refactored data model to conform with plans going forward.</li>\n<li>Logging has been overhauled.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461158,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461158,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.0buINbcPZk3bqrjz"
+    },
+    {
+      "name": "v0.66.0",
+      "type": "text",
+      "_id": "COsJ33UWuaZenmWf",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Aimed shot was using the Autofire Skill when attacking instead of using the Weapon Skill</li>\n<li>Suppressive Fire was using the Weapon Skill when attacking instead of using the Autofire Skill</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461158,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461158,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.COsJ33UWuaZenmWf"
+    },
+    {
+      "name": "v0.65.0",
+      "type": "text",
+      "_id": "DPQ07AZK1UzW9UwF",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>UI/UX</h3>\n<ul>\n<li>Implemented a chat command “/red” which will roll 1d10 and explode on a 10 or negatively explode (implode?) on a 1. Rolls of the form “/red+X”, “/red-X”, and “/red XdY” are also supported (though there are no dice icons if Y isn’t a 6 or a 10).</li>\n<li>Macros can now be made for weapons, skills, journal entries and actors by dragging and dropping to the macro bar. Weapon macros can be easily edited to roll for damage, aimed shots, autofire, and suppressive fire.</li>\n<li>Improvement Points now trackable and exist on the front of the character sheet, underneath Humanity.</li>\n<li>Eurobucks tracked in the gear tab.</li>\n<li>Can now view details of installed cyberware in ‘read-only’ mode.</li>\n<li>Being able to edit installed cyberware causes issues so the original fix was to make it so that installed cyberware could not be edited. This had the unintended consequence that you could no longer click on the item to see its description if you wanted to reference how it worked. This solves that issue.</li>\n<li>System setting to allow skipping of the roll dialogue. This basically inverts the function of ctrl-click. This rolls default values on a regular click and brings up the roll modification dialogue on ctrl-click.</li>\n<li>Early implementation for keeping track of critical injuries.</li>\n<li>New glyphs/buttons for autofire and suppressive fire.</li>\n<li>Death saves are now rollable, trackable, and relate to critical injuries.</li>\n<li>Added the option to apply no humanity loss on installation of cyberware. This is useful if the user realizes a mistake after installation. They can uninstall, edit the item and reinstall without having to worry about fixing humanity loss afterwards. Also useful for reinstallation of items like Skill Chips and extra cyberarms for the quick-change mounts.</li>\n<li>Added support for damage formulas like 2d6+2, 3d6-4, etc. for all your homebrew and 2020 conversions.</li>\n<li>Ctrl-click an item name to send its description to chat. This feature is still in the early stages of development and may have some formatting issues on the chat card. These will be addressed as the feature is refined.</li>\n<li>Rolling for cyberware is now printed to chat.</li>\n<li>Items of type ‘gear’ are now equippable (just a cosmetic feature for keeping track of what is on your person vs. somewhere else).</li>\n<li>Improved alignment when there are multiple Roles selected to display.</li>\n</ul>\n<h3>Plumbing</h3>\n<ul>\n<li>All rolls moved off of the character sheet to allow for drag n’ drop macros.</li>\n<li>Foundation for roll glyphs embedded into chat cards implemented.</li>\n<li>Many changes and fixes for data migration during updates.</li>\n</ul>\n<h3>Corrección de Errores</h3>\n<ul>\n<li>Applying status condition icons no longer fails.</li>\n<li>Custom pause animation no longer disappears on unpause/re-pause.</li>\n<li>Collapsing the side bar now works as expected.</li>\n<li>Rolls are now displayed as originating from the selected token, rather than the player. If no token is selected or associated with the actor sheet, rolls are displayed from the actor that triggered the roll.</li>\n<li>Fixed alt-text localization for critical injuries section.</li>\n<li>When changing the ammo types on an owned weapon, a race condition was occurring which was intermittently over-writing what the proper value of ammoVariety should be so setting compatible ammo would sometimes just fail. Re-ordered the way things are done and this has resolved this issue.</li>\n<li>Vehicles now correctly display Structural Damage Points (SDP) instead of the erroneous spd.</li>\n<li>Fix for the inability to set compatible ammo for an unowned weapon.</li>\n<li>Fixed a bug where choosing to roll for humanity loss when installing cyberware wouldn’t work.</li>\n<li>Fix for humanity loss looping back and subtracting from the maximum when dropping below 0 upon cyberware installation.</li>\n<li>There was an issue where if you made any change to the character sheet, it would reset the view of the sheet. For example, if you opened the sheet and collapsed category 1, Closed the sheet, Opened the sheet, Category 1 is still collapsed. All Good. Change anything (Pin something, change a skill level) Category 1 would instantly expand.</li>\n<li>Fixed a bug where wound state was not updating properly on some actors.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461158,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461158,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!Z1THhnTcqax4pFJA.DPQ07AZK1UzW9UwF"
+    }
+  ],
+  "flags": {
+    "core": {
+      "viewMode": "JournalSheet.VIEW_MODES.MULTIPLE"
+    }
+  },
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461096,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461096,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!journal!Z1THhnTcqax4pFJA",
+  "categories": []
+}

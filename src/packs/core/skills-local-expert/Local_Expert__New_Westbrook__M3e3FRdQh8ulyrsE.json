@@ -1,0 +1,40 @@
+{
+  "_id": "M3e3FRdQh8ulyrsE",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Skill.svg",
+  "name": "Local Expert (New Westbrook)",
+  "system": {
+    "basic": false,
+    "category": "educationSkills",
+    "core": false,
+    "description": {
+      "value": ""
+    },
+    "difficulty": "typical",
+    "favorite": false,
+    "level": 0,
+    "skillType": "generic",
+    "source": {
+      "book": "Core",
+      "page": 135
+    },
+    "stat": "int"
+  },
+  "type": "skill",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460914,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460914,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!M3e3FRdQh8ulyrsE"
+}

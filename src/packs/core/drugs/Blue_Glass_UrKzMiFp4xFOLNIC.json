@@ -1,0 +1,46 @@
+{
+  "_id": "UrKzMiFp4xFOLNIC",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/drugs/blue_glass.svg",
+  "name": "Blue Glass",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "consumed": "None",
+    "description": {
+      "value": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 4 hours.</p>\n<ul>\n  <li>\n    The GM may occasionally tell the user that they are seeing swirls of\n    colours. When this happens the user loses their action on a single turn\n  </li>\n</ul>\n<p><strong>Secondary Effect (DV15)</strong></p>\n<ul>\n  <li>\n    The GM may occasionally tell the user that they are seeing swirls of\n    colours. When this happens the user loses their action on a single turn\n  </li>\n</ul>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "price": {
+      "market": 20
+    },
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 357
+    },
+    "usage": "toggled"
+  },
+  "type": "drug",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460879,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460879,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!UrKzMiFp4xFOLNIC"
+}

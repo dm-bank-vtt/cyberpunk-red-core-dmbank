@@ -1,0 +1,139 @@
+{
+  "_id": "R3b9aNqHxWIAo4tX",
+  "effects": [
+    {
+      "_id": "B5UD7QmiTRg3jyFR",
+      "changes": [
+        {
+          "key": "system.stats.body.value",
+          "mode": 5,
+          "priority": null,
+          "value": "12"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "stat"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+      "name": "Implanted LF-001 SWAT Linear Frame",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460754,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460754,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!R3b9aNqHxWIAo4tX.B5UD7QmiTRg3jyFR"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+  "name": "Implanted LF-001 SWAT Linear Frame",
+  "system": {
+    "ammoVariety": [],
+    "attackmod": 0,
+    "brand": "Polska CyberTechnologies",
+    "canIgnoreArmor": true,
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "core": false,
+    "damage": "1d6",
+    "description": {
+      "value": "<ul>\n  <li>Requires BODY 8, 2 Grafted Muscle and Bone Lace</li>\n  <li>\n    Increases BODY stat to 12 (adjusting your HP, Wound Threshold, and Death\n    Save)\n  </li>\n  <li>Ignores the normal movement penalty for climbing and swimming</li>\n</ul>\n"
+    },
+    "dvTable": "",
+    "favorite": false,
+    "fireModes": {
+      "autoFire": 0,
+      "suppressiveFire": false
+    },
+    "humanityLoss": {
+      "roll": "4d6",
+      "static": 14
+    },
+    "ignoreArmorPercent": 50,
+    "installLocation": "mall",
+    "installedItems": {
+      "allowed": true,
+      "allowedTypes": [
+        "itemUpgrade",
+        "cyberware",
+        "ammo"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "isFoundational": true,
+    "isRanged": false,
+    "isWeapon": false,
+    "magazine": {
+      "ammoData": null,
+      "max": 0,
+      "value": 0
+    },
+    "price": {
+      "market": 5000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "rof": 1,
+    "size": 0,
+    "source": {
+      "book": "BC",
+      "page": 53
+    },
+    "type": "borgware",
+    "unarmedAutomaticCalculation": true,
+    "usage": "installed",
+    "usesType": "magazine",
+    "weaponSkill": "Archery",
+    "weaponType": "assaultRifle"
+  },
+  "type": "cyberware",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460737,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460737,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!R3b9aNqHxWIAo4tX"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": "r21n9rFplUOtnjHM",
+  "effects": [
+    {
+      "_id": "Tdev2grXyvKJvIhr",
+      "changes": [
+        {
+          "key": "bonuses.hasPainSuppression",
+          "mode": 5,
+          "priority": null,
+          "value": "1"
+        }
+      ],
+      "description": "",
+      "disabled": true,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "misc"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/drugs/stim.svg",
+      "name": "Stim",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460882,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460882,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!r21n9rFplUOtnjHM.Tdev2grXyvKJvIhr"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/drugs/stim.svg",
+  "name": "Stim",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "consumed": "Stim",
+    "description": {
+      "value": "<p>\n  Injecting a target with Stim causes them to ignore all penalties from being\n  Seriously Wounded for one hour. It can only be used on a target once per day.\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "price": {
+      "market": 0
+    },
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 150
+    },
+    "usage": "snorted"
+  },
+  "type": "drug",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460881,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460881,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!r21n9rFplUOtnjHM"
+}

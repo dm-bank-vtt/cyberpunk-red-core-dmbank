@@ -1,0 +1,195 @@
+{
+  "_id": "bMwkrapQscYWYhYh",
+  "description": "<p>Core Rulebook Page 173</p>",
+  "displayRoll": false,
+  "formula": "",
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+  "name": "DV Shotgun (Slug)",
+  "replacement": false,
+  "results": [
+    {
+      "_id": "UztvAgxETD5GEjNw",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        0,
+        6
+      ],
+      "text": "13",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461055,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461055,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.UztvAgxETD5GEjNw"
+    },
+    {
+      "_id": "ryeIKrAMFbeEaM3a",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        7,
+        12
+      ],
+      "text": "15",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461057,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461057,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.ryeIKrAMFbeEaM3a"
+    },
+    {
+      "_id": "UCIDgMuIFecbqdhe",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        13,
+        25
+      ],
+      "text": "20",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461063,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461063,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.UCIDgMuIFecbqdhe"
+    },
+    {
+      "_id": "q7IiOLtQZpURfAYi",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        26,
+        50
+      ],
+      "text": "25",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461065,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461065,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.q7IiOLtQZpURfAYi"
+    },
+    {
+      "_id": "MsFXaJERBThgLtTc",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        51,
+        100
+      ],
+      "text": "30",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461066,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461066,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.MsFXaJERBThgLtTc"
+    },
+    {
+      "_id": "VmgLEAngRSD6zITt",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        101,
+        200
+      ],
+      "text": "35",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461067,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461067,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.VmgLEAngRSD6zITt"
+    },
+    {
+      "_id": "xIXTXA2o35I6aN8v",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        201,
+        400
+      ],
+      "text": "N/A",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461071,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461071,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.xIXTXA2o35I6aN8v"
+    },
+    {
+      "_id": "IbC4DscGF5KGD4lw",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        401,
+        800
+      ],
+      "text": "N/A",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461069,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461069,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!bMwkrapQscYWYhYh.IbC4DscGF5KGD4lw"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461072,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461072,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!bMwkrapQscYWYhYh"
+}

@@ -1,0 +1,187 @@
+{
+  "_id": "Wu14Pqln0Mi8tED5",
+  "description": "<p>***READ THIS WHEN CREATING CUSTOM ROLL TABLES*** This is a generic DV table. For a DV table to work, it should be configured as follows: - The Table Name name must begin with \"DV \". - Roll Table Formula should be blank &amp; both boxes unchecked - The \"Result Type\" must be Text - The DV should be in \"Result Details\" - The weight should be \"1\" - The Range should be the start distance to end distance, inclusive, in m/yds</p>",
+  "displayRoll": false,
+  "formula": "",
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+  "name": "DV Generic",
+  "replacement": false,
+  "results": [
+    {
+      "_id": "YDQcg98eioRyU3eF",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        0,
+        6
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461068,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461068,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.YDQcg98eioRyU3eF"
+    },
+    {
+      "_id": "6WoZlJLFcZxWXUaw",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        7,
+        12
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461067,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461067,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.6WoZlJLFcZxWXUaw"
+    },
+    {
+      "_id": "kZRmj4aVvGObIDTT",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        13,
+        25
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461068,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461068,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.kZRmj4aVvGObIDTT"
+    },
+    {
+      "_id": "8ut6dGxpxJM73iIS",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        26,
+        50
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461067,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461067,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.8ut6dGxpxJM73iIS"
+    },
+    {
+      "_id": "KDSPu0zD3rYbwvom",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        51,
+        100
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461068,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461068,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.KDSPu0zD3rYbwvom"
+    },
+    {
+      "_id": "PhU6rtmbS6q7r4yn",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        101,
+        200
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461068,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461068,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.PhU6rtmbS6q7r4yn"
+    },
+    {
+      "_id": "ESmJ9zsloGeUzGuS",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        201,
+        400
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461067,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461067,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.ESmJ9zsloGeUzGuS"
+    },
+    {
+      "_id": "jrvIP11VLoftC2R3",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "range": [
+        401,
+        800
+      ],
+      "text": "",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461068,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461068,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!Wu14Pqln0Mi8tED5.jrvIP11VLoftC2R3"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461071,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461071,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!Wu14Pqln0Mi8tED5"
+}

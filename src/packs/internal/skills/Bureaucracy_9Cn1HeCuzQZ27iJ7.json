@@ -1,0 +1,40 @@
+{
+  "_id": "9Cn1HeCuzQZ27iJ7",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "name": "Bureaucracy",
+  "system": {
+    "basic": false,
+    "category": "educationSkills",
+    "core": true,
+    "description": {
+      "value": ""
+    },
+    "difficulty": "typical",
+    "favorite": false,
+    "level": 0,
+    "skillType": "generic",
+    "source": {
+      "book": "Core",
+      "page": 133
+    },
+    "stat": "int"
+  },
+  "type": "skill",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461075,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461075,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!9Cn1HeCuzQZ27iJ7"
+}

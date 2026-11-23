@@ -1,0 +1,138 @@
+{
+  "_id": "VSw96UuPdlXfu7Hy",
+  "effects": [
+    {
+      "_id": "7nCq8wHHINN9Rmt7",
+      "changes": [
+        {
+          "key": "bonuses.concentration",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/explicit-memory-stimulator.svg",
+      "name": "Explicit Memory Stimulator",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460753,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460753,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!VSw96UuPdlXfu7Hy.7nCq8wHHINN9Rmt7"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/explicit-memory-stimulator.svg",
+  "name": "Explicit Memory Stimulator",
+  "system": {
+    "ammoVariety": [],
+    "attackmod": 0,
+    "brand": "",
+    "canIgnoreArmor": true,
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "core": false,
+    "damage": "1d6",
+    "description": {
+      "value": "<p>Chipware.</p>\n<p>Enhances memorization. +2 Concentration while installed.</p>\n"
+    },
+    "dvTable": "",
+    "favorite": false,
+    "fireModes": {
+      "autoFire": 0,
+      "suppressiveFire": false
+    },
+    "humanityLoss": {
+      "roll": "1d6",
+      "static": 3
+    },
+    "ignoreArmorPercent": 50,
+    "installLocation": "notApplicable",
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade",
+        "ammo"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "isFoundational": false,
+    "isRanged": false,
+    "isWeapon": false,
+    "magazine": {
+      "ammoData": null,
+      "max": 0,
+      "value": 0
+    },
+    "price": {
+      "market": 100
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "rof": 1,
+    "size": 1,
+    "source": {
+      "book": "BC",
+      "page": 18
+    },
+    "type": "neuralWare",
+    "unarmedAutomaticCalculation": true,
+    "usage": "installed",
+    "usesType": "magazine",
+    "weaponSkill": "Archery",
+    "weaponType": "assaultRifle"
+  },
+  "type": "cyberware",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460732,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460732,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!VSw96UuPdlXfu7Hy"
+}

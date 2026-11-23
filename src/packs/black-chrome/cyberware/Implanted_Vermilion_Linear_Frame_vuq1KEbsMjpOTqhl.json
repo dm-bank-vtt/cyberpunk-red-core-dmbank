@@ -1,0 +1,139 @@
+{
+  "_id": "vuq1KEbsMjpOTqhl",
+  "effects": [
+    {
+      "_id": "n1T1ojrhz0na565t",
+      "changes": [
+        {
+          "key": "system.stats.body.value",
+          "mode": 5,
+          "priority": null,
+          "value": "12"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "stat"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+      "name": "Implanted Vermilion Linear Frame",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460754,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460754,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!vuq1KEbsMjpOTqhl.n1T1ojrhz0na565t"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+  "name": "Implanted Vermilion Linear Frame",
+  "system": {
+    "ammoVariety": [],
+    "attackmod": 0,
+    "brand": "Wyzard Technologies",
+    "canIgnoreArmor": true,
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "core": false,
+    "damage": "1d6",
+    "description": {
+      "value": "<ul>\n  <li>Requires BODY 8, 2 Grafted Muscle and Bone Lace</li>\n  <li>\n    Increases BODY stat to 12 (adjusting your HP, Wound Threshold, and Death\n    Save)\n  </li>\n  <li>No movement penalty for jumping</li>\n  <li>Operates as if paired Skate Feet are installed</li>\n</ul>\n"
+    },
+    "dvTable": "",
+    "favorite": false,
+    "fireModes": {
+      "autoFire": 0,
+      "suppressiveFire": false
+    },
+    "humanityLoss": {
+      "roll": "4d6",
+      "static": 14
+    },
+    "ignoreArmorPercent": 50,
+    "installLocation": "mall",
+    "installedItems": {
+      "allowed": true,
+      "allowedTypes": [
+        "itemUpgrade",
+        "cyberware",
+        "ammo"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "isFoundational": true,
+    "isRanged": false,
+    "isWeapon": false,
+    "magazine": {
+      "ammoData": null,
+      "max": 0,
+      "value": 0
+    },
+    "price": {
+      "market": 5000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "rof": 1,
+    "size": 0,
+    "source": {
+      "book": "BC",
+      "page": 54
+    },
+    "type": "borgware",
+    "unarmedAutomaticCalculation": true,
+    "usage": "installed",
+    "usesType": "magazine",
+    "weaponSkill": "Archery",
+    "weaponType": "assaultRifle"
+  },
+  "type": "cyberware",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460738,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460738,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!vuq1KEbsMjpOTqhl"
+}

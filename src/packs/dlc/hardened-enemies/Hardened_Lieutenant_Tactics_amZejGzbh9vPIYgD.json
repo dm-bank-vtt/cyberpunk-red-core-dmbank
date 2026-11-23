@@ -1,0 +1,239 @@
+{
+  "_id": "amZejGzbh9vPIYgD",
+  "description": "",
+  "displayRoll": true,
+  "formula": "1d10",
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Dice.svg",
+  "name": "Hardened Lieutenant Tactics",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "GAB4VkDPVGQELhVC",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Lieutenant and their allies ambush the party (CP:R page 399).",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461006,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461006,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.GAB4VkDPVGQELhVC"
+    },
+    {
+      "_id": "FzZmrVTi3g36meXo",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Lieutenant is grappling a human shield (CP:R page 184).",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461007,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461007,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.FzZmrVTi3g36meXo"
+    },
+    {
+      "_id": "o7LoF8VyTstDqqQh",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        3,
+        3
+      ],
+      "text": "Lieutenant orders their allies to focus on a particular player.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461007,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461007,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.o7LoF8VyTstDqqQh"
+    },
+    {
+      "_id": "sO17c5MxQ3GR8PXH",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Lieutenant orders their allies to charge wildly at the party.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461007,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461007,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.sO17c5MxQ3GR8PXH"
+    },
+    {
+      "_id": "3Sef1wYXTp4oxwVt",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        5,
+        5
+      ],
+      "text": "Lieutenant is in a highly defensible position, making use of cover.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461007,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461007,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.3Sef1wYXTp4oxwVt"
+    },
+    {
+      "_id": "xa6fiX99mgC1MqXL",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Lieutenant has First Aid and Paramedic Skill Bases of 14 each.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461006,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461006,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.xa6fiX99mgC1MqXL"
+    },
+    {
+      "_id": "1udxY5oW9uaNmApH",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        7,
+        7
+      ],
+      "text": "Lieutenant has rigged an Armor-Piercing Grenade (CP:R page 345) as a trap before the combat, somewhere on the field. Noticing it requires a DV15 Perception Skill Check. Disarming it requires a DV9 Demolitions Skill Check. The grenade goes off if any Character moves into the square in which it is hidden.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461007,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461007,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.1udxY5oW9uaNmApH"
+    },
+    {
+      "_id": "NVcjUTkGFAsEDWGU",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        8,
+        8
+      ],
+      "text": "Lieutenant has done extensive research into the combat capabilities of the party.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461006,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461006,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.NVcjUTkGFAsEDWGU"
+    },
+    {
+      "_id": "xwBrtyTaAZaopTUs",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        9,
+        9
+      ],
+      "text": "Lieutenant has a COOL of 6, a Reputation of 2, and attempts a Facedown. (CP:R page 194) either before combat begins or right at the beginning.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461006,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461006,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.xwBrtyTaAZaopTUs"
+    },
+    {
+      "_id": "J68hJfTVPTTTH1MZ",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        10,
+        10
+      ],
+      "text": "Lieutenant has a Tactics Skill Base of 16 and is in command.",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461006,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461006,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!amZejGzbh9vPIYgD.J68hJfTVPTTTH1MZ"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461008,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461008,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!amZejGzbh9vPIYgD"
+}

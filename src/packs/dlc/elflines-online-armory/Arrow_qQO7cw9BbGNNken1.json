@@ -1,0 +1,57 @@
+{
+  "_id": "qQO7cw9BbGNNken1",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "icons/weapons/ammunition/arrow-broadhead.webp",
+  "name": "Arrow",
+  "system": {
+    "ablationValue": 1,
+    "amount": 10,
+    "brand": "",
+    "concealable": {
+      "concealable": true,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>Basic ammo, nothing special.</p>\n"
+    },
+    "favorite": false,
+    "overrides": {
+      "autofire": {
+        "minimum": 3,
+        "mode": "none",
+        "value": -1
+      },
+      "damage": {
+        "minimum": "1d6",
+        "mode": "none",
+        "value": "3d6"
+      }
+    },
+    "price": {
+      "market": 1
+    },
+    "source": {
+      "book": "ELO",
+      "page": 3
+    },
+    "type": "basic",
+    "variety": "arrow"
+  },
+  "type": "ammo",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460996,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460996,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!qQO7cw9BbGNNken1"
+}

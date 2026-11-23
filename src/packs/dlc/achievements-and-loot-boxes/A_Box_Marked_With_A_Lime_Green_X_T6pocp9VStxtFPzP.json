@@ -1,0 +1,173 @@
+{
+  "_id": "T6pocp9VStxtFPzP",
+  "description": "Source: Achievements and Loot Boxes pg.6\nAll weapons come fully loaded with a compatible ammo type of the GM's choosing.",
+  "displayRoll": true,
+  "formula": "1d6",
+  "img": "icons/containers/boxes/crate-reinforced-green.webp",
+  "name": "A Box Marked With A Lime Green X",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "JMQL50Vwsp7AMmWo",
+      "documentCollection": "cyberpunk-red-core.dlc_elflines-online",
+      "documentId": "yobTPhOaGRpfkjz8",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/memory_chip.svg",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Elflines Online",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460977,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460977,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.JMQL50Vwsp7AMmWo"
+    },
+    {
+      "_id": "r6fFsAFxIRq1HriP",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/disposable_cellphone.svg",
+      "range": [
+        2,
+        2
+      ],
+      "text": "2 Disposable Cell Phones",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460974,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460974,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.r6fFsAFxIRq1HriP"
+    },
+    {
+      "_id": "a6fZu5y7jIoTN38p",
+      "documentCollection": "cyberpunk-red-core.black-chrome_cyberware",
+      "documentId": "f9u0uhwRBcunP0gz",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/modular-hand.svg",
+      "range": [
+        3,
+        3
+      ],
+      "text": "Modular Finger Cyberhand",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460980,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460980,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.a6fZu5y7jIoTN38p"
+    },
+    {
+      "_id": "g0YvDqhptZVY8bIh",
+      "documentCollection": "cyberpunk-red-core.core_clothing",
+      "documentId": "Q7LFdojJFEIRaLlN",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_jewelry.svg",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Leisurewear Jewelry",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460979,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460979,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.g0YvDqhptZVY8bIh"
+    },
+    {
+      "_id": "lcpBqFf1ztvwm6ZJ",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "GqYz689ddSKQHMen",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/agent.svg",
+      "range": [
+        5,
+        5
+      ],
+      "text": "Agent",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460974,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460974,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.lcpBqFf1ztvwm6ZJ"
+    },
+    {
+      "_id": "X7XamnHpkEyA1BOt",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "it4Mfyti7WPpuuYE",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/smart_glasses.svg",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Smart Glasses",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460984,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460984,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.X7XamnHpkEyA1BOt"
+    },
+    {
+      "_id": "bEJSghOjTTcHngHW",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "OjMJ2SyoMr4VWmnm",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/disposable_cellphone.svg",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Disposable Cell Phone",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460976,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460976,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!T6pocp9VStxtFPzP.bEJSghOjTTcHngHW"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460987,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460987,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!T6pocp9VStxtFPzP"
+}

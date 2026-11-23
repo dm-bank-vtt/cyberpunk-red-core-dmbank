@@ -1,0 +1,153 @@
+{
+  "_id": "2ea71NL50IBcCcJZ",
+  "effects": [
+    {
+      "_id": "oiotWhajDFYb5QQm",
+      "changes": [
+        {
+          "key": "bonuses.acting",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        },
+        {
+          "key": "bonuses.concentration",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        },
+        {
+          "key": "bonuses.conversation",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        },
+        {
+          "key": "bonuses.deduction",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        },
+        {
+          "key": "bonuses.humanPerception",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        },
+        {
+          "key": "bonuses.persuasion",
+          "mode": 2,
+          "priority": null,
+          "value": "-5"
+        }
+      ],
+      "description": "",
+      "disabled": true,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill",
+              "1": "skill",
+              "2": "skill",
+              "3": "skill",
+              "4": "skill",
+              "5": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "1": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "2": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "3": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "4": {
+                "isSituational": false,
+                "onByDefault": false
+              },
+              "5": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/status/veritas.svg",
+      "name": "Veritas Primary",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461012,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461012,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!2ea71NL50IBcCcJZ.oiotWhajDFYb5QQm"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/hornets_pharmacy/veritas.svg",
+  "name": "Veritas",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "consumed": "Veritas Primary",
+    "description": {
+      "value": "<p>Dose lasts 10 minutes.</p>\n<p>MedTech pharmaceutical.</p>\n<p>\n  Target must make a <strong>DV17 Resist Torture/Drugs</strong> check. On failed\n  check, target suffers -5 to Acting, Concentration, Conversation, Deduction,\n  Human Perception, and Persuasion Checks\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "price": {
+      "market": 0
+    },
+    "revealed": true,
+    "source": {
+      "book": "HP",
+      "page": 4
+    },
+    "usage": "snorted"
+  },
+  "type": "drug",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461010,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461010,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!2ea71NL50IBcCcJZ"
+}

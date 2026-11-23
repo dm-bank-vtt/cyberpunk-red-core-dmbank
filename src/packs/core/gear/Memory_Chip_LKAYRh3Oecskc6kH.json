@@ -1,0 +1,56 @@
+{
+  "_id": "LKAYRh3Oecskc6kH",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/gear/memory_chip.svg",
+  "name": "Memory Chip",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>Data storage.</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 0,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "price": {
+      "market": 10
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 354
+    },
+    "usage": "toggled"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460892,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460892,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!LKAYRh3Oecskc6kH"
+}

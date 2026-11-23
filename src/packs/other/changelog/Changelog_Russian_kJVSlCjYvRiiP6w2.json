@@ -1,0 +1,128 @@
+{
+  "_id": "kJVSlCjYvRiiP6w2",
+  "name": "Changelog Russian",
+  "pages": [
+    {
+      "name": "v0.92.2",
+      "type": "text",
+      "_id": "u9CJmNQCCieXmMhw",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Требует внимания</h3>\n<h4>Weapon Quality/Attack Mod</h4>\n<p>We have fixed a number of Quality/Attack Mod mismatches on weapons in the Compendia for the below weapons. If any of your Characters/Mooks/Containers use any of these weapons the quickest way to fix them is to remove the old weapons from their sheet and replace them from the Compendia.</p>\n<ul>\n<li>Arasaka Weeping Reaver Katana</li>\n<li>SlamDance FangFist</li>\n<li>SlamDance Tasmanskiy Klô</li>\n<li>Malorian Arms 3516</li>\n<li>Arasaka Minami 10</li>\n<li>Arasaka WSSA Sniper System</li>\n<li>Chadran Arms City Reaper</li>\n<li>Chadran Arms Jungle Reaper</li>\n<li>Dai Lung Magnum</li>\n<li>Dai Lung Streetmaster</li>\n<li>Eagletech Bearcat</li>\n<li>Eagletech Scorpion</li>\n<li>Federated Arms Super Chief</li>\n<li>Federated Arms Tech-Assault III</li>\n<li>GunMart Home Defender</li>\n<li>GunMart Snipe-Star</li>\n<li>Militech Avenger</li>\n<li>Militech Boomer Buster</li>\n<li>Militech Bulldog</li>\n<li>Militech Dragon</li>\n<li>Militech Hotshot</li>\n<li>Militech Viper</li>\n<li>Nova Cityhunter</li>\n<li>Towa Manufacturing Type-G</li>\n<li>Towa Manufacturing Type-R</li>\n<li>Tsunami Arms Type-18</li>\n<li>Chainknife</li>\n<li>Sub-Flechette Gun</li>\n<li>Archimedes</li>\n<li>TearJerker</li>\n</ul>\n<h3>Нововведения</h3>\n<ul>\n<li>Add Ukrainian Language support</li>\n</ul>\n<h3>Исправления</h3>\n<ul>\n<li>Fix term &quot;Optional Slots&quot; to &quot;Option Slots&quot;</li>\n<li>Fix small layout bug with Item Sheet: Source/Page display</li>\n<li>Corrected armor penetration settings for Federated Arms X-9mm</li>\n<li>Fix Weapon Quality/Attack Mod mismatches</li>\n<li>Fix <code>Techtronica Russia BMG 500</code> price/hands</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461219,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461219,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!kJVSlCjYvRiiP6w2.u9CJmNQCCieXmMhw"
+    },
+    {
+      "name": "v0.92.1",
+      "type": "text",
+      "_id": "5mypHdO2loukymXG",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Исправления</h3>\n<ul>\n<li>#1134 - Fix HP/Humanity interacting with the mouse scrollwheel</li>\n<li>#1137 - Fix bug preventing extended magazines from modifying weapon ammo count</li>\n<li>#1149 - Set correct <code>ammoVariety</code> on Westwood Pistol, Hello Cutie 1TruLuv, and Timeless WW1 Rifle to Pistol Conversion</li>\n<li>#1152 - Fix creating weapon item on <code>CPRActorSheet</code> crashing that Actor&#39;s sheet and migrate to fix currently broken weapons</li>\n<li>#1146 - Fix all container items that contain &quot;programs&quot; in <code>system.installedItems.allowedTypes</code> to correctly be &quot;program&quot;</li>\n<li>#1161 - Fix shop container config not saving</li>\n<li>#1139 - Remove items from weapons that do not exist in the game and in the actor owner of the item</li>\n<li>#1162 - Fix Condition Lab and Triggler configutation styling in Dark Mode</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461218,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461218,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!kJVSlCjYvRiiP6w2.5mypHdO2loukymXG"
+    },
+    {
+      "name": "v0.89.2",
+      "type": "text",
+      "_id": "R4on4ZOsTdJdDpeo",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Исправления</h3>\n<ul>\n<li>#1130 - Fixed loading ammo into weapon upgrades.</li>\n<li>#1131 - Fixed issue where migration app would not scroll when many compendia caused overflow.</li>\n<li>Migration error reports now redact host information.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461218,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461218,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!kJVSlCjYvRiiP6w2.R4on4ZOsTdJdDpeo"
+    },
+    {
+      "name": "v0.89.1",
+      "type": "text",
+      "_id": "hMZk4OX27afOYJrG",
+      "title": {
+        "show": true
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h3>Исправления</h3>\n<ul>\n<li>#1128 - Fixed visual bug related to weapon firemodes not showing state correctly.</li>\n<li>Fix uprade weapons (e.g., underbarrel weapons) not rolling.</li>\n</ul>\n"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461218,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461218,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!journal.pages!kJVSlCjYvRiiP6w2.hMZk4OX27afOYJrG"
+    }
+  ],
+  "flags": {
+    "core": {
+      "viewMode": "JournalSheet.VIEW_MODES.MULTIPLE"
+    }
+  },
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461098,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461098,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!journal!kJVSlCjYvRiiP6w2",
+  "categories": []
+}

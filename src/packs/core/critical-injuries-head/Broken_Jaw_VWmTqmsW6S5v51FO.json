@@ -1,0 +1,99 @@
+{
+  "_id": "VWmTqmsW6S5v51FO",
+  "effects": [
+    {
+      "_id": "fuvMhn0ZVMzPG1d8",
+      "changes": [
+        {
+          "key": "bonuses.allActionsSpeech",
+          "mode": 2,
+          "priority": null,
+          "value": "-4"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "misc"
+            },
+            "situational": {
+              "0": {
+                "isSituational": true,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/broken_jaw.svg",
+      "name": "Broken Jaw",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460836,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460836,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!VWmTqmsW6S5v51FO.fuvMhn0ZVMzPG1d8"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/broken_jaw.svg",
+  "name": "Broken Jaw",
+  "system": {
+    "deathSaveIncrease": false,
+    "description": {
+      "value": "<p>-4 to Speech Actions.</p>\n"
+    },
+    "favorite": false,
+    "location": "head",
+    "quickFix": {
+      "dvFirstAid": 0,
+      "dvParamedic": 13,
+      "type": "paramedic"
+    },
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 188
+    },
+    "treatment": {
+      "dvParamedic": 13,
+      "dvSurgery": 13,
+      "type": "paramedicSurgery"
+    },
+    "usage": "toggled"
+  },
+  "type": "criticalInjury",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460834,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460834,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!VWmTqmsW6S5v51FO"
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "kDE2jnvcsbbz1vaL",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Role.svg",
+  "name": "Lawman",
+  "system": {
+    "abilities": [],
+    "addRoleAbilityRank": true,
+    "bonusRatio": 1,
+    "bonuses": [],
+    "description": {
+      "value": "<p>\n  Renegade defenders, corporate strike teams, or the last remnants of a\n  government police force, they patrol the streets to enforce some order in an\n  otherwise lawless world.\n</p>\n"
+    },
+    "favorite": false,
+    "hasRoll": false,
+    "isSituational": false,
+    "mainRoleAbility": "Backup",
+    "onByDefault": false,
+    "rank": 4,
+    "skill": "--",
+    "source": {
+      "book": "Core",
+      "page": 158
+    },
+    "stat": "--",
+    "universalBonuses": []
+  },
+  "type": "role",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460899,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460899,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!kDE2jnvcsbbz1vaL"
+}

@@ -1,0 +1,108 @@
+{
+  "_id": "QE785D3EE383knl6",
+  "effects": [
+    {
+      "_id": "ooPd6s81jF5J1lpO",
+      "changes": [
+        {
+          "key": "system.stats.body.value",
+          "mode": 5,
+          "priority": null,
+          "value": "12"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "stat"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-linearframe.svg",
+      "name": "Vermilion Linear Frame",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460757,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460757,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!QE785D3EE383knl6.ooPd6s81jF5J1lpO"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/default-linearframe.svg",
+  "name": "Vermilion Linear Frame",
+  "system": {
+    "amount": 1,
+    "brand": "Wyzard Technologies",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>Exoskeleton.</p>\n<ul>\n  <li>Requires 2 Interface Plugs</li>\n  <li>Increases BODY to 12 while plugged in</li>\n  <li>No changes to your HP or Deathsave</li>\n  <li>No movement penalty for jumping</li>\n  <li>Operates as if paired Skate Feet are installed</li>\n</ul>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": true,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": false,
+    "price": {
+      "market": 5000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "BC",
+      "page": 54
+    },
+    "usage": "equipped"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460764,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460764,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!QE785D3EE383knl6"
+}

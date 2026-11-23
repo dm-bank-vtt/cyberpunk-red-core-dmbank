@@ -1,0 +1,371 @@
+{
+  "_id": "C4VTqrDNvNUHdyDd",
+  "description": "<p>Table for rolling for the uncommon floors of a NET architecture, as detailed on page 211.</p>",
+  "displayRoll": false,
+  "formula": "3d6",
+  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Dice.svg",
+  "name": "All Other Floors (Uncommon)",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "gTFymnRnYv0uzwPG",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        3,
+        3
+      ],
+      "text": "Kraken",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461088,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461088,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.gTFymnRnYv0uzwPG"
+    },
+    {
+      "_id": "OcfpWh052AlMRmJB",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Hellhound, Scorpion",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461087,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461087,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.OcfpWh052AlMRmJB"
+    },
+    {
+      "_id": "6zKmgA9bq0fqSvX2",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        5,
+        5
+      ],
+      "text": "Hellhound, Killer",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461086,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461086,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.6zKmgA9bq0fqSvX2"
+    },
+    {
+      "_id": "TxpaqyUljo7WJxoH",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Raven x2",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461090,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461090,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.TxpaqyUljo7WJxoH"
+    },
+    {
+      "_id": "PyEP7XZdxLyjh8Yo",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        7,
+        7
+      ],
+      "text": "Sabertooth",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461091,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461091,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.PyEP7XZdxLyjh8Yo"
+    },
+    {
+      "_id": "9MNZfkBOBwhCOTjU",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        9,
+        9
+      ],
+      "text": "Password DV10",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461089,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461089,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.9MNZfkBOBwhCOTjU"
+    },
+    {
+      "_id": "dkOizxPow9rQOduG",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        10,
+        10
+      ],
+      "text": "File DV10",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461085,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461085,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.dkOizxPow9rQOduG"
+    },
+    {
+      "_id": "TPrJEJkXVskySHcy",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        11,
+        11
+      ],
+      "text": "Control Node DV10",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461084,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461084,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.TPrJEJkXVskySHcy"
+    },
+    {
+      "_id": "uZutrunJaCj3I3u0",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        12,
+        12
+      ],
+      "text": "Password DV10",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461089,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461089,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.uZutrunJaCj3I3u0"
+    },
+    {
+      "_id": "Yk0NCUQVbAnsy1U0",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        13,
+        13
+      ],
+      "text": "Killer",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461087,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461087,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.Yk0NCUQVbAnsy1U0"
+    },
+    {
+      "_id": "HVcgCTtotxv3c1jA",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        14,
+        14
+      ],
+      "text": "Liche",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461088,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461088,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.HVcgCTtotxv3c1jA"
+    },
+    {
+      "_id": "7mDiGoSfFC7OIC8I",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        15,
+        15
+      ],
+      "text": "Dragon",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461084,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461084,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.7mDiGoSfFC7OIC8I"
+    },
+    {
+      "_id": "e86hWgiH9l8h1AZe",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        16,
+        16
+      ],
+      "text": "Asp, Raven",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461083,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461083,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.e86hWgiH9l8h1AZe"
+    },
+    {
+      "_id": "42tU8yLFBTygWzOz",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        17,
+        17
+      ],
+      "text": "Dragon, Wisp",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461084,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461084,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.42tU8yLFBTygWzOz"
+    },
+    {
+      "_id": "bFmeEyNKGPsKOb7f",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        18,
+        18
+      ],
+      "text": "Giant",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461085,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461085,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.bFmeEyNKGPsKOb7f"
+    },
+    {
+      "_id": "LTib3Jr90BYlKlXm",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "icons/svg/d20-black.svg",
+      "range": [
+        8,
+        8
+      ],
+      "text": "Hellhound",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228461086,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228461086,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!C4VTqrDNvNUHdyDd.LTib3Jr90BYlKlXm"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461093,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461093,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!C4VTqrDNvNUHdyDd"
+}

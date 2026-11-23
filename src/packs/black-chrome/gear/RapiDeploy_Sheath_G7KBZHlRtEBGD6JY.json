@@ -1,0 +1,108 @@
+{
+  "_id": "G7KBZHlRtEBGD6JY",
+  "effects": [
+    {
+      "_id": "g80WDTq4XGjrJgJc",
+      "changes": [
+        {
+          "key": "bonuses.concealOrRevealObject",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": true,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/rapideploy-sheath.svg",
+      "name": "RapiDeploy Sheath",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460757,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460757,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!G7KBZHlRtEBGD6JY.g80WDTq4XGjrJgJc"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/rapideploy-sheath.svg",
+  "name": "RapiDeploy Sheath",
+  "system": {
+    "amount": 1,
+    "brand": "Gambler Workshop",
+    "concealable": {
+      "concealable": true,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>\n  Gives the User a +2 bonus to their Conceal/Reveal Skill Check if used to\n  conceal a weapon already capable of concealment.\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 0,
+      "usedSlots": 0
+    },
+    "isElectronic": false,
+    "price": {
+      "market": 500
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "BC",
+      "page": 47
+    },
+    "usage": "equipped"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460762,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460762,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!G7KBZHlRtEBGD6JY"
+}

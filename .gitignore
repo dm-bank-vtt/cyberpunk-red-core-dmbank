@@ -1,0 +1,15 @@
+# Built compendia (LevelDB). Sources are in src/packs/; build with `npm run pack`.
+/packs/
+/node_modules/
+/build/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.map

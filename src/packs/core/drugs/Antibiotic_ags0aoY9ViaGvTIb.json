@@ -1,0 +1,46 @@
+{
+  "_id": "ags0aoY9ViaGvTIb",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/drugs/antibiotics.svg",
+  "name": "Antibiotic",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "consumed": "None",
+    "description": {
+      "value": "<p>\n  If a target has started the natural healing process injecting them with\n  Antibiotic will cause them to heal an additional 2 Hit Points per day for a\n  week. This effect does not stack.\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "price": {
+      "market": 0
+    },
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 150
+    },
+    "usage": "toggled"
+  },
+  "type": "drug",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460879,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460879,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!ags0aoY9ViaGvTIb"
+}

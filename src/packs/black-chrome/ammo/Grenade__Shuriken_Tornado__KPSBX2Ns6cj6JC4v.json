@@ -1,0 +1,59 @@
+{
+  "_id": "KPSBX2Ns6cj6JC4v",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/ammo/grenade_armorpiercing.png",
+  "name": "Grenade (Shuriken Tornado)",
+  "system": {
+    "ablationValue": 2,
+    "amount": 1,
+    "brand": "Great Lakes Cutlery",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>\n  A literal explosion of shurikens. Armor Piercing grenade. Each shuriken from\n  explosion deals individual damage.\n</p>\n"
+    },
+    "favorite": false,
+    "installLocation": "mall",
+    "overrides": {
+      "autofire": {
+        "minimum": 3,
+        "mode": "none",
+        "value": -1
+      },
+      "damage": {
+        "minimum": "1d6",
+        "mode": "none",
+        "value": "3d6"
+      }
+    },
+    "price": {
+      "market": 100
+    },
+    "size": 0,
+    "source": {
+      "book": "BC",
+      "page": 87
+    },
+    "type": "special",
+    "variety": "grenade"
+  },
+  "type": "ammo",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460716,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460716,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!KPSBX2Ns6cj6JC4v"
+}

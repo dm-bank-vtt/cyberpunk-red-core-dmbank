@@ -1,0 +1,137 @@
+{
+  "_id": "CHQVWD2VlDiWJSzf",
+  "effects": [
+    {
+      "_id": "LQDd5nho7VGc0hgJ",
+      "changes": [
+        {
+          "key": "bonuses.wardrobeAndStyle",
+          "mode": 2,
+          "priority": null,
+          "value": "2"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "skill"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/superchrome_covering.svg",
+      "name": "Superchrome® Covering (Arm)",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460878,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460878,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!CHQVWD2VlDiWJSzf.LQDd5nho7VGc0hgJ"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/superchrome_covering.svg",
+  "name": "Superchrome® Covering (Cyber Arm)",
+  "system": {
+    "ammoVariety": [],
+    "attackmod": 0,
+    "brand": "",
+    "canIgnoreArmor": true,
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "core": false,
+    "damage": "1d6",
+    "description": {
+      "value": "<p>A metallic coating for your arm. Provides +2 to Wardrobe and Style.*</p>\n<p>\n  <em\n    >*Note: Superchrome effects do not stack and will need to be managed in the\n    Effects tab if multiple Superchrome items are installed.</em\n  >\n</p>\n"
+    },
+    "dvTable": "",
+    "favorite": false,
+    "fireModes": {
+      "autoFire": 0,
+      "suppressiveFire": false
+    },
+    "humanityLoss": {
+      "roll": "0",
+      "static": 0
+    },
+    "ignoreArmorPercent": 50,
+    "installLocation": "mall",
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": false,
+    "isFoundational": false,
+    "isRanged": false,
+    "isWeapon": false,
+    "magazine": {
+      "ammoData": null,
+      "max": 0,
+      "value": 0
+    },
+    "price": {
+      "market": 1000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "rof": 1,
+    "size": 0,
+    "source": {
+      "book": "Core",
+      "page": 367
+    },
+    "type": "cyberArm",
+    "unarmedAutomaticCalculation": true,
+    "usage": "installed",
+    "usesType": "magazine",
+    "weaponSkill": "Archery",
+    "weaponType": "assaultRifle"
+  },
+  "type": "cyberware",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460867,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460867,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!CHQVWD2VlDiWJSzf"
+}

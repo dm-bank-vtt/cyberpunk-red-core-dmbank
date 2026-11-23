@@ -1,0 +1,54 @@
+{
+  "_id": "zDjspn0R9fgRILpv",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "icons/consumables/plants/herb-tied-bundle-dried-yellow.webp",
+  "name": "Sacred Herbs",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>\n  Ingesting Sacred Herbs immediately heals HP equal to the user's BODY plus\n  their WILL.\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": true,
+      "allowedTypes": [],
+      "list": [],
+      "slots": 0,
+      "usedSlots": 0
+    },
+    "isElectronic": false,
+    "price": {
+      "market": 50
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "ELO",
+      "page": 3
+    },
+    "usage": "toggled"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460998,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460998,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!zDjspn0R9fgRILpv"
+}

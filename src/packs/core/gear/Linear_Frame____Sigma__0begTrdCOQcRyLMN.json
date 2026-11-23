@@ -1,0 +1,108 @@
+{
+  "_id": "0begTrdCOQcRyLMN",
+  "effects": [
+    {
+      "_id": "tdnkWa1CRu3vQO0N",
+      "changes": [
+        {
+          "key": "system.stats.body.value",
+          "mode": 5,
+          "priority": null,
+          "value": "12"
+        }
+      ],
+      "description": "",
+      "disabled": false,
+      "duration": {
+        "combat": null,
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null
+      },
+      "flags": {
+        "cyberpunk-red-core": {
+          "changes": {
+            "cats": {
+              "0": "stat"
+            },
+            "situational": {
+              "0": {
+                "isSituational": false,
+                "onByDefault": false
+              }
+            }
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/linearframe_sigma.svg",
+      "name": "Linear Frame Sigma",
+      "statuses": [],
+      "system": {},
+      "transfer": true,
+      "type": "base",
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460885,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460885,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!items.effects!0begTrdCOQcRyLMN.tdnkWa1CRu3vQO0N"
+    }
+  ],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/gear/linearframe_sigma.svg",
+  "name": "Linear Frame ∑ (Sigma)",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>Exoskeleton.</p>\n<ul>\n  <li>Requires 1 Interface Plug</li>\n  <li>Increases BODY to 12 while plugged in</li>\n  <li>Does not affect HP or Deathsave due to BODY increase</li>\n</ul>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": false,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 0,
+      "usedSlots": 0
+    },
+    "isElectronic": true,
+    "price": {
+      "market": 1000
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 351
+    },
+    "usage": "equipped"
+  },
+  "type": "gear",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460891,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460891,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!0begTrdCOQcRyLMN"
+}

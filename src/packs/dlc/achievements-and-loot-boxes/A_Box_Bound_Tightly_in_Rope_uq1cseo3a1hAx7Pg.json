@@ -1,0 +1,195 @@
+{
+  "_id": "uq1cseo3a1hAx7Pg",
+  "description": "Source: Achievements and Loot Boxes pg.5\nAll weapons come fully loaded with a compatible ammo type of the GM's choosing.",
+  "displayRoll": true,
+  "formula": "1d6",
+  "img": "icons/containers/boxes/box-gift-blue.webp",
+  "name": "A Box Bound Tightly in Rope",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "NYIH71JwbuArdM71",
+      "documentCollection": "",
+      "documentId": null,
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/rope.svg",
+      "range": [
+        1,
+        1
+      ],
+      "text": "2 Coils of Rope (60m/yd per coil, 120m/yd in all.)",
+      "type": "text",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460974,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460974,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.NYIH71JwbuArdM71"
+    },
+    {
+      "_id": "gEL1jssG8BYFCbEN",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "ECoCsPyfIEBCSggM",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/virtuality_goggles.svg",
+      "range": [
+        2,
+        2
+      ],
+      "text": "Virtuality Goggles",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460986,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460986,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.gEL1jssG8BYFCbEN"
+    },
+    {
+      "_id": "1xJ62jbSbw9jlhRl",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "VrwVUEHuMCGjp8Fi",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/grapple_gun.svg",
+      "range": [
+        3,
+        3
+      ],
+      "text": "Grapple Gun",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460977,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460977,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.1xJ62jbSbw9jlhRl"
+    },
+    {
+      "_id": "uMEBOmKCPijSlR7T",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "gaGUmTGViuxZ4mqR",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/vial_poison.svg",
+      "range": [
+        4,
+        4
+      ],
+      "text": "Vial of Poison",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460986,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460986,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.uMEBOmKCPijSlR7T"
+    },
+    {
+      "_id": "VQynxqPUN4ABRYGD",
+      "documentCollection": "cyberpunk-red-core.core_clothing",
+      "documentId": "iwf7yiZyvmhW3rPj",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_jewelry.svg",
+      "range": [
+        5,
+        5
+      ],
+      "text": "Urban Flash Jewelry",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460985,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460985,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.VQynxqPUN4ABRYGD"
+    },
+    {
+      "_id": "fQTbhhUcSlRuNsSf",
+      "documentCollection": "cyberpunk-red-core.dlc_the-12-days-of-cybermas",
+      "documentId": "U8SdGzK5sIdWHaQ1",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/the_12_days_of_cybermas/cybermatrix_gang_jazzler.svg",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Gang Jazzler",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460977,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460977,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.fQTbhhUcSlRuNsSf"
+    },
+    {
+      "_id": "kGYKKrORxH2OxM6Q",
+      "documentCollection": "cyberpunk-red-core.core_gear",
+      "documentId": "i0xmIJjhcMKIWJ0M",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/gear/rope.svg",
+      "range": [
+        1,
+        1
+      ],
+      "text": "Rope (60m/yd)",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460982,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460982,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.kGYKKrORxH2OxM6Q"
+    },
+    {
+      "_id": "SZBfy8RDcTLbwCkV",
+      "documentCollection": "cyberpunk-red-core.core_ammo",
+      "documentId": "MfuoJ69NL1FiP7B8",
+      "drawn": false,
+      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/battery.png",
+      "range": [
+        6,
+        6
+      ],
+      "text": "Battery Pack",
+      "type": "pack",
+      "weight": 1,
+      "_stats": {
+        "coreVersion": 12,
+        "createdTime": 1775228460975,
+        "lastModifiedBy": "00CPRCBuildBot00",
+        "modifiedTime": 1775228460975,
+        "systemVersion": "v0.92.4"
+      },
+      "_key": "!tables.results!uq1cseo3a1hAx7Pg.SZBfy8RDcTLbwCkV"
+    }
+  ],
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460986,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460986,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!tables!uq1cseo3a1hAx7Pg"
+}

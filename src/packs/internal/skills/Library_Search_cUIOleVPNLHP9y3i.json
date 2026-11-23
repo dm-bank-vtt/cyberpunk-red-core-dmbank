@@ -1,0 +1,40 @@
+{
+  "_id": "cUIOleVPNLHP9y3i",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "name": "Library Search",
+  "system": {
+    "basic": false,
+    "category": "educationSkills",
+    "core": true,
+    "description": {
+      "value": ""
+    },
+    "difficulty": "typical",
+    "favorite": false,
+    "level": 0,
+    "skillType": "generic",
+    "source": {
+      "book": "Core",
+      "page": 135
+    },
+    "stat": "int"
+  },
+  "type": "skill",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228461079,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228461079,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!cUIOleVPNLHP9y3i"
+}

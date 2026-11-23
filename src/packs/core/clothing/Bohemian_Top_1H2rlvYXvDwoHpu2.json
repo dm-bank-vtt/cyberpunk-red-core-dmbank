@@ -1,0 +1,58 @@
+{
+  "_id": "1H2rlvYXvDwoHpu2",
+  "effects": [],
+  "flags": {
+    "cyberpunk-red-core": {
+      "_migration": {
+        "current": 33,
+        "previous": "24"
+      }
+    }
+  },
+  "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_top.svg",
+  "name": "Bohemian Top",
+  "system": {
+    "amount": 1,
+    "brand": "",
+    "concealable": {
+      "concealable": false,
+      "isConcealed": false
+    },
+    "description": {
+      "value": "<p>\n  Channel your inner 70s hippy! Show everyone how much of a free spirit you are\n  with these clothes.\n</p>\n"
+    },
+    "equipped": "owned",
+    "favorite": false,
+    "installedItems": {
+      "allowed": true,
+      "allowedTypes": [
+        "itemUpgrade"
+      ],
+      "list": [],
+      "slots": 3,
+      "usedSlots": 0
+    },
+    "isElectronic": false,
+    "price": {
+      "market": 20
+    },
+    "providesHardening": false,
+    "revealed": true,
+    "source": {
+      "book": "Core",
+      "page": 356
+    },
+    "style": "bohemian",
+    "type": "top",
+    "usage": "equipped"
+  },
+  "type": "clothing",
+  "_stats": {
+    "coreVersion": 12,
+    "createdTime": 1775228460813,
+    "lastModifiedBy": "00CPRCBuildBot00",
+    "modifiedTime": 1775228460813,
+    "systemVersion": "v0.92.4"
+  },
+  "_key": "!items!1H2rlvYXvDwoHpu2"
+}
