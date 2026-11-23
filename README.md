@@ -75,7 +75,7 @@ Compendium and document links use the system id too: `Compendium.cyberpunk-red-c
 
 ## Reporting bugs
 
-Report bugs on [GitHub Issues](https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/issues) or in [#cyberpunk-red on the DM Bank Discord](https://discord.gg/XWfgWKpxJp). Include your Foundry version, the system version, whether the world is new, your active Modules and the console log (F12).
+Report bugs on [GitHub Issues](https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/issues) or in [#cyberpunk-red on the DM Bank Discord](https://discord.gg/c7CTUVuwk3) (when you join, pick the Cyberpunk RED answer in the welcome questions to see the channel). Include your Foundry version, the system version, whether the world is new, your active Modules and the console log (F12).
 
 **Please don't report bugs in this fork to The Project Red Team.** They are not responsible for it.
 
