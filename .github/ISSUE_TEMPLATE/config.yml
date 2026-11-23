@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: "Ask in #cyberpunk-red on Discord"
-    url: https://discord.gg/c7CTUVuwk3
+    url: https://discord.gg/pBnkhnr2da
     about: Questions, help and quick bug checks. When you join, pick the Cyberpunk RED answer in the welcome questions.
   - name: "Moving a world from the official Cyberpunk RED Core?"
     url: https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank#existing-worlds
