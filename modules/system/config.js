@@ -402,10 +402,10 @@ CPR.netArchDifficulty = {
 
 // game.system is not defined when this file is read, so there is a magic string here
 CPR.defaultCriticalInjuryTable =
-  "cyberpunk-red-core.internal_critical-injury-tables";
-CPR.defaultNetArchTable = "cyberpunk-red-core.internal_net-rolltables";
-CPR.defaultDvTable = "cyberpunk-red-core.internal_dv-tables";
-CPR.changelogCompendium = "cyberpunk-red-core.other_changelog";
+  "cyberpunk-red-core-dmbank.internal_critical-injury-tables";
+CPR.defaultNetArchTable = "cyberpunk-red-core-dmbank.internal_net-rolltables";
+CPR.defaultDvTable = "cyberpunk-red-core-dmbank.internal_dv-tables";
+CPR.changelogCompendium = "cyberpunk-red-core-dmbank.other_changelog";
 
 CPR.criticalInjuryLocation = {
   body: "CPR.global.location.body",
@@ -869,6 +869,7 @@ CPR.defaultSituationalMods = {
 };
 
 CPR.themes = {
+  nightcity: "CPR.settings.theme.name.nightcity",
   default: "CPR.settings.theme.name.default",
   darkmode: "CPR.settings.theme.name.darkmode",
 };

@@ -1076,8 +1076,6 @@
   "CPR.module.dsn.colorsetRed": "Blood over Chrome",
   "CPR.module.dsn.colorsetYellow": "Wet Work",
   "CPR.module.dsn.groupName": "Cyberpunk RED",
-  "CPR.module.dsn.themeBrandedLogo": "Q-Workshop (Branded Logos)",
-  "CPR.module.dsn.themeNumbersOnly": "Q-Workshop (Numbers)",
   "CPR.mookSheet.criticalInjuries": "Critical Injuries",
   "CPR.mookSheet.criticalInjuryRoll": "Roll on Critical Injury Table",
   "CPR.mookSheet.deathSave.hoverCriticalInjuryPenalty": "Critical Injury Penalty",
@@ -1286,5 +1284,15 @@
   "TYPES.Item.role": "Role",
   "TYPES.Item.skill": "Skill",
   "TYPES.Item.vehicle": "Vehicle",
-  "TYPES.Item.weapon": "Weapon"
+  "TYPES.Item.weapon": "Weapon",
+  "CPR.effectSheet.tabDetails": "Details",
+  "CPR.effectSheet.tabEffects": "Effects",
+  "CPR.effectSheet.name": "Effect Name",
+  "CPR.effectSheet.image": "Effect Image",
+  "CPR.effectSheet.tint": "Tint Color",
+  "CPR.effectSheet.changeKey": "Attribute Key",
+  "CPR.effectSheet.changeValue": "Effect Value",
+  "CPR.effectSheet.changeMode": "Change Mode",
+  "CPR.effectSheet.saveAndClose": "Save & Close",
+  "CPR.settings.theme.name.nightcity": "Night City (DM Bank)"
 }

@@ -127,28 +127,28 @@
     <div class="actor-details-wound-state-value">
       {{#with actor.system.derivedStats.currentWoundState as |state| }}
         {{#if (cprCompare state "===" "notWounded") }}
-          <img src="systems/cyberpunk-red-core/icons/hud/wounded_none.svg"
+          <img src="systems/cyberpunk-red-core-dmbank/icons/hud/wounded_none.svg"
                width="20"
                height="20"
                alt="{{localize "CPR.global.woundState.notWounded"}}"
                data-tooltip="{{localize "CPR.global.woundState.notWounded"}}"/>
         {{/if}}
         {{#if (cprCompare state "===" "lightlyWounded") }}
-          <img src="systems/cyberpunk-red-core/icons/hud/wounded_lightly.svg"
+          <img src="systems/cyberpunk-red-core-dmbank/icons/hud/wounded_lightly.svg"
                width="20"
                height="20"
                alt="{{localize "CPR.global.woundState.lightlyWounded"}}"
                data-tooltip="{{localize "CPR.global.woundState.lightlyWounded"}}"/>
         {{/if}}
         {{#if (cprCompare state "===" "seriouslyWounded") }}
-          <img src="systems/cyberpunk-red-core/icons/hud/wounded_seriously.svg"
+          <img src="systems/cyberpunk-red-core-dmbank/icons/hud/wounded_seriously.svg"
                width="20"
                height="20"
                alt="{{localize "CPR.global.woundState.seriouslyWounded"}}"
                data-tooltip="{{localize "CPR.global.woundState.seriouslyWounded"}}"/>
         {{/if}}
         {{#if (cprCompare state "===" "mortallyWounded") }}
-          <img src="systems/cyberpunk-red-core/icons/hud/wounded_mortally.svg"
+          <img src="systems/cyberpunk-red-core-dmbank/icons/hud/wounded_mortally.svg"
                width="20"
                height="20"
                alt="{{localize "CPR.global.woundState.mortallyWounded"}}"

@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest an idea for DM Bank Night City Edition.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the feature and how you'd use it at the table.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it help?
+      description: What's hard or slow today without it?
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, sketches or examples
+    validations:
+      required: false

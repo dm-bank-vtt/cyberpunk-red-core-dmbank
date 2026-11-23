@@ -205,7 +205,7 @@ export default class MigrationApp extends HandlebarsApplicationMixin(
     if (!statusChange) return null;
     let statusString = game.i18n.localize(`CPR.migration.status.${phase}`);
     if (docType) {
-      statusString = game.i18n.format("CPR.migration.status.migratingDocs", {
+      statusString = CPRSystemUtils.Format("CPR.migration.status.migratingDocs", {
         docType: game.i18n.localize(`CPR.migration.docType.${docType}`),
       });
     }
@@ -262,7 +262,7 @@ export default class MigrationApp extends HandlebarsApplicationMixin(
    */
   static PARTS = {
     body: {
-      template: `systems/cyberpunk-red-core/templates/migration/migration-app.hbs`,
+      template: `systems/cyberpunk-red-core-dmbank/templates/migration/migration-app.hbs`,
     },
   };
 
@@ -675,7 +675,7 @@ export default class MigrationApp extends HandlebarsApplicationMixin(
     userConfirmButtons.remove();
 
     // Replace compendia selection form with progress section.
-    const progressTemplate = await renderTemplate(
+    const progressTemplate = await foundry.applications.handlebars.renderTemplate(
       `systems/${game.system.id}/templates/migration/migration-progress.hbs`,
       { progress: this.progress }
     );
@@ -822,7 +822,7 @@ export default class MigrationApp extends HandlebarsApplicationMixin(
     // Add the message.
     let message = game.i18n.localize(`CPR.migration.messages.${phase}`);
     if (messageData) {
-      message = game.i18n.format(
+      message = CPRSystemUtils.Format(
         `CPR.migration.messages.${phase}`,
         messageData
       );
@@ -910,7 +910,7 @@ export default class MigrationApp extends HandlebarsApplicationMixin(
    */
   async addButtons() {
     if (!this.buttons) return;
-    const buttonsTemplate = await renderTemplate(
+    const buttonsTemplate = await foundry.applications.handlebars.renderTemplate(
       `systems/${game.system.id}/templates/migration/migration-buttons.hbs`,
       this.buttons
     );

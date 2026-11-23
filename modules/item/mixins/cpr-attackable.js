@@ -35,7 +35,7 @@ const Attackable = function Attackable() {
     }
     if (this.actor) {
       return this.actor.updateEmbeddedDocuments("Item", [
-        { _id: this.id, system: this.system },
+        { _id: this.id, ...SystemUtils.SystemChanges(this) },
       ]);
     }
     return Promise.resolve();
@@ -55,7 +55,7 @@ const Attackable = function Attackable() {
       0
     );
     return this.actor.updateEmbeddedDocuments("Item", [
-      { _id: this.id, system: this.system },
+      { _id: this.id, ...SystemUtils.SystemChanges(this) },
     ]);
   };
 
@@ -89,7 +89,13 @@ const Attackable = function Attackable() {
         }
       }
     }
-    const skillName = skillItem.name;
+    // DM Bank: an actor without the skill item rolls at skill 0 instead of throwing.
+    const skillName =
+      skillItem?.name ??
+      (type === CPRRolls.rollTypes.SUPPRESSIVE ||
+      type === CPRRolls.rollTypes.AUTOFIRE
+        ? "Autofire"
+        : cprWeaponData.weaponSkill);
     const skillValue = actor.getSkillLevel(skillName);
 
     let statName;

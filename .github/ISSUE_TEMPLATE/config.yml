@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Ask in #cyberpunk-red on Discord"
+    url: https://discord.gg/XWfgWKpxJp
+    about: Questions, help and quick bug checks with other players of DM Bank Night City Edition.
+  - name: "Moving a world from the official Cyberpunk RED Core?"
+    url: https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank#existing-worlds
+    about: This release is for new worlds only. Read "Existing worlds" before opening an issue.

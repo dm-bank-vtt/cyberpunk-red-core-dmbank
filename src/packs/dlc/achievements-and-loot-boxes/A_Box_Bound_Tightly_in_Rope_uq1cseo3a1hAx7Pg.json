@@ -9,187 +9,236 @@
   "results": [
     {
       "_id": "NYIH71JwbuArdM71",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/rope.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/rope.svg",
       "range": [
         1,
         1
       ],
-      "text": "2 Coils of Rope (60m/yd per coil, 120m/yd in all.)",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460974,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460974,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "2 Coils of Rope (60m/yd per coil, 120m/yd in all.)",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.NYIH71JwbuArdM71"
     },
     {
       "_id": "gEL1jssG8BYFCbEN",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "ECoCsPyfIEBCSggM",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/virtuality_goggles.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/virtuality_goggles.svg",
       "range": [
         2,
         2
       ],
-      "text": "Virtuality Goggles",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460986,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460986,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Virtuality Goggles",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.ECoCsPyfIEBCSggM",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.gEL1jssG8BYFCbEN"
     },
     {
       "_id": "1xJ62jbSbw9jlhRl",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "VrwVUEHuMCGjp8Fi",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/grapple_gun.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/grapple_gun.svg",
       "range": [
         3,
         3
       ],
-      "text": "Grapple Gun",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Grapple Gun",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.VrwVUEHuMCGjp8Fi",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.1xJ62jbSbw9jlhRl"
     },
     {
       "_id": "uMEBOmKCPijSlR7T",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "gaGUmTGViuxZ4mqR",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/vial_poison.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/vial_poison.svg",
       "range": [
         4,
         4
       ],
-      "text": "Vial of Poison",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460986,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460986,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Vial of Poison",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.gaGUmTGViuxZ4mqR",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.uMEBOmKCPijSlR7T"
     },
     {
       "_id": "VQynxqPUN4ABRYGD",
-      "documentCollection": "cyberpunk-red-core.core_clothing",
-      "documentId": "iwf7yiZyvmhW3rPj",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_jewelry.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/clothing/generic_jewelry.svg",
       "range": [
         5,
         5
       ],
-      "text": "Urban Flash Jewelry",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Urban Flash Jewelry",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_clothing.Item.iwf7yiZyvmhW3rPj",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.VQynxqPUN4ABRYGD"
     },
     {
       "_id": "fQTbhhUcSlRuNsSf",
-      "documentCollection": "cyberpunk-red-core.dlc_the-12-days-of-cybermas",
-      "documentId": "U8SdGzK5sIdWHaQ1",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/the_12_days_of_cybermas/cybermatrix_gang_jazzler.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/the_12_days_of_cybermas/cybermatrix_gang_jazzler.svg",
       "range": [
         6,
         6
       ],
-      "text": "Gang Jazzler",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Gang Jazzler",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_the-12-days-of-cybermas.Item.U8SdGzK5sIdWHaQ1",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.fQTbhhUcSlRuNsSf"
     },
     {
       "_id": "kGYKKrORxH2OxM6Q",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "i0xmIJjhcMKIWJ0M",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/rope.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/rope.svg",
       "range": [
         1,
         1
       ],
-      "text": "Rope (60m/yd)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460982,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460982,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Rope (60m/yd)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.i0xmIJjhcMKIWJ0M",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.kGYKKrORxH2OxM6Q"
     },
     {
       "_id": "SZBfy8RDcTLbwCkV",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "MfuoJ69NL1FiP7B8",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/battery.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/battery.png",
       "range": [
         6,
         6
       ],
-      "text": "Battery Pack",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Battery Pack",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.MfuoJ69NL1FiP7B8",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!uq1cseo3a1hAx7Pg.SZBfy8RDcTLbwCkV"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460986,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460986,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!uq1cseo3a1hAx7Pg"
 }

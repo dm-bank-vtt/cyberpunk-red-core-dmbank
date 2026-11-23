@@ -1,4 +1,5 @@
 import CPRItem from "../cpr-item.js";
+import SystemUtils from "../../utils/cpr-systemUtils.js";
 
 /**
  * Extend the base CPRItem object with things specific to ammunition.
@@ -25,7 +26,7 @@ export default class CPRAmmoItem extends CPRItem {
     // If the actor, is updating his owned item, this logic should live within the actor.
     if (this.actor) {
       this.actor.updateEmbeddedDocuments("Item", [
-        { _id: this.id, system: this.system },
+        { _id: this.id, ...SystemUtils.SystemChanges(this) },
       ]);
     }
   }
@@ -42,7 +43,7 @@ export default class CPRAmmoItem extends CPRItem {
     this.system.amount = newValue;
     if (this.actor) {
       return this.actor.updateEmbeddedDocuments("Item", [
-        { _id: this.id, system: this.system },
+        { _id: this.id, ...SystemUtils.SystemChanges(this) },
       ]);
     }
     return null;
@@ -60,7 +61,7 @@ export default class CPRAmmoItem extends CPRItem {
     this.system.amount = newValue;
     if (this.actor) {
       return this.actor.updateEmbeddedDocuments("Item", [
-        { _id: this.id, system: this.system },
+        { _id: this.id, ...SystemUtils.SystemChanges(this) },
       ]);
     }
     return null;

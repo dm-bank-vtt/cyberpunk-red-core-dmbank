@@ -1,20 +1,6 @@
 {
   "_id": "vTifY2SLaE82514t",
   "active": false,
-  "background": {
-    "alphaThreshold": 0,
-    "anchorX": 0,
-    "anchorY": 0,
-    "fit": "fill",
-    "offsetX": 7,
-    "offsetY": 8,
-    "rotation": 0,
-    "scaleX": 1,
-    "scaleY": 1,
-    "src": "systems/cyberpunk-red-core/maps/S0L-DCJunction-NOGRID1080.jpg",
-    "tint": "#ffffff"
-  },
-  "backgroundColor": "#999999",
   "drawings": [],
   "environment": {
     "base": {
@@ -55,12 +41,9 @@
       "explored": null,
       "unexplored": null
     },
-    "exploration": true,
-    "overlay": null,
-    "reset": 1659831837776
+    "reset": 1659831837776,
+    "mode": 1
   },
-  "foreground": null,
-  "foregroundElevation": null,
   "grid": {
     "alpha": 0.2,
     "color": "#000000",
@@ -90,8 +73,7 @@
   "playlistSound": null,
   "regions": [],
   "sounds": [],
-  "templates": [],
-  "thumb": "systems/cyberpunk-red-core/assets/scenes/Dystopian_City_Junction_thumb.webp",
+  "thumb": "systems/cyberpunk-red-core-dmbank/assets/scenes/Dystopian_City_Junction_thumb.webp",
   "tiles": [],
   "tokenVision": true,
   "tokens": [],
@@ -99,12 +81,31 @@
   "weather": "",
   "width": 1920,
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461230,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461230,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
-  "_key": "!scenes!vTifY2SLaE82514t",
-  "levels": []
+  "levels": [],
+  "shiftX": 7,
+  "shiftY": 8,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "templates": [],
+  "_key": "!scenes!vTifY2SLaE82514t"
 }

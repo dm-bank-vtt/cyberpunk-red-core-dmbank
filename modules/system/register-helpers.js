@@ -3,7 +3,7 @@ import LOGGER from "../utils/cpr-logger.js";
 import CPR from "./config.js";
 import SystemUtils from "../utils/cpr-systemUtils.js";
 import TextUtils from "../utils/TextUtils.js";
-import CPRActiveEffect from "../cpr-active-effect.js";
+import CPRActiveEffect, { CHANGE_TYPE_TO_MODE } from "../cpr-active-effect.js";
 import CPRMod from "../rolls/cpr-modifiers.js";
 
 export default function registerHandlebarsHelpers() {
@@ -1004,7 +1004,11 @@ export default function registerHandlebarsHelpers() {
    *    4 (UPGRADE) - like OVERRIDE but only replace if the value is higher (better)
    *    5 (OVERRIDE) - replace the current value with this one
    */
-  Handlebars.registerHelper("cprEffectModMode", (mode, value) => {
+  Handlebars.registerHelper("cprEffectModMode", (rawMode, value) => {
+    const mode =
+      typeof rawMode === "string" && rawMode in CHANGE_TYPE_TO_MODE
+        ? CHANGE_TYPE_TO_MODE[rawMode]
+        : Number(rawMode);
     switch (mode) {
       case 1:
         return `*${value}`;
@@ -1022,6 +1026,14 @@ export default function registerHandlebarsHelpers() {
   });
 
   /**
+   * Return the (legacy, numeric) mode of an active effect change. Foundry V14 stores the mode as a
+   * string `type` instead of a numeric `mode`, this helper hides that difference from templates.
+   */
+  Handlebars.registerHelper("cprChangeMode", (change) =>
+    CPRActiveEffect.getChangeMode(change)
+  );
+
+  /**
    * Figure out if an effect row should have a toggle glyph displayed or not.
    * Only show the toggle if 1 of these conditions is true:
    *    1. the effect is on the actor itself, not from an item
@@ -1034,8 +1046,9 @@ export default function registerHandlebarsHelpers() {
    */
   Handlebars.registerHelper("cprShowEffectToggle", (effect, name) => {
     if (effect.sourceName === name) return true;
-    if (!effect.system.isSuppressed && effect.usage !== "always") return true;
-    if (effect.system.isSuppressed && effect.usage === "toggled") return true;
+    const isSuppressed = effect.isSuppressed ?? effect.system?.isSuppressed;
+    if (!isSuppressed && effect.usage !== "always") return true;
+    if (isSuppressed && effect.usage === "toggled") return true;
     return false;
   });
 

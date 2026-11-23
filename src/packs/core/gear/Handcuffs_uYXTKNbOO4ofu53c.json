@@ -2,14 +2,14 @@
   "_id": "uYXTKNbOO4ofu53c",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/gear/handcuffs.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/handcuffs.svg",
   "name": "Handcuffs",
   "system": {
     "amount": 1,
@@ -46,11 +46,20 @@
   },
   "type": "gear",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460890,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460890,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!uYXTKNbOO4ofu53c"
 }

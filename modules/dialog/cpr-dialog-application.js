@@ -4,7 +4,7 @@ import SystemUtils from "../utils/cpr-systemUtils.js";
 /**
  * Form application to handle dialogs more generally.
  */
-export default class CPRDialog extends FormApplication {
+export default class CPRDialog extends foundry.appv1.api.FormApplication {
   constructor(dialogData, options) {
     super(dialogData, options);
 

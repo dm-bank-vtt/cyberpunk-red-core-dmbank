@@ -12,7 +12,7 @@ import RoleAbilitySchema from "../../datamodels/item/components/role-ability-sch
  * @extends {ItemSheet}
  */
 
-export default class CPRItemSheet extends ItemSheet {
+export default class CPRItemSheet extends foundry.appv1.sheets.ItemSheet {
   /* -------------------------------------------- */
   /** @override */
   static get defaultOptions() {
@@ -107,7 +107,7 @@ export default class CPRItemSheet extends ItemSheet {
     }
 
     // Enrich the description so that links to foundry documents in item descriptions have proper functionality.
-    foundryData.enrichedHTMLDescription = await TextEditor.enrichHTML(
+    foundryData.enrichedHTMLDescription = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
       foundryData.item.system.description.value,
       { async: true }
     );
@@ -541,24 +541,24 @@ export default class CPRItemSheet extends ItemSheet {
     let branch = "a";
     floors.forEach((floor) => {
       let content = "CPR.global.programClass.blackice";
-      if (floor.results[0].text.match("^Password")) {
+      if (SystemUtils.GetTableResultText(floor.results[0]).match("^Password")) {
         content = "CPR.netArchitecture.floor.options.password";
       }
-      if (floor.results[0].text.match("^File")) {
+      if (SystemUtils.GetTableResultText(floor.results[0]).match("^File")) {
         content = "CPR.netArchitecture.floor.options.file";
       }
-      if (floor.results[0].text.match("^Control Node")) {
+      if (SystemUtils.GetTableResultText(floor.results[0]).match("^Control Node")) {
         content = "CPR.netArchitecture.floor.options.controlnode";
       }
       let dv = "N/A";
       const dvRegex = /DV([0-9]+)/g;
-      const match = dvRegex.exec(floor.results[0].text);
+      const match = dvRegex.exec(SystemUtils.GetTableResultText(floor.results[0]));
       if (match !== null && match.length > 1) {
         [, dv] = match;
       }
       let blackice = "--";
       if (content.match("blackice")) {
-        switch (floor.results[0].text) {
+        switch (SystemUtils.GetTableResultText(floor.results[0])) {
           case "Asp":
             blackice = "CPR.netArchitecture.floor.options.blackIce.asp";
             break;
@@ -620,7 +620,7 @@ export default class CPRItemSheet extends ItemSheet {
         description: "Roll ".concat(
           floor.roll.total.toString(),
           ": ",
-          floor.results[0].text
+          SystemUtils.GetTableResultText(floor.results[0])
         ),
       });
       index += 1;
@@ -641,7 +641,7 @@ export default class CPRItemSheet extends ItemSheet {
       // eslint-disable-next-line no-await-in-loop
       const res = await table.draw({ displayChat: false });
       if (!drawnNumbers.includes(res.roll.total)) {
-        if (!res.results[0].text.match(drawDuplicatesRegex)) {
+        if (!SystemUtils.GetTableResultText(res.results[0]).match(drawDuplicatesRegex)) {
           drawnNumbers.push(res.roll.total);
         }
         drawnResults.push(res);

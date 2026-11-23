@@ -134,7 +134,7 @@ export default class CPRContainerActorSheet extends CPRActorSheet {
       // The same holds for purchasing the item, as it is handled by this._purchaseItem()
       if (actionType !== "delete" && actionType !== "purchase") {
         this.actor.updateEmbeddedDocuments("Item", [
-          { _id: item.id, system: item.system },
+          { _id: item.id, ...SystemUtils.SystemChanges(item) },
         ]);
       }
     }
@@ -578,7 +578,7 @@ export default class CPRContainerActorSheet extends CPRActorSheet {
     );
     if (game.user.isGM || playersCanCreate || playersCanSell) {
       if (!game.user.isGM && !playersCanCreate) {
-        const dragData = TextEditor.getDragEventData(event);
+        const dragData = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
         const tradePartnerId = dragData.system.actorId;
         const vendorData = this.actor.system.vendor;
         if (dragData.type === "Item") {

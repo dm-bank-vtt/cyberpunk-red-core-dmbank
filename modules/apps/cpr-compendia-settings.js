@@ -7,7 +7,7 @@ import SystemUtils from "../utils/cpr-systemUtils.js";
  * based on content in game.packs, but game.packs is not defined when settings are
  * configured. So we have present options dynamically when a button is clicked.
  */
-export default class CPRCompendiaSettings extends FormApplication {
+export default class CPRCompendiaSettings extends foundry.appv1.api.FormApplication {
   /**
    * set up default things like the html template and window size
    *

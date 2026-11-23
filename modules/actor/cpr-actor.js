@@ -1577,7 +1577,7 @@ export default class CPRActor extends Actor {
                   cprArmorData.headLocation.ablation + ablation,
                   armorSp
                 );
-          updateList.push({ _id: a.id, system: cprArmorData });
+          updateList.push({ _id: a.id, ...SystemUtils.SystemChanges(a) });
         });
         await this.updateEmbeddedDocuments("Item", updateList);
         // Update actor external data as head armor is ablated:
@@ -1607,7 +1607,7 @@ export default class CPRActor extends Actor {
                   cprArmorData.bodyLocation.ablation + ablation,
                   armorSp
                 );
-          updateList.push({ _id: a.id, system: cprArmorData });
+          updateList.push({ _id: a.id, ...SystemUtils.SystemChanges(a) });
         });
         await this.updateEmbeddedDocuments("Item", updateList);
         // Update actor external data as body armor is ablated:
@@ -1642,7 +1642,7 @@ export default class CPRActor extends Actor {
                   a.system.shieldHitPoints.max
                 )
               : Math.max(a.system.shieldHitPoints.value - ablation, 0);
-          updateList.push({ _id: a.id, system: cprArmorData });
+          updateList.push({ _id: a.id, ...SystemUtils.SystemChanges(a) });
         });
         await this.updateEmbeddedDocuments("Item", updateList);
         // Update actor external data as shield is damaged:
@@ -1676,7 +1676,7 @@ export default class CPRActor extends Actor {
     const effectDoc = await this.createEmbeddedDocuments("ActiveEffect", [
       {
         name: SystemUtils.Localize("CPR.itemSheet.effects.newEffect"),
-        icon: "icons/svg/aura.svg",
+        img: "icons/svg/aura.svg",
         origin: this.uuid, // Do we still want this here?
         disabled: false,
       },

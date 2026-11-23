@@ -3,57 +3,16 @@
   "effects": [
     {
       "_id": "v688v2AQZUpGXV7t",
-      "changes": [
-        {
-          "key": "bonuses.acting",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        },
-        {
-          "key": "bonuses.contortionist",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        },
-        {
-          "key": "bonuses.conversation",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        },
-        {
-          "key": "bonuses.dance",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        },
-        {
-          "key": "bonuses.humanPerception",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        },
-        {
-          "key": "bonuses.persuasion",
-          "mode": 2,
-          "priority": null,
-          "value": "2"
-        }
-      ],
       "description": "",
       "disabled": true,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "skill",
@@ -92,74 +51,82 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/status/smash.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/status/smash.svg",
       "name": "Smash Primary",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "bonuses.acting",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.contortionist",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.conversation",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.dance",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.humanPerception",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.persuasion",
+            "priority": null,
+            "value": 2,
+            "type": "add"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460882,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460882,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!PRLDaeBVeMuBBIeO.v688v2AQZUpGXV7t"
     },
     {
       "_id": "R7hdY2qZux5j9oVJ",
-      "changes": [
-        {
-          "key": "bonuses.acting",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        },
-        {
-          "key": "bonuses.contortionist",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        },
-        {
-          "key": "bonuses.conversation",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        },
-        {
-          "key": "bonuses.dance",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        },
-        {
-          "key": "bonuses.humanPerception",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        },
-        {
-          "key": "bonuses.persuasion",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        }
-      ],
       "description": "",
       "disabled": true,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "skill",
@@ -198,31 +165,80 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/status/smash_addiciton.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/status/smash_addiciton.svg",
       "name": "Smash Addiction",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "bonuses.acting",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.contortionist",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.conversation",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.dance",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.humanPerception",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.persuasion",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460882,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460882,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!PRLDaeBVeMuBBIeO.R7hdY2qZux5j9oVJ"
     }
   ],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/drugs/smash.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/drugs/smash.svg",
   "name": "Smash",
   "system": {
     "amount": 1,
@@ -249,11 +265,20 @@
   },
   "type": "drug",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460880,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460880,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!PRLDaeBVeMuBBIeO"
 }

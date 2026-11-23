@@ -5,7 +5,7 @@
          data-tab="item-settings">
       <ol class="items-list">
         {{!-- Item Name --}}
-        {{> "systems/cyberpunk-red-core/templates/item/cpr-item-name.hbs" this}}
+        {{> "systems/cyberpunk-red-core-dmbank/templates/item/cpr-item-name.hbs" this}}
         {{!-- Settings common to all items --}}
         <li class="item flexrow">
           <div class="item flexrow setting-name text-nowrap">
@@ -38,7 +38,7 @@
           </div>
         </li>
         {{#if item.system.quality}}
-          {{> "systems/cyberpunk-red-core/templates/item/settings/mixin/cpr-quality.hbs" this}}
+          {{> "systems/cyberpunk-red-core-dmbank/templates/item/settings/mixin/cpr-quality.hbs" this}}
         {{/if}}
         <hr/>
         {{!-- Settings from mixins --}}
@@ -47,12 +47,12 @@
             {{!-- If it is the attackable mixin and this is either an itemUpgrade or cyberware, let those item types handle if
             the mixin should be displayed or not since they may or may not be attackable --}}
             {{#unless (cprCompare (cprCompare mixin "===" "attackable") "&&" (cprCompare (cprCompare ../item.type "===" "itemUpgrade") "||" (cprCompare ../item.type "===" "cyberware")))}}
-              {{> (cprGeneratePartial "systems/cyberpunk-red-core/templates/item/settings/mixin/cpr-VAR.hbs" mixin) ../this}}
+              {{> (cprGeneratePartial "systems/cyberpunk-red-core-dmbank/templates/item/settings/mixin/cpr-VAR.hbs" mixin) ../this}}
             {{/unless}}
           {{/if}}
         {{/each}}
         {{!-- Settings specific to the item type --}}
-        {{> (cprGeneratePartial "systems/cyberpunk-red-core/templates/item/settings/cpr-VAR.hbs" item.type) this}}
+        {{> (cprGeneratePartial "systems/cyberpunk-red-core-dmbank/templates/item/settings/cpr-VAR.hbs" item.type) this}}
       </ol>
     </div>
   </div>

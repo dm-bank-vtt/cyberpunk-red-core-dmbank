@@ -1,28 +1,261 @@
 {
-  "version": "v0.92.4",
-  "flags": {
-    "featureVideoURL": ""
-  },
-  "id": "cyberpunk-red-core",
-  "title": "Cyberpunk RED - CORE",
-  "description": "Implementation of the Cyberpunk RED, Core Rules, for FVTT",
+  "id": "cyberpunk-red-core-dmbank",
+  "title": "DM Bank Night City Edition: for use with Cyberpunk RED",
+  "description": "A free, unofficial Foundry VTT V13–V14 system for use with Cyberpunk RED, with the DM Bank Night City UI: holographic character sheets, a cyberware body scan, Quick Skills, a gear grid, INCOMING TRANSMISSION chat cards, a Token HUD and a combat tracker. Forked from v0.92.4 of the GPL v3 Foundry system by The Project Red Team. Not affiliated with or endorsed by The Project Red Team, R. Talsorian Games or CD PROJEKT RED.",
+  "version": "0.0.0",
   "compatibility": {
-    "minimum": 12,
-    "verified": 12,
-    "maximum": 12
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
   },
   "authors": [
     {
-      "name": "The Project Red Team",
+      "name": "The Project Red Team (original system)",
       "url": "https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core"
+    },
+    {
+      "name": "DM Bank",
+      "url": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank"
     }
   ],
+  "url": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank",
+  "manifest": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/releases/latest/download/system.json",
+  "download": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/releases/download/v0.0.0/system.zip",
+  "bugs": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/issues",
+  "changelog": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/blob/main/CHANGELOG.md",
+  "readme": "https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/blob/main/README.md",
+  "license": "LICENSE",
+  "flags": {
+    "featureVideoURL": ""
+  },
   "esmodules": [
     "cpr.js"
   ],
   "styles": [
-    "main.css"
+    "main.css",
+    "styles/dmbank-theme.css",
+    "styles/dmbank-sheet.css",
+    "styles/dmbank-chat.css",
+    "styles/dmbank-cyber.css",
+    "styles/dmbank-gear.css",
+    "styles/dmbank-net.css"
   ],
+  "documentTypes": {
+    "Actor": {
+      "blackIce": {
+        "htmlFields": [
+          "notes",
+          "information.alias",
+          "information.description",
+          "information.history",
+          "information.notes",
+          "lifepath.aboutPeople",
+          "lifepath.affections",
+          "lifepath.childhoodEnvironment",
+          "lifepath.clothingStyle",
+          "lifepath.culturalOrigin",
+          "lifepath.enemies",
+          "lifepath.familyBackground",
+          "lifepath.familyCrisis",
+          "lifepath.friends",
+          "lifepath.hairStyle",
+          "lifepath.lifeGoals",
+          "lifepath.personality",
+          "lifepath.roleLifepath",
+          "lifepath.tragicLoveAffairs",
+          "lifepath.valueMost",
+          "lifepath.valuedPerson",
+          "lifepath.valuedPossession",
+          "lifestyle.fashion.description"
+        ]
+      },
+      "character": {
+        "htmlFields": [
+          "notes",
+          "information.alias",
+          "information.description",
+          "information.history",
+          "information.notes",
+          "lifepath.aboutPeople",
+          "lifepath.affections",
+          "lifepath.childhoodEnvironment",
+          "lifepath.clothingStyle",
+          "lifepath.culturalOrigin",
+          "lifepath.enemies",
+          "lifepath.familyBackground",
+          "lifepath.familyCrisis",
+          "lifepath.friends",
+          "lifepath.hairStyle",
+          "lifepath.lifeGoals",
+          "lifepath.personality",
+          "lifepath.roleLifepath",
+          "lifepath.tragicLoveAffairs",
+          "lifepath.valueMost",
+          "lifepath.valuedPerson",
+          "lifepath.valuedPossession",
+          "lifestyle.fashion.description"
+        ]
+      },
+      "container": {
+        "htmlFields": [
+          "notes",
+          "information.alias",
+          "information.description",
+          "information.history",
+          "information.notes",
+          "lifepath.aboutPeople",
+          "lifepath.affections",
+          "lifepath.childhoodEnvironment",
+          "lifepath.clothingStyle",
+          "lifepath.culturalOrigin",
+          "lifepath.enemies",
+          "lifepath.familyBackground",
+          "lifepath.familyCrisis",
+          "lifepath.friends",
+          "lifepath.hairStyle",
+          "lifepath.lifeGoals",
+          "lifepath.personality",
+          "lifepath.roleLifepath",
+          "lifepath.tragicLoveAffairs",
+          "lifepath.valueMost",
+          "lifepath.valuedPerson",
+          "lifepath.valuedPossession",
+          "lifestyle.fashion.description"
+        ]
+      },
+      "demon": {
+        "htmlFields": [
+          "notes",
+          "information.alias",
+          "information.description",
+          "information.history",
+          "information.notes",
+          "lifepath.aboutPeople",
+          "lifepath.affections",
+          "lifepath.childhoodEnvironment",
+          "lifepath.clothingStyle",
+          "lifepath.culturalOrigin",
+          "lifepath.enemies",
+          "lifepath.familyBackground",
+          "lifepath.familyCrisis",
+          "lifepath.friends",
+          "lifepath.hairStyle",
+          "lifepath.lifeGoals",
+          "lifepath.personality",
+          "lifepath.roleLifepath",
+          "lifepath.tragicLoveAffairs",
+          "lifepath.valueMost",
+          "lifepath.valuedPerson",
+          "lifepath.valuedPossession",
+          "lifestyle.fashion.description"
+        ]
+      },
+      "mook": {
+        "htmlFields": [
+          "notes",
+          "information.alias",
+          "information.description",
+          "information.history",
+          "information.notes",
+          "lifepath.aboutPeople",
+          "lifepath.affections",
+          "lifepath.childhoodEnvironment",
+          "lifepath.clothingStyle",
+          "lifepath.culturalOrigin",
+          "lifepath.enemies",
+          "lifepath.familyBackground",
+          "lifepath.familyCrisis",
+          "lifepath.friends",
+          "lifepath.hairStyle",
+          "lifepath.lifeGoals",
+          "lifepath.personality",
+          "lifepath.roleLifepath",
+          "lifepath.tragicLoveAffairs",
+          "lifepath.valueMost",
+          "lifepath.valuedPerson",
+          "lifepath.valuedPossession",
+          "lifestyle.fashion.description"
+        ]
+      }
+    },
+    "Item": {
+      "ammo": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "clothing": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "criticalInjury": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "cyberdeck": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "cyberware": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "drug": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "itemUpgrade": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "netarch": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "program": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "role": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "skill": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "description.value"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description.value"
+        ]
+      }
+    }
+  },
   "packFolders": [
     {
       "name": "Cyberpunk RED: Core",
@@ -107,400 +340,400 @@
       "type": "Item",
       "name": "black-chrome_ammo",
       "path": "packs/black-chrome/ammo",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Armor",
       "type": "Item",
       "name": "black-chrome_armor",
       "path": "packs/black-chrome/armor",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Clothing",
       "type": "Item",
       "name": "black-chrome_clothing",
       "path": "packs/black-chrome/clothing",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Cyberware",
       "type": "Item",
       "name": "black-chrome_cyberware",
       "path": "packs/black-chrome/cyberware",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Gear",
       "type": "Item",
       "name": "black-chrome_gear",
       "path": "packs/black-chrome/gear",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Upgrades",
       "type": "Item",
       "name": "black-chrome_upgrades",
       "path": "packs/black-chrome/upgrades",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Vehicles",
       "type": "Item",
       "name": "black-chrome_vehicles",
       "path": "packs/black-chrome/vehicles",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Weapons",
       "type": "Item",
       "name": "black-chrome_weapons",
       "path": "packs/black-chrome/weapons",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Ammo",
       "type": "Item",
       "name": "core_ammo",
       "path": "packs/core/ammo",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Armor",
       "type": "Item",
       "name": "core_armor",
       "path": "packs/core/armor",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Clothing",
       "type": "Item",
       "name": "core_clothing",
       "path": "packs/core/clothing",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Critical Injuries (Body)",
       "type": "Item",
       "name": "core_critical-injuries-body",
       "path": "packs/core/critical-injuries-body",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Critical Injuries (Head)",
       "type": "Item",
       "name": "core_critical-injuries-head",
       "path": "packs/core/critical-injuries-head",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Cyberware",
       "type": "Item",
       "name": "core_cyberware",
       "path": "packs/core/cyberware",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Drugs",
       "type": "Item",
       "name": "core_drugs",
       "path": "packs/core/drugs",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Gear",
       "type": "Item",
       "name": "core_gear",
       "path": "packs/core/gear",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Programs",
       "type": "Item",
       "name": "core_programs",
       "path": "packs/core/programs",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Roles",
       "type": "Item",
       "name": "core_roles",
       "path": "packs/core/roles",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Skills (Languages)",
       "type": "Item",
       "name": "core_skills-languages",
       "path": "packs/core/skills-languages",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Skills (Local Expert)",
       "type": "Item",
       "name": "core_skills-local-expert",
       "path": "packs/core/skills-local-expert",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Skills (Martial Arts)",
       "type": "Item",
       "name": "core_skills-martial-arts",
       "path": "packs/core/skills-martial-arts",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Skills (Play Instrument)",
       "type": "Item",
       "name": "core_skills-play-instrument",
       "path": "packs/core/skills-play-instrument",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Skills (Science)",
       "type": "Item",
       "name": "core_skills-science",
       "path": "packs/core/skills-science",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Upgrades",
       "type": "Item",
       "name": "core_upgrades",
       "path": "packs/core/upgrades",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Vehicles",
       "type": "Item",
       "name": "core_vehicles",
       "path": "packs/core/vehicles",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Weapons",
       "type": "Item",
       "name": "core_weapons",
       "path": "packs/core/weapons",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Weapons (Branded)",
       "type": "Item",
       "name": "core_weapons-branded",
       "path": "packs/core/weapons-branded",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Black Chrome Plus",
       "type": "Item",
       "name": "dlc_black-chrome-plus",
       "path": "packs/dlc/black-chrome-plus",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Achievements and Loot Boxes",
       "type": "RollTable",
       "name": "dlc_achievements-and-loot-boxes",
       "path": "packs/dlc/achievements-and-loot-boxes",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "All About Drones",
       "type": "Item",
       "name": "dlc_all-about-drones",
       "path": "packs/dlc/all-about-drones",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Cargo Containers and Cube Hotels",
       "type": "Item",
       "name": "dlc_cargo-containers-and-cube-hotels",
       "path": "packs/dlc/cargo-containers-and-cube-hotels",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Cyberchairs",
       "type": "Item",
       "name": "dlc_cyberchairs",
       "path": "packs/dlc/cyberchairs",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Elflines Online",
       "type": "Item",
       "name": "dlc_elflines-online",
       "path": "packs/dlc/elflines-online",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Elflines Online Armory",
       "type": "Item",
       "name": "dlc_elflines-online-armory",
       "path": "packs/dlc/elflines-online-armory",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Elflines Online Macros",
       "type": "Macro",
       "name": "dlc_elflines-online-macros",
       "path": "packs/dlc/elflines-online-macros",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Elflines Online the Trading Card Game",
       "type": "Item",
       "name": "dlc_elflines-online-the-trading-card-game",
       "path": "packs/dlc/elflines-online-the-trading-card-game",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Exotics of 2045",
       "type": "Item",
       "name": "dlc_exotics-of-2045",
       "path": "packs/dlc/exotics-of-2045",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Hardened Enemies",
       "type": "RollTable",
       "name": "dlc_hardened-enemies",
       "path": "packs/dlc/hardened-enemies",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Hornet's Pharmacy",
       "type": "Item",
       "name": "dlc_hornets-pharmacy",
       "path": "packs/dlc/hornets-pharmacy",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Micro Chrome",
       "type": "Item",
       "name": "dlc_micro-chrome",
       "path": "packs/dlc/micro-chrome",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Must Have Cyberware Deals",
       "type": "Item",
       "name": "dlc_must-have-cyberware-deals",
       "path": "packs/dlc/must-have-cyberware-deals",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Midnight With the Upload",
       "type": "Item",
       "name": "dlc_midnight-with-the-upload",
       "path": "packs/dlc/midnight-with-the-upload",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Night City Tarot",
       "type": "RollTable",
       "name": "dlc_night-city-tarot",
       "path": "packs/dlc/night-city-tarot",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Night City Weather",
       "type": "Item",
       "name": "dlc_night-city-weather",
       "path": "packs/dlc/night-city-weather",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Spinning Your Wheels",
       "type": "Item",
       "name": "dlc_spinning-your-wheels",
       "path": "packs/dlc/spinning-your-wheels",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "The 12 Days of Cybermas",
       "type": "Item",
       "name": "dlc_the-12-days-of-cybermas",
       "path": "packs/dlc/the-12-days-of-cybermas",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "The 12 Days of Gearmas",
       "type": "Item",
       "name": "dlc_the-12-days-of-gearmas",
       "path": "packs/dlc/the-12-days-of-gearmas",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "The 12 Days of Gunmas",
       "type": "Item",
       "name": "dlc_the-12-days-of-gunmas",
       "path": "packs/dlc/the-12-days-of-gunmas",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Woodchipper’s Garage",
       "type": "Item",
       "name": "dlc_woodchippers-garage",
       "path": "packs/dlc/woodchippers-garage",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Critical Injury Tables",
       "type": "RollTable",
       "name": "internal_critical-injury-tables",
       "path": "packs/internal/critical-injury-tables",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp",
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp",
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
@@ -513,8 +746,8 @@
       "type": "Item",
       "name": "internal_cyberware-core",
       "path": "packs/internal/cyberware-core",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp",
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp",
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
@@ -527,8 +760,8 @@
       "type": "RollTable",
       "name": "internal_dv-tables",
       "path": "packs/internal/dv-tables",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp",
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp",
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
@@ -541,8 +774,8 @@
       "type": "Item",
       "name": "internal_skills",
       "path": "packs/internal/skills",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp",
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp",
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
@@ -555,8 +788,8 @@
       "type": "RollTable",
       "name": "internal_net-rolltables",
       "path": "packs/internal/net-rolltables",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp",
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp",
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
@@ -569,24 +802,24 @@
       "type": "JournalEntry",
       "name": "other_changelog",
       "path": "packs/other/changelog",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Macros",
       "type": "Macro",
       "name": "other_macros",
       "path": "packs/other/macros",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     },
     {
       "label": "Scenes",
       "type": "Scene",
       "name": "other_scenes",
       "path": "packs/other/scenes",
-      "system": "cyberpunk-red-core",
-      "banner": "systems/cyberpunk-red-core/images/compendium-banner.webp"
+      "system": "cyberpunk-red-core-dmbank",
+      "banner": "systems/cyberpunk-red-core-dmbank/images/compendium-banner.webp"
     }
   ],
   "languages": [
@@ -663,9 +896,6 @@
   },
   "primaryTokenAttribute": "derivedStats.hp",
   "secondaryTokenAttribute": null,
-  "background": "systems/cyberpunk-red-core/images/Foundry-Background.webp",
-  "url": "https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core",
-  "manifest": "https://gitlab.com/api/v4/projects/22820629/packages/generic/fvtt-cyberpunk-red-core/latest/system.json",
-  "download": "https://gitlab.com/api/v4/projects/22820629/packages/generic/fvtt-cyberpunk-red-core/v0.92.4/fvtt-cyberpunk-red-core-v0.92.4.zip",
-  "license": "GPL v3"
+  "background": "systems/cyberpunk-red-core-dmbank/images/Foundry-Background.webp",
+  "socket": true
 }

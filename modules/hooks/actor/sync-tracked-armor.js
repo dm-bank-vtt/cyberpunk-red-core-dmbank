@@ -1,3 +1,5 @@
+import SystemUtils from "../../utils/cpr-systemUtils.js";
+
 const SyncTrackedArmor = () => {
   /**
    *
@@ -42,7 +44,7 @@ const SyncTrackedArmor = () => {
                         0
                       );
                     }
-                    updateList.push({ _id: a.id, system: armorData });
+                    updateList.push({ _id: a.id, ...SystemUtils.SystemChanges(a) });
                   });
                   doc.updateEmbeddedDocuments("Item", updateList);
                 }
@@ -67,7 +69,7 @@ const SyncTrackedArmor = () => {
                         0
                       );
                     }
-                    updateList.push({ _id: a.id, system: armorData });
+                    updateList.push({ _id: a.id, ...SystemUtils.SystemChanges(a) });
                   });
                   doc.updateEmbeddedDocuments("Item", updateList);
                 }
@@ -76,7 +78,7 @@ const SyncTrackedArmor = () => {
                     item.system.shieldHitPoints.value = currentValue;
                   }
                   doc.updateEmbeddedDocuments("Item", [
-                    { _id: item.id, system: item.system },
+                    { _id: item.id, ...SystemUtils.SystemChanges(item) },
                   ]);
                 }
                 break;

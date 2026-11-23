@@ -9,275 +9,345 @@
   "results": [
     {
       "_id": "9XqUo02ZTN1EJoQT",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "JL6Nf3l7hjzDmJZ5",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/binoculars.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/binoculars.svg",
       "range": [
         1,
         1
       ],
-      "text": "Binoculars",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Binoculars",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.JL6Nf3l7hjzDmJZ5",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.9XqUo02ZTN1EJoQT"
     },
     {
       "_id": "hgXu6ktxNPBq4rfg",
-      "documentCollection": "cyberpunk-red-core.core_armor",
-      "documentId": "uaN9WukkezPfcutU",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Armor.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Armor.svg",
       "range": [
         2,
         2
       ],
-      "text": "Light Armorjack (Body)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Light Armorjack (Body)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_armor.Item.uaN9WukkezPfcutU",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.hgXu6ktxNPBq4rfg"
     },
     {
       "_id": "IFS3beg2EGj5LDSS",
-      "documentCollection": "cyberpunk-red-core.core_weapons-branded",
-      "documentId": "luv1w6UcSC3xHg5j",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/mediumPistol_excellent.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/mediumPistol_excellent.svg",
       "range": [
         3,
         3
       ],
-      "text": "Avenger",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Avenger",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_weapons-branded.Item.luv1w6UcSC3xHg5j",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.IFS3beg2EGj5LDSS"
     },
     {
       "_id": "YYpTUny4o9I5DdR6",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "clCxd7qkp2olsKii",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/video_camera.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/video_camera.svg",
       "range": [
         4,
         4
       ],
-      "text": "Video Camera",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460986,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460986,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Video Camera",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.clCxd7qkp2olsKii",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.YYpTUny4o9I5DdR6"
     },
     {
       "_id": "oUTec8w9GkgiP5A9",
-      "documentCollection": "cyberpunk-red-core.dlc_must-have-cyberware-deals",
-      "documentId": "mTL4ZsBLRd6dO7Hv",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/must_have_cyberware_deals/neutongue.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/must_have_cyberware_deals/neutongue.svg",
       "range": [
         5,
         5
       ],
-      "text": "NeuTongue",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460980,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460980,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "NeuTongue",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_must-have-cyberware-deals.Item.mTL4ZsBLRd6dO7Hv",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.oUTec8w9GkgiP5A9"
     },
     {
       "_id": "6ZVQlLsR7FFUysXC",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "n1vIKB6Mln9XgUXL",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_rubber.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_rubber.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Rubber)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Rubber)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.n1vIKB6Mln9XgUXL",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.6ZVQlLsR7FFUysXC"
     },
     {
       "_id": "sFfjwgosN9Kfm007",
-      "documentCollection": "cyberpunk-red-core.black-chrome_cyberware",
-      "documentId": "0z0v50kDAgHvMquv",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/reflex-co-processor.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/reflex-co-processor.svg",
       "range": [
         6,
         6
       ],
-      "text": "Reflex Co-Processor",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460981,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460981,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Reflex Co-Processor",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_cyberware.Item.0z0v50kDAgHvMquv",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.sFfjwgosN9Kfm007"
     },
     {
       "_id": "6Aob1Q13Wnq2fmKF",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "6OdC9uNTwgQLFdto",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_basic.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_basic.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Basic)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Basic)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.6OdC9uNTwgQLFdto",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.6Aob1Q13Wnq2fmKF"
     },
     {
       "_id": "NadBu2gykgTVe0A4",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "PBA9BUs49TQeLoDi",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_armorpiercing.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_armorpiercing.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Armor-Piercing)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Armor-Piercing)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.PBA9BUs49TQeLoDi",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.NadBu2gykgTVe0A4"
     },
     {
       "_id": "jXkHDDDnhIXQCaQd",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "yEZOd9wbzrw30wKz",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_expansive.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_expansive.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Expansive)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Expansive)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.yEZOd9wbzrw30wKz",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.jXkHDDDnhIXQCaQd"
     },
     {
       "_id": "Nzy48k6l0ISVynhn",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "wTLwxLUvBBoM3yhM",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_incendiary.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_incendiary.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Incendiary)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460979,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460979,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Incendiary)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.wTLwxLUvBBoM3yhM",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.Nzy48k6l0ISVynhn"
     },
     {
       "_id": "CQ6soKGNpevqO25w",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "6dwSiAhYho02ZtgL",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolmedium_smart.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolmedium_smart.png",
       "range": [
         3,
         3
       ],
-      "text": "Medium Pistol (Smart)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460980,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460980,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Medium Pistol (Smart)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.6dwSiAhYho02ZtgL",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!4S3emhUCIIDNoTAg.CQ6soKGNpevqO25w"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460987,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460987,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!4S3emhUCIIDNoTAg"
 }

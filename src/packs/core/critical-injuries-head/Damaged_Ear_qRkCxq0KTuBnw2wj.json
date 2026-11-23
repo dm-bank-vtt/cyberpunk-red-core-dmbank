@@ -3,27 +3,16 @@
   "effects": [
     {
       "_id": "Z1UtRgahC2BAOxh5",
-      "changes": [
-        {
-          "key": "bonuses.perceptionHearing",
-          "mode": 2,
-          "priority": null,
-          "value": "-2"
-        }
-      ],
       "description": "",
       "disabled": false,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "skill"
@@ -37,31 +26,50 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/damaged_ear.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/damaged_ear.svg",
       "name": "Damaged Ear",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "bonuses.perceptionHearing",
+            "priority": null,
+            "value": -2,
+            "type": "add"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460837,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460837,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!qRkCxq0KTuBnw2wj.Z1UtRgahC2BAOxh5"
     }
   ],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/damaged_ear.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/damaged_ear.svg",
   "name": "Damaged Ear",
   "system": {
     "deathSaveIncrease": false,
@@ -89,11 +97,20 @@
   },
   "type": "criticalInjury",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460834,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460834,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!qRkCxq0KTuBnw2wj"
 }

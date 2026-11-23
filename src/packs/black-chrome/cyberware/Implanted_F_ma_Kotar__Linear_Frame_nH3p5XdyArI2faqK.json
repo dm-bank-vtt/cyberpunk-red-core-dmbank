@@ -3,27 +3,16 @@
   "effects": [
     {
       "_id": "0kAtEuSpu0FoTiwE",
-      "changes": [
-        {
-          "key": "system.stats.body.value",
-          "mode": 5,
-          "priority": null,
-          "value": "12"
-        }
-      ],
       "description": "",
       "disabled": false,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "stat"
@@ -37,31 +26,50 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/default-implanted-linearframe.svg",
       "name": "Implanted Fūma Kotarō Linear Frame",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.stats.body.value",
+            "priority": null,
+            "value": 12,
+            "type": "override"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460754,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460754,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!nH3p5XdyArI2faqK.0kAtEuSpu0FoTiwE"
     }
   ],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/default-implanted-linearframe.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/default-implanted-linearframe.svg",
   "name": "Implanted Fūma Kotarō Linear Frame",
   "system": {
     "ammoVariety": [],
@@ -128,11 +136,20 @@
   },
   "type": "cyberware",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460737,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460737,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!nH3p5XdyArI2faqK"
 }

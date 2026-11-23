@@ -20,8 +20,8 @@ export default class CPRChat {
    */
   static ChatDataSetup(content, modeOverride, forceWhisper, isRoll = false) {
     const chatData = {
-      user: game.user.id,
-      rollMode: modeOverride || game.settings.get("core", "rollMode"),
+      author: game.user.id,
+      rollMode: modeOverride || SystemUtils.GetRollMode(),
       content,
     };
 
@@ -39,6 +39,15 @@ export default class CPRChat {
       chatData.blind = true;
     } else if (chatData.rollMode === "selfroll") {
       chatData.whisper = [game.user];
+    }
+
+    // Foundry V14 replaced roll modes with message visibility modes. Let core apply the
+    // visibility (whisper/blind) when that API is available.
+    if (typeof ChatMessage.applyMode === "function") {
+      ChatMessage.applyMode(
+        chatData,
+        SystemUtils.RollModeToMessageMode(chatData.rollMode)
+      );
     }
 
     if (forceWhisper) {
@@ -64,7 +73,7 @@ export default class CPRChat {
       cprRoll.criticalCard = false;
     }
 
-    return renderTemplate(cprRoll.rollCard, cprRoll).then((html) => {
+    return foundry.applications.handlebars.renderTemplate(cprRoll.rollCard, cprRoll).then((html) => {
       const chatOptions = this.ChatDataSetup(html);
 
       if (cprRoll.entityData !== undefined && cprRoll.entityData !== null) {
@@ -127,7 +136,7 @@ export default class CPRChat {
       )}…`;
     }
 
-    return renderTemplate(itemTemplate, trimmedItem).then((html) => {
+    return foundry.applications.handlebars.renderTemplate(itemTemplate, trimmedItem).then((html) => {
       const chatOptions = this.ChatDataSetup(html);
       if (item.entityData !== undefined && item.entityData !== null) {
         const actor = game.actors.filter(
@@ -156,7 +165,7 @@ export default class CPRChat {
   static RenderDamageApplicationCard(damageData) {
     const damageApplicationTemplate = `systems/${game.system.id}/templates/chat/cpr-damage-application-card.hbs`;
 
-    return renderTemplate(damageApplicationTemplate, damageData).then(
+    return foundry.applications.handlebars.renderTemplate(damageApplicationTemplate, damageData).then(
       (html) => {
         const chatOptions = this.ChatDataSetup(html);
 

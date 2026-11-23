@@ -3,63 +3,16 @@
   "effects": [
     {
       "_id": "eLAjuE7xaYrcbIzN",
-      "changes": [
-        {
-          "key": "bonuses.basicTech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.cybertech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.landVehicleTech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.seaVehicleTech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.airVehicleTech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.electronicsAndSecurityTech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        },
-        {
-          "key": "bonuses.weaponstech",
-          "mode": 2,
-          "priority": null,
-          "value": "4"
-        }
-      ],
       "description": "",
       "disabled": false,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "skill",
@@ -103,31 +56,86 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/tech_bag.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/tech_bag.svg",
       "name": "Master Mechanic's Tool Kit",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "bonuses.basicTech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.cybertech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.landVehicleTech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.seaVehicleTech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.airVehicleTech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.electronicsAndSecurityTech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.weaponstech",
+            "priority": null,
+            "value": 4,
+            "type": "add"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461038,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461038,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!yI9sUHnAIXGYncg9.eLAjuE7xaYrcbIzN"
     }
   ],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/the_12_days_of_gearmas/master_mechanics_tool_kit.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/the_12_days_of_gearmas/master_mechanics_tool_kit.svg",
   "name": "Master Mechanic's Tool Kit",
   "system": {
     "amount": 1,
@@ -164,11 +172,20 @@
   },
   "type": "gear",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461040,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461040,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!yI9sUHnAIXGYncg9"
 }

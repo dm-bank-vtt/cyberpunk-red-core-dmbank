@@ -1,0 +1,495 @@
+/* =====================================================================
+   Cyberpunk RED Core - DM Bank :: actor & item sheets ("BIOMON" HUD)
+   ===================================================================== */
+
+html[data-cpr-theme="nightcity"] .window-app.sheet {
+  --cpr-background-box: transparent;
+  --cpr-background-border: transparent;
+  min-width: 320px;
+}
+
+/* --- the window itself: glass + 3D stage ------------------------------ */
+html[data-cpr-theme="nightcity"] .window-app.sheet .window-content {
+  position: relative;
+  padding: 10px;
+  perspective: 1400px;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(255, 42, 61, 0.14), transparent 55%),
+    radial-gradient(90% 70% at 100% 100%, rgba(62, 242, 255, 0.08), transparent 60%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 30%);
+}
+/* moving scanlines + a slow scan bar over the whole sheet */
+html[data-cpr-theme="nightcity"] .window-app.sheet .window-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+  animation: nc-scan 0.6s linear infinite;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-scanbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70px;
+  top: -12%;
+  pointer-events: none;
+  z-index: 41;
+  background: linear-gradient(180deg, transparent, rgba(62, 242, 255, 0.05) 60%, rgba(62, 242, 255, 0.16) 98%, transparent);
+  animation: nc-scan-bar 7s linear infinite;
+}
+
+/* HUD corner brackets on the window */
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners {
+  position: absolute;
+  inset: 4px;
+  pointer-events: none;
+  z-index: 42;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners i {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: var(--nc-cyan);
+  border-style: solid;
+  opacity: 0.8;
+  animation: nc-pulse 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px var(--nc-cyan-glow));
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners i:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners i:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+  animation-delay: 0.6s;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners i:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+  animation-delay: 1.2s;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .nc-corners i:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+  animation-delay: 1.8s;
+}
+/* tiny system readout in the header */
+html[data-cpr-theme="nightcity"] .window-app.sheet .window-header .nc-readout {
+  font-family: var(--nc-font-hud);
+  font-size: 10px;
+  color: var(--nc-cyan);
+  opacity: 0.75;
+  letter-spacing: 0.12em;
+  margin: 0 10px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .window-header .nc-readout b {
+  color: var(--nc-red-hot);
+  font-weight: normal;
+  animation: nc-blink 1.1s steps(1) infinite;
+}
+
+/* the form tilts with the mouse (variables set by script) */
+html[data-cpr-theme="nightcity"] .window-app.sheet .window-content > form {
+  transform-style: preserve-3d;
+  transform: rotateX(var(--nc-tilt-x, 0deg)) rotateY(var(--nc-tilt-y, 0deg));
+  transition: transform 0.25s ease-out;
+  will-change: transform;
+}
+
+/* --- panels ---------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .actor-sheet {
+  background: transparent;
+  color: var(--nc-text);
+  font-family: var(--nc-font-body);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details,
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-stats,
+html[data-cpr-theme="nightcity"] .actor-sheet .right-content-section,
+html[data-cpr-theme="nightcity"] .actor-sheet .bottom-content-section {
+  position: relative;
+  background: linear-gradient(160deg, rgba(30, 10, 16, 0.42), rgba(6, 6, 10, 0.34));
+  border: 1px solid var(--nc-red-line);
+  border-radius: 0;
+  box-shadow:
+    inset 0 0 22px rgba(255, 42, 61, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.5),
+    6px 6px 0 -1px rgba(255, 42, 61, 0.1),
+    10px 12px 22px rgba(0, 0, 0, 0.45);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details {
+  gap: 2px;
+  padding: 3px;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details > div {
+  background: rgba(0, 0, 0, 0.38);
+  border-left: 2px solid rgba(255, 42, 61, 0.55);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details > div:hover {
+  border-left-color: var(--nc-cyan);
+  background: linear-gradient(90deg, rgba(62, 242, 255, 0.08), rgba(0, 0, 0, 0.38));
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details > .actor-details-image {
+  border-left: none;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 42, 61, 0.25), rgba(0, 0, 0, 0.6) 70%);
+  position: relative;
+  overflow: hidden;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--nc-cyan), var(--nc-cyan)) top left / 16px 2px no-repeat,
+    linear-gradient(var(--nc-cyan), var(--nc-cyan)) top left / 2px 16px no-repeat,
+    linear-gradient(var(--nc-cyan), var(--nc-cyan)) bottom right / 16px 2px no-repeat,
+    linear-gradient(var(--nc-cyan), var(--nc-cyan)) bottom right / 2px 16px no-repeat,
+    repeating-linear-gradient(180deg, rgba(62, 242, 255, 0.06) 0 1px, transparent 1px 4px);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-image .profile-img {
+  background: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 42, 61, 0.45));
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-handle input {
+  font-family: var(--nc-font-hud);
+  color: var(--nc-text);
+  text-shadow: 0 0 10px var(--nc-red-glow), 2px 0 0 rgba(62, 242, 255, 0.35), -2px 0 0 rgba(255, 42, 61, 0.35);
+  background: transparent !important;
+  border: none;
+  letter-spacing: 0.04em;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-role input {
+  color: var(--nc-cyan);
+  background: transparent !important;
+  border: none;
+  font-family: var(--nc-font-hud);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+/* titles inside the detail boxes */
+html[data-cpr-theme="nightcity"] .actor-sheet [class*="-title"].text-semi,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-stats-title {
+  font-family: var(--nc-font-hud);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  color: var(--nc-red-hot);
+}
+/* numbers glow cyan */
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details input,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-death-save-value,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-improvement-points-value,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-reputation-value,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-eurobucks-value,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-hp-max,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-humanity-max {
+  color: var(--nc-cyan);
+  font-family: var(--nc-font-hud);
+  text-shadow: 0 0 8px var(--nc-cyan-glow);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-details input {
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px dashed rgba(62, 242, 255, 0.35);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-details-filter input {
+  border-bottom: 1px solid var(--nc-red-line) !important;
+  color: var(--nc-text) !important;
+  text-shadow: none !important;
+  font-family: var(--nc-font-body) !important;
+}
+
+/* stats column */
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-stats {
+  padding: 4px 3px;
+  gap: 4px;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-stats .actor-stats-stat {
+  background: linear-gradient(180deg, rgba(255, 42, 61, 0.16), rgba(0, 0, 0, 0.45));
+  border: 1px solid rgba(255, 42, 61, 0.4);
+  clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 7px 100%, 0 calc(100% - 7px));
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-stats .actor-stats-stat:hover {
+  transform: translateX(-2px) scale(1.04);
+  border-color: var(--nc-cyan);
+  box-shadow: 0 0 12px var(--nc-cyan-soft);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .left-pane .actor-stats .actor-stats-stat:hover .actor-stats-title {
+  animation: nc-glitch 0.3s steps(2) 1;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-stats-value,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-stats-of,
+html[data-cpr-theme="nightcity"] .actor-sheet .actor-stats-of input {
+  color: var(--nc-cyan) !important;
+  font-family: var(--nc-font-hud);
+  font-size: 1.05rem;
+  text-shadow: 0 0 8px var(--nc-cyan-glow);
+  background: transparent !important;
+  border: none;
+}
+
+/* --- tabs ------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .actor-sheet .tab-pink-underlay,
+html[data-cpr-theme="nightcity"] .item-sheet .tab-pink-underlay {
+  background: linear-gradient(90deg, var(--nc-red-deep), rgba(255, 42, 61, 0.15));
+}
+html[data-cpr-theme="nightcity"] .tab-label {
+  font-family: var(--nc-font-hud);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+html[data-cpr-theme="nightcity"] .tab-label:not(.active):hover {
+  color: var(--nc-cyan);
+  background: rgba(62, 242, 255, 0.12);
+}
+html[data-cpr-theme="nightcity"] .tab-label.active {
+  background: linear-gradient(90deg, var(--nc-red), var(--nc-red-hot));
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 14px var(--nc-red-glow);
+}
+
+/* --- skill / item lists ----------------------------------------------- */
+html[data-cpr-theme="nightcity"] .actor-sheet .skills-container {
+  background: transparent;
+  gap: 4px;
+}
+html[data-cpr-theme="nightcity"] .items-list .items-header,
+html[data-cpr-theme="nightcity"] .items-list .item-header,
+html[data-cpr-theme="nightcity"] .actor-sheet .section-name {
+  background: linear-gradient(90deg, rgba(255, 42, 61, 0.4), rgba(0, 0, 0, 0.75) 60%);
+  color: var(--nc-text);
+  font-family: var(--nc-font-hud);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  border-left: 3px solid var(--nc-red);
+}
+html[data-cpr-theme="nightcity"] .items-list .item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: background 0.12s ease, box-shadow 0.12s ease;
+}
+html[data-cpr-theme="nightcity"] .items-list .item:hover {
+  background: linear-gradient(90deg, rgba(62, 242, 255, 0.14), rgba(62, 242, 255, 0.02)) !important;
+  box-shadow: inset 2px 0 0 var(--nc-cyan);
+}
+html[data-cpr-theme="nightcity"] .items-list .item .text-pill,
+html[data-cpr-theme="nightcity"] .text-pill {
+  background: rgba(255, 42, 61, 0.28);
+  color: #ffb3ba;
+  border: 1px solid rgba(255, 42, 61, 0.45);
+  border-radius: 0;
+  font-family: var(--nc-font-hud);
+}
+html[data-cpr-theme="nightcity"] .items-list input.skill-input,
+html[data-cpr-theme="nightcity"] .items-list input.number {
+  color: var(--nc-cyan);
+  background: transparent !important;
+  border: none;
+  font-family: var(--nc-font-hud);
+}
+html[data-cpr-theme="nightcity"] .items-list .item a:hover,
+html[data-cpr-theme="nightcity"] .actor-sheet a.rollable:hover,
+html[data-cpr-theme="nightcity"] .actor-sheet .rollable:hover {
+  color: var(--nc-cyan);
+  text-shadow: 0 0 6px var(--nc-cyan-glow);
+}
+
+/* --- bottom pane (fight / role / lifepath) ---------------------------- */
+html[data-cpr-theme="nightcity"] .actor-sheet .fight-tab,
+html[data-cpr-theme="nightcity"] .actor-sheet .tab.fight-tab {
+  background: transparent;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .fight-tab .fight-tab > div,
+html[data-cpr-theme="nightcity"] .actor-sheet .fight-tab > div,
+html[data-cpr-theme="nightcity"] .actor-sheet .role-tab-content,
+html[data-cpr-theme="nightcity"] .actor-sheet .lifepath-tab > div {
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(255, 42, 61, 0.25);
+}
+html[data-cpr-theme="nightcity"] .actor-sheet a.editor-edit {
+  background: var(--nc-red);
+  color: #fff;
+}
+html[data-cpr-theme="nightcity"] .window-app.sheet .editor-content {
+  color: var(--nc-text);
+}
+
+/* --- item sheet ------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .item-sheet {
+  background: transparent;
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .item-sheet .item-top-pane,
+html[data-cpr-theme="nightcity"] .item-sheet .item-bottom-pane .item-bottom-content-section {
+  background: linear-gradient(160deg, rgba(30, 10, 16, 0.62), rgba(6, 6, 10, 0.55));
+  border-color: var(--nc-red-line);
+}
+html[data-cpr-theme="nightcity"] .item-sheet .item-settings-tab,
+html[data-cpr-theme="nightcity"] .item-sheet .item-effects-tab,
+html[data-cpr-theme="nightcity"] .item-sheet .item-description-tab {
+  background: transparent;
+}
+
+/* staggered entrance of the panels on boot */
+html[data-cpr-theme="nightcity"] .nc-boot .actor-sheet > *,
+html[data-cpr-theme="nightcity"] .nc-boot .actor-stats-stat {
+  animation: nc-boot-items 0.45s ease-out both;
+}
+html[data-cpr-theme="nightcity"] .nc-boot .actor-sheet > .left-pane {
+  animation-delay: 0.25s;
+}
+html[data-cpr-theme="nightcity"] .nc-boot .actor-sheet > .right-pane {
+  animation-delay: 0.35s;
+}
+html[data-cpr-theme="nightcity"] .nc-boot .actor-sheet > .bottom-pane {
+  animation-delay: 0.45s;
+}
+html[data-cpr-theme="nightcity"] .nc-boot .actor-stats-stat:nth-child(n) {
+  animation-delay: calc(0.3s + var(--nc-i, 0) * 0.04s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-cpr-theme="nightcity"] .window-app.sheet *,
+  html[data-cpr-theme="nightcity"] .nc-boot {
+    animation: none !important;
+  }
+}
+
+html[data-cpr-theme="nightcity"] .actor-sheet .fight-tab .fight-tab {
+  background: transparent;
+  gap: 4px;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .fight-tab * {
+  border-color: rgba(255, 42, 61, 0.25);
+}
+
+/* ---------------------------------------------------------------------
+   Gear / list rows: the action buttons always stay visible
+   --------------------------------------------------------------------- */
+.actor-sheet .gear-tab li.item,
+.actor-sheet .gear-tab li.items-header,
+.actor-sheet .cyberware-tab li.item,
+.actor-sheet .cyberware-tab li.items-header {
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.actor-sheet .gear-tab .gear-name {
+  flex: 0 1 30%;
+  min-width: 7rem;
+}
+.actor-sheet .gear-tab .gear-amount {
+  flex: 0 0 4rem;
+}
+.actor-sheet .gear-tab .gear-data {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.actor-sheet .gear-tab .gear-actions {
+  flex: 0 0 auto;
+  min-width: max-content;
+  text-align: right;
+  padding-right: 4px;
+}
+.actor-sheet .gear-tab .gear-actions a {
+  margin-left: 2px;
+}
+.actor-sheet .gear-tab li.item > .sub-list {
+  flex: 1 0 100%;
+}
+
+/* ---------------------------------------------------------------------
+   "Wrap long text" setting (body.nc-wrap): descriptions break into lines
+   --------------------------------------------------------------------- */
+body.nc-wrap .actor-sheet .gear-tab .gear-data,
+body.nc-wrap .actor-sheet .cyberware-tab .item-detail,
+body.nc-wrap .actor-sheet .effects-tab .item-detail {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.25;
+  padding: 2px 0;
+}
+body.nc-wrap .item-sheet .item-description-tab,
+body.nc-wrap .item-sheet .item-description-section,
+body.nc-wrap .item-sheet .item-description-section *,
+body.nc-wrap .item-sheet .editor-content {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+body.nc-wrap .item-sheet .item-description-tab {
+  grid-template-columns: 8.438rem minmax(0, 1fr);
+}
+
+/* ---------------------------------------------------------------------
+   Fight tab: readable weapon rows (no overlapping text)
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .actor-sheet .weapon-name,
+html[data-cpr-theme="nightcity"] .actor-sheet .weapon-ammo,
+html[data-cpr-theme="nightcity"] .actor-sheet .weapon-info {
+  line-height: 1.1rem;
+  font-size: 0.85rem;
+}
+html[data-cpr-theme="nightcity"] .actor-sheet .weapon-info .text-pill,
+html[data-cpr-theme="nightcity"] .actor-sheet .weapon-grid .text-pill {
+  font-size: 0.65rem;
+  line-height: 0.95rem;
+  padding: 0 4px;
+}
+.actor-sheet .weapon-grid .weapon-name,
+.actor-sheet .weapon-grid .weapon-ammo,
+.actor-sheet .weapon-grid .weapon-info {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  align-self: center;
+}
+.actor-sheet .weapon-grid {
+  grid-template-rows: 1.15rem 1.15rem 1.15rem;
+  height: auto;
+  min-height: 3.6rem;
+}
+
+/* Item sheet: keep the description inside the window so it can wrap */
+.item-sheet .item-bottom-pane {
+  grid-template-columns: minmax(0, 1fr);
+}
+.item-sheet .item-bottom-content-section,
+.item-sheet .item-bottom-content-section > .tab,
+.item-sheet .item-description-tab,
+.item-sheet .item-description-section,
+.item-sheet .item-settings-tab,
+.item-sheet .item-effects-tab {
+  min-width: 0;
+  max-width: 100%;
+}
+.item-sheet .item-bottom-content-section > .tab.active {
+  width: 100%;
+}
+.item-sheet .item-description-tab {
+  flex: 1 1 0;
+  grid-template-columns: 8.438rem minmax(0, 1fr);
+}
+body:not(.nc-wrap) .item-sheet .item-description-section {
+  overflow-x: auto;
+}

@@ -28,7 +28,7 @@
         </li>
       {{/if}}
       {{!-- Additional user inputted modifiers --}}
-      {{> "systems/cyberpunk-red-core/templates/dialog/rolls/cpr-additional-modifiers.hbs" this}}
+      {{> "systems/cyberpunk-red-core-dmbank/templates/dialog/rolls/cpr-additional-modifiers.hbs" this}}
       {{#if (cprCompare (cprCompare rollData.rollCardExtraArgs.program.system.class "!==" "blackice") "&&" (cprCompare rollData.rollCardExtraArgs.program.system.class "!==" "demon")) }}
         <li class="dialog-item flexrow">
           <div class="dialog-item-name text-nowrap">{{localize "CPR.rolls.luck"}}:</div>
@@ -46,10 +46,10 @@
         </div>
       </li>
       {{!-- All applied modifier list partial --}}
-      {{> "systems/cyberpunk-red-core/templates/dialog/rolls/cpr-all-modifiers.hbs" this}}
+      {{> "systems/cyberpunk-red-core-dmbank/templates/dialog/rolls/cpr-all-modifiers.hbs" this}}
     </ol>
   </div>
   {{!-- Situational modifier list partial --}}
-  {{> "systems/cyberpunk-red-core/templates/dialog/rolls/cpr-situational-modifiers.hbs" this}}
-  {{> "systems/cyberpunk-red-core/templates/dialog/cpr-dialog-buttons.hbs"}}
+  {{> "systems/cyberpunk-red-core-dmbank/templates/dialog/rolls/cpr-situational-modifiers.hbs" this}}
+  {{> "systems/cyberpunk-red-core-dmbank/templates/dialog/cpr-dialog-buttons.hbs"}}
 </form>

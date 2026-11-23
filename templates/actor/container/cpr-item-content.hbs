@@ -15,7 +15,7 @@
       </a>
       {{#if item.system.installedItems.list }}
         <a class="toggle-installed-visibility">
-          <i class="fa-solid fa-chevron-up fa-sm {{#unless (cprGetProp actor.flags.cyberpunk-red-core.showInstalled item.id) }}fa-flip-vertical{{/unless}}"></i>
+          <i class="fa-solid fa-chevron-up fa-sm {{#unless (cprGetProp actor.flags.cyberpunk-red-core-dmbank.showInstalled item.id) }}fa-flip-vertical{{/unless}}"></i>
         </a>
       {{/if}}
     </div>
@@ -54,7 +54,7 @@
       {{/if}}
     </div>
     <div class="item-end text-nowrap">
-      {{> "systems/cyberpunk-red-core/templates/actor/container/cpr-container-actions.hbs" (cprMergeForPartialArg "item,actor,isGM" item actor isGM)}}
+      {{> "systems/cyberpunk-red-core-dmbank/templates/actor/container/cpr-container-actions.hbs" (cprMergeForPartialArg "item,actor,isGM" item actor isGM)}}
     </div>
   {{cprNestedInstalledGearTab item}}
   </li>

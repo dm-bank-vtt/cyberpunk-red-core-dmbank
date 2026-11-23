@@ -19,9 +19,9 @@ const registerSystemSettings = () => {
     type: new foundry.data.fields.StringField({
       required: true,
       choices: () => SystemUtils.GetThemes(CPR.themes),
-      initial: "default",
+      initial: "nightcity",
     }),
-    default: "default",
+    default: "nightcity",
     onChange: () => {
       SystemUtils.SetTheme();
     },

@@ -9,187 +9,236 @@
   "results": [
     {
       "_id": "0OxDAp5vfbStfplq",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/drugs/smash.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/drugs/smash.svg",
       "range": [
         1,
         1
       ],
-      "text": "5 Cans of Smash",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460974,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460974,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "5 Cans of Smash",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.0OxDAp5vfbStfplq"
     },
     {
       "_id": "qVtkRbxUNz2Mr1GB",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "Th74cfC87RqEJKAb",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/air_hypo.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/air_hypo.svg",
       "range": [
         2,
         2
       ],
-      "text": "Airhypo",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460974,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460974,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Airhypo",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.Th74cfC87RqEJKAb",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.qVtkRbxUNz2Mr1GB"
     },
     {
       "_id": "MWZd45k1dIhuy8If",
-      "documentCollection": "cyberpunk-red-core.dlc_hornets-pharmacy",
-      "documentId": "9rKtuQcxsOmHjKyT",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Cyberware.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Cyberware.svg",
       "range": [
         3,
         3
       ],
-      "text": "Bodyweight AutoInjector",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Bodyweight AutoInjector",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_hornets-pharmacy.Item.9rKtuQcxsOmHjKyT",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.MWZd45k1dIhuy8If"
     },
     {
       "_id": "Bo75utxjeKLNgn1m",
-      "documentCollection": "cyberpunk-red-core.black-chrome_gear",
-      "documentId": "Ogmb7zTfss6Kz54C",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/airwell.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/airwell.svg",
       "range": [
         4,
         4
       ],
-      "text": "AirWell 50",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460974,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460974,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "AirWell 50",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_gear.Item.Ogmb7zTfss6Kz54C",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.Bo75utxjeKLNgn1m"
     },
     {
       "_id": "oFcPdGyZZq79XTja",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "OufLzsBG6w0CUp81",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/grenade_poison.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/grenade_poison.png",
       "range": [
         5,
         5
       ],
-      "text": "Grenade (Poison)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Grenade (Poison)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.OufLzsBG6w0CUp81",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.oFcPdGyZZq79XTja"
     },
     {
       "_id": "u8xCSLXpmliqK5eZ",
-      "documentCollection": "cyberpunk-red-core.black-chrome_weapons",
-      "documentId": "my1ugVO4a5VjJSuH",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/tr-4-detonator-fluid.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/tr-4-detonator-fluid.svg",
       "range": [
         6,
         6
       ],
-      "text": "TR-4 Detonator Fluid",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "TR-4 Detonator Fluid",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_weapons.Item.my1ugVO4a5VjJSuH",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.u8xCSLXpmliqK5eZ"
     },
     {
       "_id": "hk0ZG2Yyj1OXXEQE",
-      "documentCollection": "cyberpunk-red-core.core_drugs",
-      "documentId": "PRLDaeBVeMuBBIeO",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/drugs/smash.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/drugs/smash.svg",
       "range": [
         1,
         1
       ],
-      "text": "Smash",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460984,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460984,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Smash",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_drugs.Item.PRLDaeBVeMuBBIeO",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.hk0ZG2Yyj1OXXEQE"
     },
     {
       "_id": "xJR1fxROS011EkKi",
-      "documentCollection": "cyberpunk-red-core.core_drugs",
-      "documentId": "6BM5WFyCyIM8lZib",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/drugs/black_lace.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/drugs/black_lace.svg",
       "range": [
         2,
         2
       ],
-      "text": "Black Lace",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Black Lace",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_drugs.Item.6BM5WFyCyIM8lZib",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!zRHyYnlEqNlTA4l5.xJR1fxROS011EkKi"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460987,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460987,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!zRHyYnlEqNlTA4l5"
 }

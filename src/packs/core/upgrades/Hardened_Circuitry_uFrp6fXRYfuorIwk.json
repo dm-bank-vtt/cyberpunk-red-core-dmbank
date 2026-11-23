@@ -2,14 +2,14 @@
   "_id": "uFrp6fXRYfuorIwk",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/upgrades/hardened_circuitry.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/upgrades/hardened_circuitry.svg",
   "name": "Hardened Circuitry",
   "system": {
     "ammoVariety": [],
@@ -139,11 +139,20 @@
   },
   "type": "itemUpgrade",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460931,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460931,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!uFrp6fXRYfuorIwk"
 }

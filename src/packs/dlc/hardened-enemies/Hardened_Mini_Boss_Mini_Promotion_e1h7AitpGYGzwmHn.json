@@ -3,237 +3,287 @@
   "description": "",
   "displayRoll": true,
   "formula": "1d10",
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Dice.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Dice.svg",
   "name": "Hardened Mini Boss Mini Promotion",
   "replacement": true,
   "results": [
     {
       "_id": "SfFs4w9vkTdBlSln",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         1,
         1
       ],
-      "text": "Increase one of their Skill Bases that is above 10 to 17.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Increase one of their Skill Bases that is above 10 to 17.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.SfFs4w9vkTdBlSln"
     },
     {
       "_id": "PilKglGsqoDJOcfu",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         2,
         2
       ],
-      "text": "Increase their HP by 10.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461006,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461006,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Increase their HP by 10.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.PilKglGsqoDJOcfu"
     },
     {
       "_id": "FjsIS0p4CnFe9o4n",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         3,
         3
       ],
-      "text": "Give them Teamwork 3 (see CP:R page 153), and give them a Team Member of your choice.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them Teamwork 3 (see CP:R page 153), and give them a Team Member of your choice.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.FjsIS0p4CnFe9o4n"
     },
     {
       "_id": "Prn8xzNaeukuI4yV",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         4,
         4
       ],
-      "text": "Give them Medium Armorjack that’s been Tech upgraded, removing the Armor Penalty.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them Medium Armorjack that’s been Tech upgraded, removing the Armor Penalty.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.Prn8xzNaeukuI4yV"
     },
     {
       "_id": "A6gzjP4MuU6asaUm",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         5,
         5
       ],
-      "text": "Give them an additional 600eb of Cyberware.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them an additional 600eb of Cyberware.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.A6gzjP4MuU6asaUm"
     },
     {
       "_id": "hfGH9LPi1AUB0YXs",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         6,
         6
       ],
-      "text": "Give them a Reputation of 5.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461004,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461004,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them a Reputation of 5.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.hfGH9LPi1AUB0YXs"
     },
     {
       "_id": "hO6wFEac94UlXGlw",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         7,
         7
       ],
-      "text": "Give them an EMP Grenade (see CP:R page 345) and an Athletics Skill Base of 16.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them an EMP Grenade (see CP:R page 345) and an Athletics Skill Base of 16.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.hO6wFEac94UlXGlw"
     },
     {
       "_id": "YKmjTt0QQgOs386M",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         8,
         8
       ],
-      "text": "Give them either a dose of Black Lace (see CP:R page 357) or Synthcoke (see CP:R page 358) before combat starts.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them either a dose of Black Lace (see CP:R page 357) or Synthcoke (see CP:R page 358) before combat starts.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.YKmjTt0QQgOs386M"
     },
     {
       "_id": "5N2D1CMixS0S9vfu",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         9,
         9
       ],
-      "text": "Increase their MOVE to 8 or increase their Evasion Skill Base to 18.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461006,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461006,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Increase their MOVE to 8 or increase their Evasion Skill Base to 18.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.5N2D1CMixS0S9vfu"
     },
     {
       "_id": "UeZQ8jB8pFxYBM9O",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         10,
         10
       ],
-      "text": "Give them Gills (see CP:R page 363) and a round of Exotic Bodysculpting (see CP:R page 226). Shark? Arowana? You decide.",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461005,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461005,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Give them Gills (see CP:R page 363) and a round of Exotic Bodysculpting (see CP:R page 226). Shark? Arowana? You decide.",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!e1h7AitpGYGzwmHn.UeZQ8jB8pFxYBM9O"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461008,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461008,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!e1h7AitpGYGzwmHn"
 }

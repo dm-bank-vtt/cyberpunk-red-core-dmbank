@@ -14,18 +14,18 @@
           {{#if criticalCard }}
             {{#if wasCritSuccess }}
               <img class="d10"
-                   src="systems/cyberpunk-red-core/icons/dice/red/d10_{{initialRoll}}_preem.svg"/>
+                   src="systems/cyberpunk-red-core-dmbank/icons/dice/red/d10_{{initialRoll}}_preem.svg"/>
               <i class="fas fa-plus"></i>
             {{else}}
               <img class="d10"
-                   src="systems/cyberpunk-red-core/icons/dice/red/d10_{{initialRoll}}_fail.svg"/>
+                   src="systems/cyberpunk-red-core-dmbank/icons/dice/red/d10_{{initialRoll}}_fail.svg"/>
               <i class="fas fa-minus"></i>
             {{/if}}
             <img class="d10"
-                 src="systems/cyberpunk-red-core/icons/dice/red/d10_{{cprMath "abs" criticalRoll}}.svg"/>
+                 src="systems/cyberpunk-red-core-dmbank/icons/dice/red/d10_{{cprMath "abs" criticalRoll}}.svg"/>
           {{else}}
             <img class="d10"
-                 src="systems/cyberpunk-red-core/icons/dice/black/d10_{{initialRoll}}.svg"/>
+                 src="systems/cyberpunk-red-core-dmbank/icons/dice/black/d10_{{initialRoll}}.svg"/>
           {{/if}}
         </div>
         <div class="d10-number-div">
@@ -43,7 +43,7 @@
               {{localize "CPR.rolls.reputation"}}: {{repValue}}
             </div>
             {{#if (cprCompare mods.length "||" additionalMods.length) }}
-              {{> "systems/cyberpunk-red-core/templates/chat/cpr-rollcard-modifiers.hbs" this}}
+              {{> "systems/cyberpunk-red-core-dmbank/templates/chat/cpr-rollcard-modifiers.hbs" this}}
             {{/if}}
           </div>
         </div>

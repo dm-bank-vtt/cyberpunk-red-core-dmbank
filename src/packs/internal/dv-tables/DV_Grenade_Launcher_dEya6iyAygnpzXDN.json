@@ -3,185 +3,235 @@
   "description": "<p>Core Rulebook Page 173</p>",
   "displayRoll": false,
   "formula": "",
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
   "name": "DV Grenade Launcher",
   "replacement": false,
   "results": [
     {
       "_id": "99fmYsRTlckrlqTw",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         0,
         6
       ],
-      "text": "16",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461058,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461058,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "16",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.99fmYsRTlckrlqTw"
     },
     {
       "_id": "u5UZv1icFzjsTh3L",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         7,
         12
       ],
-      "text": "15",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461057,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461057,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "15",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.u5UZv1icFzjsTh3L"
     },
     {
       "_id": "AKTSWco84Q6QegAT",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         13,
         25
       ],
-      "text": "15",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461056,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461056,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "15",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.AKTSWco84Q6QegAT"
     },
     {
       "_id": "5odIOVc45cNv86LA",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         26,
         50
       ],
-      "text": "17",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461059,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461059,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "17",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.5odIOVc45cNv86LA"
     },
     {
       "_id": "btdBcq6xDd5U0sNU",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         51,
         100
       ],
-      "text": "20",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461063,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461063,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "20",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.btdBcq6xDd5U0sNU"
     },
     {
       "_id": "8ET1zFdOGxSKFePK",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         101,
         200
       ],
-      "text": "22",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461064,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461064,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "22",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.8ET1zFdOGxSKFePK"
     },
     {
       "_id": "Yh1TdCSfdOPx0ioy",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         201,
         400
       ],
-      "text": "25",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461064,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461064,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "25",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.Yh1TdCSfdOPx0ioy"
     },
     {
       "_id": "RcwTtPEaBjvgoWs6",
-      "documentId": null,
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_DV_Table.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_DV_Table.svg",
       "range": [
         401,
         800
       ],
-      "text": "N/A",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461069,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461069,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "N/A",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!dEya6iyAygnpzXDN.RcwTtPEaBjvgoWs6"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461071,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461071,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!dEya6iyAygnpzXDN"
 }

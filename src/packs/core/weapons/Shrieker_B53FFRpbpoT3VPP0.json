@@ -2,14 +2,14 @@
   "_id": "B53FFRpbpoT3VPP0",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/weapons/shrieker.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/shrieker.svg",
   "name": "Shrieker",
   "system": {
     "ammoVariety": [
@@ -25,7 +25,7 @@
     "critFailEffect": "jammed",
     "damage": "0",
     "description": {
-      "value": "<p>\n  An Exotic Very Heavy Pistol. Requires ear protection to prevent Damaged Ear\n  critical injuries. The target must beat a\n  <strong>DV15 Resist Torture/Drugs</strong> Check or suffer the\n  @UUID[Compendium.cyberpunk-red-core.core_critical-injuries-head.Item.qRkCxq0KTuBnw2wj]{Damaged\n  Ear} critical injury.\n</p>\n"
+      "value": "<p>\n  An Exotic Very Heavy Pistol. Requires ear protection to prevent Damaged Ear\n  critical injuries. The target must beat a\n  <strong>DV15 Resist Torture/Drugs</strong> Check or suffer the\n  @UUID[Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-head.Item.qRkCxq0KTuBnw2wj]{Damaged\n  Ear} critical injury.\n</p>\n"
     },
     "dvTable": "DV Pistol",
     "equipped": "owned",
@@ -70,11 +70,20 @@
   },
   "type": "weapon",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460954,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460954,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!B53FFRpbpoT3VPP0"
 }

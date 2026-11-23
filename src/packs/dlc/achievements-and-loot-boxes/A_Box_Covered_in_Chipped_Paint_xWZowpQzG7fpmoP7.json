@@ -9,231 +9,291 @@
   "results": [
     {
       "_id": "pXWJgAjL94Fgr83F",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "3rtsVDMaB16lc5tY",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/grenade_teargas.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/grenade_teargas.png",
       "range": [
         1,
         1
       ],
-      "text": "Grenade (Teargas)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460978,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460978,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Grenade (Teargas)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.3rtsVDMaB16lc5tY",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.pXWJgAjL94Fgr83F"
     },
     {
       "_id": "kB1Uz1Ik3X5gbsgq",
-      "documentCollection": "cyberpunk-red-core.black-chrome_weapons",
-      "documentId": "RwZUbGdbyp5KTEc5",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/heavyPistol_poor.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/heavyPistol_poor.svg",
       "range": [
         2,
         2
       ],
-      "text": "GunMart Smart Special",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460978,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460978,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "GunMart Smart Special",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_weapons.Item.RwZUbGdbyp5KTEc5",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.kB1Uz1Ik3X5gbsgq"
     },
     {
       "_id": "j6zj2lwkNOsXUUPe",
-      "documentCollection": "cyberpunk-red-core.dlc_spinning-your-wheels",
-      "documentId": "XIDIqcWCFJtzYeRw",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/spinning_your_wheels/bicycle.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/spinning_your_wheels/bicycle.svg",
       "range": [
         3,
         3
       ],
-      "text": "Bicycle",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460975,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460975,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Bicycle",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_spinning-your-wheels.Item.XIDIqcWCFJtzYeRw",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.j6zj2lwkNOsXUUPe"
     },
     {
       "_id": "Y8W7Mp8xVqTOTcDg",
-      "documentCollection": "cyberpunk-red-core.dlc_woodchippers-garage",
-      "documentId": "moqJ5beR4WqWCpZM",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/GrenadeLauncher.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/GrenadeLauncher.svg",
       "range": [
         4,
         4
       ],
-      "text": "Flare Gun",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Flare Gun",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_woodchippers-garage.Item.moqJ5beR4WqWCpZM",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.Y8W7Mp8xVqTOTcDg"
     },
     {
       "_id": "HEpyqeyPVjaNh0Uf",
-      "documentCollection": "cyberpunk-red-core.core_armor",
-      "documentId": "Bg1YEeF25HhfrzOG",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/armor/bullet_proof_shield.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/armor/bullet_proof_shield.svg",
       "range": [
         5,
         5
       ],
-      "text": "Bullet Proof Shield",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460976,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460976,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Bullet Proof Shield",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_armor.Item.Bg1YEeF25HhfrzOG",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.HEpyqeyPVjaNh0Uf"
     },
     {
       "_id": "CLYP5a79aDXgfBJc",
-      "documentCollection": "cyberpunk-red-core.dlc_the-12-days-of-gunmas",
-      "documentId": "cUgtpdroFgBBJGam",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/veryHeavyPistol.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/veryHeavyPistol.svg",
       "range": [
         6,
         6
       ],
-      "text": "Crusher",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460976,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460976,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Crusher",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_the-12-days-of-gunmas.Item.cUgtpdroFgBBJGam",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.CLYP5a79aDXgfBJc"
     },
     {
       "_id": "JmBWc0G5bpw0tIC7",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "WOJD6hQVUVEK8AsJ",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolheavy_rubber.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolheavy_rubber.png",
       "range": [
         2,
         2
       ],
-      "text": "Heavy Pistol (Rubber)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460978,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460978,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Heavy Pistol (Rubber)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.WOJD6hQVUVEK8AsJ",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.JmBWc0G5bpw0tIC7"
     },
     {
       "_id": "csBVQiIWZ7TzP3ni",
-      "documentCollection": "cyberpunk-red-core.core_gear",
-      "documentId": "EUZBOSRdQWOqKVUg",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/gear/roadflare.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/gear/roadflare.svg",
       "range": [
         4,
         4
       ],
-      "text": "Road Flare",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460982,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460982,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Road Flare",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_gear.Item.EUZBOSRdQWOqKVUg",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.csBVQiIWZ7TzP3ni"
     },
     {
       "_id": "srJ48dB0LAX4UuXl",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "mkI1KpjAOUz9PxRM",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/shotgun_shell_basic.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/shotgun_shell_basic.png",
       "range": [
         6,
         6
       ],
-      "text": "Shotgun Shell (Basic)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460983,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460983,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Shotgun Shell (Basic)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.mkI1KpjAOUz9PxRM",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.srJ48dB0LAX4UuXl"
     },
     {
       "_id": "8GiUMH48KDkiJc3c",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "jmia1vHSv6bdQEVP",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/pistolheavy_basic.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/pistolheavy_basic.png",
       "range": [
         2,
         2
       ],
-      "text": "Heavy Pistol (Basic)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460978,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460978,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Heavy Pistol (Basic)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.jmia1vHSv6bdQEVP",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!xWZowpQzG7fpmoP7.8GiUMH48KDkiJc3c"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460987,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460987,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!xWZowpQzG7fpmoP7"
 }

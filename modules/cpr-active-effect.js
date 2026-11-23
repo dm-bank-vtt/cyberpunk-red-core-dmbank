@@ -1,5 +1,22 @@
-import CPRActor from "./actor/cpr-actor.js";
-import LOGGER from "./utils/cpr-logger.js";
+/**
+ * Mapping between the legacy numeric Active Effect change modes (CONST.ACTIVE_EFFECT_MODES, V13 and older)
+ * and the string change types used by Foundry V14+ (EffectChangeData#type).
+ */
+export const CHANGE_MODE_TO_TYPE = {
+  0: "custom",
+  1: "multiply",
+  2: "add",
+  3: "downgrade",
+  4: "upgrade",
+  5: "override",
+};
+
+export const CHANGE_TYPE_TO_MODE = Object.fromEntries(
+  Object.entries(CHANGE_MODE_TO_TYPE).map(([mode, type]) => [
+    type,
+    Number(mode),
+  ])
+);
 
 /**
  * Extend the base ActiveEffect class to implement system-specific logic.
@@ -7,21 +24,60 @@ import LOGGER from "./utils/cpr-logger.js";
  */
 export default class CPRActiveEffect extends ActiveEffect {
   /**
-   * We extend the constructor to initialize CPR data structures used for tracking the CPRActiveEffect
-   * With V10, Foundry moved all system data points into {obj}.system, so we will follow suit with
-   * active effects
+   * Foundry V14 moved the changes array from ActiveEffect#changes to ActiveEffect#system#changes.
+   * Most of this system (and its templates) reads `effect.changes`, so we return the right array
+   * for whichever generation of Foundry we are running on.
    *
-   * @constructor
-   * @param {*} object - the Foundry object data for an Active Effect
-   * @param {*} options - The Foundry options for an Active Effect
+   * @param {ActiveEffect|Object} effect
+   * @returns {Array<Object>}
    */
-  constructor(object = {}, options = {}) {
-    super(object, options);
-    if (!this.system) {
-      this.system = {
-        isSuppressed: false,
-      };
+  static getChanges(effect) {
+    if (!effect) return [];
+    const systemChanges = effect.system?.changes;
+    if (Array.isArray(systemChanges)) return systemChanges;
+    const sourceChanges = effect._source?.changes ?? effect.changes;
+    return Array.isArray(sourceChanges) ? sourceChanges : [];
+  }
+
+  /**
+   * The data path at which the changes array is stored for updates.
+   *
+   * @param {ActiveEffect} effect
+   * @returns {String}
+   */
+  static getChangesPath(effect) {
+    return Array.isArray(effect?.system?.changes) ? "system.changes" : "changes";
+  }
+
+  /**
+   * Return the legacy numeric change mode of a change, whether the change uses the V14 `type`
+   * string or the older numeric `mode`.
+   *
+   * @param {Object} change
+   * @returns {Number}
+   */
+  static getChangeMode(change) {
+    if (!change) return 2;
+    if (typeof change.mode === "number") return change.mode;
+    if (typeof change.changeMode === "number") return change.changeMode;
+    if (typeof change.type === "string" && change.type in CHANGE_TYPE_TO_MODE) {
+      return CHANGE_TYPE_TO_MODE[change.type];
     }
+    const parsed = Number.parseInt(change.mode, 10);
+    return Number.isNaN(parsed) ? 2 : parsed;
+  }
+
+  /**
+   * Build the data for a new change, in the format the running Foundry version expects.
+   *
+   * @param {Object} data - {key, value, mode}
+   * @returns {Object}
+   */
+  static buildChange({ key = "", value = "0", mode = 2 } = {}) {
+    if (game.release.generation >= 14) {
+      return { key, value, type: CHANGE_MODE_TO_TYPE[mode] ?? "add" };
+    }
+    return { key, value, mode };
   }
 
   /**
@@ -33,7 +89,7 @@ export default class CPRActiveEffect extends ActiveEffect {
   get usage() {
     const item = this.parent;
     if (!item) return null;
-    return item.system.usage;
+    return item.system?.usage ?? null;
   }
 
   /**
@@ -47,34 +103,43 @@ export default class CPRActiveEffect extends ActiveEffect {
   }
 
   /**
-   * Check if this effect is suppressed before applying it. Taken from the 5E code in
-   * active-effect.js.
+   * Determine if this effect is suppressed because of some game mechanic, like the item is not
+   * equipped. Foundry skips suppressed effects when applying them to an actor, so overriding this
+   * getter is all that is needed to keep unequipped/uninstalled gear from applying its mods.
    *
    * @override
-   * @param {CPRActor} actor - who's getting the active effect?
-   * @param {Object} change - the change to apply from an effect
-   * @returns null if this is suppressed, apply() otherwise
+   * @returns {Boolean}
    */
-  apply(actor, change) {
-    if (this.system.isSuppressed) return null;
-    return super.apply(actor, change);
+  get isSuppressed() {
+    if (super.isSuppressed) return true;
+    if (this.disabled) return false;
+    const doc = this.parent;
+    if (!doc) return false; // happens on item delete
+    if (doc.documentName === "Actor") return false; // we never suppress actor effects
+    if (typeof doc.areEffectsSuppressed !== "function") return false;
+    try {
+      return !!doc.areEffectsSuppressed();
+    } catch (err) {
+      return false;
+    }
   }
 
   /**
-   * Determine if this effect is suppressed because of some game mechanic, like the item is not equipped.
-   * This was mostly copied from the dnd5e module in active-effect.js.
-   *
-   * Warning: If errors are thrown in this method, they'll show up early on loading Foundry,
-   * and break basic functionality, for example, in actor.getData.
-   *
-   * @returns nothing, it only sets the isSuppressed property (it's a mutator)
+   * Kept for backwards compatibility with code that still calls it. Suppression is now computed
+   * on the fly by the isSuppressed getter.
    */
-  determineSuppression() {
-    this.system.isSuppressed = false;
-    if (this.disabled) return;
-    const doc = this.parent;
-    if (!doc) return; // happens on item delete
-    if (doc instanceof CPRActor) return; // we never suppress actor effects
-    this.system.isSuppressed = doc.areEffectsSuppressed();
-  }
+  // eslint-disable-next-line class-methods-use-this
+  determineSuppression() {}
+}
+
+// On Foundry V14+ `changes` is no longer a field of ActiveEffect itself. Provide a getter so the
+// rest of the system and its Handlebars templates (`effect.changes`) keep working.
+if (!("changes" in (ActiveEffect.schema?.fields ?? {}))) {
+  Object.defineProperty(CPRActiveEffect.prototype, "changes", {
+    get() {
+      const changes = this.system?.changes ?? this._source?.changes;
+      return Array.isArray(changes) ? changes : [];
+    },
+    configurable: true,
+  });
 }

@@ -21,7 +21,7 @@
           {{#each faces as |dieFace| }}
             {{#if (cprCompare (cprCompare ../die "===" "d6") "||" (cprCompare ../die "===" "d10")) }}
               <img class="{{cprDiceSizeImageClass ../formula}}"
-                   src="systems/cyberpunk-red-core/icons/dice/black/{{../die}}_{{dieFace}}.svg"/>
+                   src="systems/cyberpunk-red-core-dmbank/icons/dice/black/{{../die}}_{{dieFace}}.svg"/>
             {{else}}
               <span class="text-large">{{dieFace}}</span>
             {{/if}}
@@ -35,7 +35,7 @@
         <div class="{{die}}-data-div">
           <div class="{{die}}-data-details hide">
             {{#if (cprCompare mods.length "||" additionalMods.length) }}
-              {{> "systems/cyberpunk-red-core/templates/chat/cpr-rollcard-modifiers.hbs" this}}
+              {{> "systems/cyberpunk-red-core-dmbank/templates/chat/cpr-rollcard-modifiers.hbs" this}}
             {{/if}}
           </div>
         </div>

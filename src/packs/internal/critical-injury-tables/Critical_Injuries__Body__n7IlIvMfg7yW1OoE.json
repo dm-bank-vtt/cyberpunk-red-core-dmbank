@@ -3,259 +3,324 @@
   "description": "",
   "displayRoll": true,
   "formula": "2d6",
-  "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/body_critical_injury.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/body_critical_injury.svg",
   "name": "Critical Injuries (Body)",
   "replacement": true,
   "results": [
     {
       "_id": "ZieosouBln5Il2tk",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "9N6yHeVwiGg2MkeL",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/dismembered_arm.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/dismembered_arm.svg",
       "range": [
         2,
         2
       ],
-      "text": "Dismembered Arm",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461052,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461052,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Dismembered Arm",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.9N6yHeVwiGg2MkeL",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.ZieosouBln5Il2tk"
     },
     {
       "_id": "odZ5Yyt3WOrNSKzV",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "xmlFB3X2q2NAklfn",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/dismembered_hand.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/dismembered_hand.svg",
       "range": [
         3,
         3
       ],
-      "text": "Dismembered Hand",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461052,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461052,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Dismembered Hand",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.xmlFB3X2q2NAklfn",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.odZ5Yyt3WOrNSKzV"
     },
     {
       "_id": "TGVSxOE3pxFV34Sm",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "RAZcouFe0FS1VN1o",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/collapsed_lung.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/collapsed_lung.svg",
       "range": [
         4,
         4
       ],
-      "text": "Collapsed Lung",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461051,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461051,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Collapsed Lung",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.RAZcouFe0FS1VN1o",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.TGVSxOE3pxFV34Sm"
     },
     {
       "_id": "unBMWAiXQKK6GY0M",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "MQpiPgEtPaIe6MJ6",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/broken_ribs.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/broken_ribs.svg",
       "range": [
         5,
         5
       ],
-      "text": "Broken Ribs",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461051,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461051,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Broken Ribs",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.MQpiPgEtPaIe6MJ6",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.unBMWAiXQKK6GY0M"
     },
     {
       "_id": "O1dQcS4a7PmVCp5J",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "Y65igO9rtakP4qSs",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/broken_arm.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/broken_arm.svg",
       "range": [
         6,
         6
       ],
-      "text": "Broken Arm",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461050,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461050,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Broken Arm",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.Y65igO9rtakP4qSs",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.O1dQcS4a7PmVCp5J"
     },
     {
       "_id": "RCLUsZLr404b5IcV",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "xTQ2T50UGNY8DrHl",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/foreign_object_body.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/foreign_object_body.svg",
       "range": [
         7,
         7
       ],
-      "text": "Foreign Object",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461052,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461052,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Foreign Object",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.xTQ2T50UGNY8DrHl",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.RCLUsZLr404b5IcV"
     },
     {
       "_id": "QGtmPYrCvP88rKzC",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "yBy9rlhgZeaWGtHh",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/broken_leg.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/broken_leg.svg",
       "range": [
         8,
         8
       ],
-      "text": "Broken Leg",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461051,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461051,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Broken Leg",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.yBy9rlhgZeaWGtHh",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.QGtmPYrCvP88rKzC"
     },
     {
       "_id": "dpYAJWeQ1uDXPo0S",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "Z3iVuSFtma3Bx7SX",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/torn_muscle.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/torn_muscle.svg",
       "range": [
         9,
         9
       ],
-      "text": "Torn Muscle",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461053,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461053,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Torn Muscle",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.Z3iVuSFtma3Bx7SX",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.dpYAJWeQ1uDXPo0S"
     },
     {
       "_id": "juZQlAH6geJgCHw4",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "pQ2F7FsQvZJyZGXe",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/spinal_injury.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/spinal_injury.svg",
       "range": [
         10,
         10
       ],
-      "text": "Spinal Injury",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461053,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461053,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Spinal Injury",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.pQ2F7FsQvZJyZGXe",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.juZQlAH6geJgCHw4"
     },
     {
       "_id": "YhW9mFW9i6vzKbBU",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "IKKcCgHU1lBJ4wVd",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/crushed_fingers.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/crushed_fingers.svg",
       "range": [
         11,
         11
       ],
-      "text": "Crushed Fingers",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461051,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461051,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Crushed Fingers",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.IKKcCgHU1lBJ4wVd",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.YhW9mFW9i6vzKbBU"
     },
     {
       "_id": "ysFKhaP2wS8HHg8A",
-      "documentCollection": "cyberpunk-red-core.core_critical-injuries-body",
-      "documentId": "vRhxMWgOHYROHeHm",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/dismembered_leg.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/dismembered_leg.svg",
       "range": [
         12,
         12
       ],
-      "text": "Dismembered Leg",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461052,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461052,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Dismembered Leg",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_critical-injuries-body.Item.vRhxMWgOHYROHeHm",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!n7IlIvMfg7yW1OoE.ysFKhaP2wS8HHg8A"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461053,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461053,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!n7IlIvMfg7yW1OoE"
 }

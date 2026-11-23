@@ -9,143 +9,183 @@
   "results": [
     {
       "_id": "JiMN6zADBZGPIqHC",
-      "documentCollection": "cyberpunk-red-core.core_clothing",
-      "documentId": "Xi3LUVQem3nBHgB1",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/clothing/generic_mirrorshades.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/clothing/generic_mirrorshades.svg",
       "range": [
         1,
         1
       ],
-      "text": "Bohemian Mirrorshades",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460976,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460976,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Bohemian Mirrorshades",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_clothing.Item.Xi3LUVQem3nBHgB1",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.JiMN6zADBZGPIqHC"
     },
     {
       "_id": "wqG4JWoUVJYhyJqH",
-      "documentCollection": "cyberpunk-red-core.black-chrome_armor",
-      "documentId": "OzfbjQ3nPCCf6BQQ",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/street-viper-riding-suit.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/street-viper-riding-suit.svg",
       "range": [
         2,
         2
       ],
-      "text": "Street Viper Riding Suit",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Street Viper Riding Suit",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_armor.Item.OzfbjQ3nPCCf6BQQ",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.wqG4JWoUVJYhyJqH"
     },
     {
       "_id": "qVw9IIb1peHOxlXK",
-      "documentCollection": "cyberpunk-red-core.black-chrome_cyberware",
-      "documentId": "BYDAED1axkFYm1h9",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cybereye.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/cyberware/cybereye.svg",
       "range": [
         3,
         3
       ],
-      "text": "Sponsored Cybereye",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Sponsored Cybereye",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_cyberware.Item.BYDAED1axkFYm1h9",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.qVw9IIb1peHOxlXK"
     },
     {
       "_id": "C1PBkQkgZesy7QSz",
-      "documentCollection": "cyberpunk-red-core.black-chrome_armor",
-      "documentId": "xVE36X9aE4m3mRza",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/skidrow-trench.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/skidrow-trench.svg",
       "range": [
         4,
         4
       ],
-      "text": "Skid Row Trench",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460983,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460983,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Skid Row Trench",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_armor.Item.xVE36X9aE4m3mRza",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.C1PBkQkgZesy7QSz"
     },
     {
       "_id": "1luj1hZCHHXcW6eT",
-      "documentCollection": "cyberpunk-red-core.dlc_hornets-pharmacy",
-      "documentId": "RZ7P9nSOB21pfiaI",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/hornets_pharmacy/prime_time.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/hornets_pharmacy/prime_time.svg",
       "range": [
         5,
         5
       ],
-      "text": "Prime Time",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460980,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460980,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Prime Time",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_hornets-pharmacy.Item.RZ7P9nSOB21pfiaI",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.1luj1hZCHHXcW6eT"
     },
     {
       "_id": "xdzTOenYphIk50Dk",
-      "documentCollection": "cyberpunk-red-core.black-chrome_armor",
-      "documentId": "fyi3U9v6On4r1iiO",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/laser-light-street-jacket.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/laser-light-street-jacket.svg",
       "range": [
         6,
         6
       ],
-      "text": "Laser Light Street Jacket",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460978,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460978,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Laser Light Street Jacket",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_armor.Item.fyi3U9v6On4r1iiO",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!VszxZ4TJjQ8FGuoc.xdzTOenYphIk50Dk"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460987,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460987,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!VszxZ4TJjQ8FGuoc"
 }

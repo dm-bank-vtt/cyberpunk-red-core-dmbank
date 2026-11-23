@@ -3,33 +3,16 @@
   "effects": [
     {
       "_id": "nQeh4cCSn7qDzjYj",
-      "changes": [
-        {
-          "key": "bonuses.ranged",
-          "mode": 2,
-          "priority": null,
-          "value": "-4"
-        },
-        {
-          "key": "bonuses.perceptionSight",
-          "mode": 2,
-          "priority": null,
-          "value": "-4"
-        }
-      ],
       "description": "",
       "disabled": false,
       "duration": {
-        "combat": null,
-        "rounds": null,
-        "seconds": null,
-        "startRound": null,
-        "startTime": null,
-        "startTurn": null,
-        "turns": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
-        "cyberpunk-red-core": {
+        "cyberpunk-red-core-dmbank": {
           "changes": {
             "cats": {
               "0": "combat",
@@ -48,31 +31,56 @@
           }
         }
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/lost_eye.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/lost_eye.svg",
       "name": "Lost Eye",
       "statuses": [],
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "bonuses.ranged",
+            "priority": null,
+            "value": -4,
+            "type": "add"
+          },
+          {
+            "key": "bonuses.perceptionSight",
+            "priority": null,
+            "value": -4,
+            "type": "add"
+          }
+        ]
+      },
       "transfer": true,
       "type": "base",
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460837,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460837,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
       "_key": "!items.effects!vysFvuTpuG2aDDIz.nQeh4cCSn7qDzjYj"
     }
   ],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/critical_injuries/lost_eye.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/critical_injuries/lost_eye.svg",
   "name": "Lost Eye",
   "system": {
     "deathSaveIncrease": true,
@@ -100,11 +108,20 @@
   },
   "type": "criticalInjury",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460836,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460836,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!vysFvuTpuG2aDDIz"
 }

@@ -2,14 +2,14 @@
   "_id": "Hp1BPN8A3ZlBjZ2q",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Skill.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Skill.svg",
   "name": "Science (Physics)",
   "system": {
     "basic": false,
@@ -30,11 +30,20 @@
   },
   "type": "skill",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460919,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460919,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!Hp1BPN8A3ZlBjZ2q"
 }

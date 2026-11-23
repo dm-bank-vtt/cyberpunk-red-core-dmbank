@@ -36,7 +36,7 @@
             {{localize "CPR.containerSheet.settings.eurobucks.label"}}:
           </div>
           <div class="item-end eurobucks-value">
-            {{#if (cprCompare actor.flags.cyberpunk-red-core.container-type "!==" "loot")}}
+            {{#if (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "!==" "loot")}}
               {{cprNumberFormat actor.system.wealth.value}}
             {{else}}
               <span data-tooltip="Eurobucks not supported for 'loot' containers">
@@ -45,7 +45,7 @@
             {{/if}}
           </div>
           {{#if isGM }}
-            {{#if (cprCompare actor.flags.cyberpunk-red-core.container-type "!==" "loot")}}
+            {{#if (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "!==" "loot")}}
               <a class="eurobucks-open-ledger"
                  data-tooltip="{{localize "CPR.ledger.ledgerOpen"}}">
                 <i class="fas fa-note-sticky"></i>
@@ -68,15 +68,15 @@
             </div>
             <div class="item-end">
               <select class="container-type-dropdown">
-                {{selectOptions (cprFindConfigObj "containerType") selected=actor.flags.cyberpunk-red-core.container-type localize=true}}
+                {{selectOptions (cprFindConfigObj "containerType") selected=actor.flags.cyberpunk-red-core-dmbank.container-type localize=true}}
               </select>
             </div>
           </li>
-        {{#if (cprCompare actor.flags.cyberpunk-red-core.container-type "===" "custom") }}
+        {{#if (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" "custom") }}
           <li class="item flexrow container-type-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="items-free">
-                {{#if actor.flags.cyberpunk-red-core.items-free }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.items-free }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -86,7 +86,7 @@
             </div>
           </li>
         {{/if}}
-        {{#if (cprCompare actor.flags.cyberpunk-red-core.container-type "===" "shop") }}
+        {{#if (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" "shop") }}
           <li class="item flexrow container-shop-settings">
             <div class="item-name text-semi text-center">
               <a class="vendor-configure-sell-to">
@@ -95,11 +95,11 @@
             </div>
           </li>
         {{/if}}
-        {{#if (cprCompare (cprCompare (cprCompare actor.flags.cyberpunk-red-core.container-type "===" "custom") "||" (cprCompare actor.flags.cyberpunk-red-core.container-type "===" "shop")) "||" (cprCompare actor.flags.cyberpunk-red-core.container-type "===" undefined)) }}
+        {{#if (cprCompare (cprCompare (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" "custom") "||" (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" "shop")) "||" (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" undefined)) }}
           <li class="item flexrow">
             <div class="item-name container-shop-settings">
               <a class="checkbox-toggle" data-flag-name="infinite-stock">
-                {{#if actor.flags.cyberpunk-red-core.infinite-stock }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.infinite-stock }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -109,7 +109,7 @@
             </div>
           </li>
         {{/if}}
-        {{#if (cprCompare actor.flags.cyberpunk-red-core.container-type "===" "custom") }}
+        {{#if (cprCompare actor.flags.cyberpunk-red-core-dmbank.container-type "===" "custom") }}
           <li class="item flexrow container-shop-settings">
             <div class="item-name text-semi">
               {{localize "CPR.containerSheet.settings.playersCan"}}:
@@ -118,7 +118,7 @@
           <li class="item flexrow container-shop-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="players-create">
-                {{#if actor.flags.cyberpunk-red-core.players-create }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.players-create }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -130,7 +130,7 @@
           <li class="item flexrow container-shop-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="players-delete">
-                {{#if actor.flags.cyberpunk-red-core.players-delete }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.players-delete }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -142,7 +142,7 @@
           <li class="item flexrow container-shop-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="players-modify">
-                {{#if actor.flags.cyberpunk-red-core.players-modify }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.players-modify }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -154,14 +154,14 @@
           <li class="item flexrow container-shop-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="players-sell">
-                {{#if actor.flags.cyberpunk-red-core.players-sell }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.players-sell }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
                 {{/if}}
               </a>
               {{localize "CPR.containerSheet.settings.playersSell"}}
-              {{#if actor.flags.cyberpunk-red-core.players-sell }}
+              {{#if actor.flags.cyberpunk-red-core-dmbank.players-sell }}
                 <a class="vendor-configure-sell-to"><i class="text-small text-super fas fa-wrench"></i></a>
               {{/if}}
             </div>
@@ -169,7 +169,7 @@
           <li class="item flexrow container-shop-settings">
             <div class="item-name">
               <a class="checkbox-toggle" data-flag-name="players-move">
-                {{#if actor.flags.cyberpunk-red-core.players-move }}
+                {{#if actor.flags.cyberpunk-red-core-dmbank.players-move }}
                   <i class="far fa-circle-check"></i>
                 {{else}}
                   <i class="far fa-circle"></i>
@@ -210,7 +210,7 @@
                 {{localize "CPR.global.generic.price"}}
               </span>
               <span class="item-end text-nowrap">
-                {{#if (cprCompare ../isGM "||" ../actor.flags.cyberpunk-red-core.players-create) }}
+                {{#if (cprCompare ../isGM "||" ../actor.flags.cyberpunk-red-core-dmbank.players-create) }}
                   <a class="item-create"
                      data-tooltip="{{localize "CPR.actorSheets.commonActions.createNewItem"}}"
                      data-item-type="{{c}}">
@@ -222,7 +222,7 @@
             <ol class="items-list">
               {{#each (cprSort (cprGetProp ../actor.itemTypes c) "name") as |item i| }}
                 {{!-- Row for individual item --}}
-                {{> "systems/cyberpunk-red-core/templates/actor/container/cpr-item-content.hbs" (cprMergeForPartialArg "item,actor,isGM,collapsed" item ../../actor ../../isGM ../../this.options.collapsedSections)}}
+                {{> "systems/cyberpunk-red-core-dmbank/templates/actor/container/cpr-item-content.hbs" (cprMergeForPartialArg "item,actor,isGM,collapsed" item ../../actor ../../isGM ../../this.options.collapsedSections)}}
               {{/each}}
             </ol>
           </div>

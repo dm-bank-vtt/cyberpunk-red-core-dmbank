@@ -1,0 +1,587 @@
+/* =====================================================================
+   Cyberpunk RED Core - DM Bank :: Cyberware body scan (Cyber tab)
+   ===================================================================== */
+
+.tab.cyberware-tab.nc-hud-mode > :not(.nc-cyberhud) {
+  display: none !important;
+}
+.nc-cyberhud {
+  --nc-tile: 34px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  min-height: 430px;
+  padding: 4px 6px 6px;
+  color: var(--nc-text, #f2e9ea);
+  font-family: var(--nc-font-hud, "Tektur", sans-serif);
+  background:
+    radial-gradient(60% 55% at 50% 45%, rgba(255, 42, 61, 0.12), transparent 70%),
+    repeating-linear-gradient(0deg, rgba(255, 42, 61, 0.04) 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(90deg, rgba(255, 42, 61, 0.04) 0 1px, transparent 1px 22px);
+}
+.nc-cyberhud.nc-collapsed {
+  min-height: 0;
+  height: auto;
+  background: none;
+  margin-bottom: 4px;
+}
+.nc-cyberhud.nc-collapsed .nc-cyber-stage,
+.nc-cyberhud.nc-collapsed .nc-cyber-inv {
+  display: none;
+}
+
+/* top bar */
+.nc-cyber-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--nc-red, #ff2a3d);
+  padding-bottom: 4px;
+}
+.nc-cyber-title {
+  color: var(--nc-red-hot, #ff4d5e);
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.nc-cyber-title span {
+  color: var(--nc-cyan, #3ef2ff);
+  font-size: 0.7rem;
+}
+.nc-cyber-view {
+  margin-left: auto;
+  display: flex;
+  gap: 2px;
+}
+.nc-cyber-view a {
+  padding: 1px 8px;
+  border: 1px solid rgba(255, 42, 61, 0.45);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--nc-text-dim, #a8979b);
+}
+.nc-cyber-view a.active {
+  background: var(--nc-red, #ff2a3d);
+  color: #fff;
+}
+
+/* humanity bar */
+.nc-hum {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+.nc-hum-label b,
+.nc-hum-emp b {
+  color: var(--nc-cyan, #3ef2ff);
+  font-weight: normal;
+  font-size: 0.95rem;
+  text-shadow: 0 0 6px rgba(62, 242, 255, 0.6);
+}
+.nc-hum-bar {
+  position: relative;
+  flex: 1;
+  min-width: 80px;
+  height: 9px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(62, 242, 255, 0.35);
+}
+.nc-hum-cap {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: repeating-linear-gradient(90deg, rgba(62, 242, 255, 0.12) 0 4px, transparent 4px 6px);
+}
+.nc-hum-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: linear-gradient(90deg, #1aa9b4, var(--nc-cyan, #3ef2ff));
+  box-shadow: 0 0 8px rgba(62, 242, 255, 0.6);
+  transition: width 0.5s ease;
+}
+.nc-hum-bar i {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+.nc-hum .nc-ok {
+  color: #4dff9a;
+}
+.nc-hum .nc-warn {
+  color: var(--nc-red-hot, #ff4d5e);
+  animation: nc-blink 0.9s steps(1) infinite;
+}
+.nc-hum.nc-risk .nc-hum-fill {
+  background: linear-gradient(90deg, #b8a100, var(--nc-yellow, #f3e600));
+}
+.nc-hum.nc-psycho .nc-hum-fill {
+  background: var(--nc-red, #ff2a3d);
+  box-shadow: 0 0 12px var(--nc-red, #ff2a3d);
+}
+
+/* stage */
+.nc-cyber-stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 0.7fr) minmax(0, 1fr);
+  gap: 6px;
+  min-height: 330px;
+}
+.nc-links {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
+}
+.nc-links .nc-link {
+  fill: none;
+  stroke: var(--nc-red, #ff2a3d);
+  stroke-width: 1;
+  stroke-opacity: 0.75;
+  stroke-dasharray: 3 3;
+  animation: nc-dash 1.2s linear infinite;
+}
+.nc-links .nc-link-dot {
+  fill: var(--nc-cyan, #3ef2ff);
+}
+.nc-links .nc-link-dim {
+  stroke-opacity: 0.25;
+  fill-opacity: 0.35;
+}
+@keyframes nc-dash {
+  to {
+    stroke-dashoffset: -12;
+  }
+}
+.nc-col {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4px;
+  min-width: 0;
+}
+.nc-col-left {
+  align-items: flex-end;
+  text-align: right;
+}
+.nc-col-right {
+  align-items: flex-start;
+}
+
+/* system panels */
+.nc-sys {
+  max-width: 100%;
+}
+.nc-sys header {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+.nc-sys-label {
+  color: var(--nc-red-hot, #ff4d5e);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 42, 61, 0.45);
+}
+.nc-sys-sub {
+  font-size: 0.55rem;
+  color: var(--nc-text-dim, #a8979b);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.nc-sys-status {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nc-cyan, #3ef2ff);
+  margin: 1px 0 2px;
+}
+.nc-sys-status b {
+  display: inline-block;
+  min-width: 2.2em;
+  padding: 0 3px;
+  background: rgba(62, 242, 255, 0.85);
+  color: #041214;
+  text-align: center;
+  font-weight: normal;
+}
+.nc-sys-status.nc-dim {
+  color: rgba(242, 233, 234, 0.4);
+}
+.nc-sys-status.nc-full b {
+  background: var(--nc-red, #ff2a3d);
+  color: #fff;
+}
+.nc-frow {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+.nc-col-left .nc-frow {
+  flex-direction: row-reverse;
+}
+.nc-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  max-width: calc(var(--nc-tile) * 4 + 9px);
+}
+.nc-col-left .nc-slots {
+  flex-direction: row-reverse;
+}
+
+/* tiles */
+.nc-tile {
+  position: relative;
+  width: var(--nc-tile);
+  height: var(--nc-tile);
+  flex: 0 0 var(--nc-tile);
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, rgba(40, 14, 20, 0.85), rgba(10, 8, 12, 0.85));
+  border: 1px solid rgba(255, 42, 61, 0.55);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%);
+  cursor: pointer;
+  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+}
+.nc-tile img {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  border: none;
+  filter: drop-shadow(0 0 3px rgba(255, 42, 61, 0.5));
+}
+.nc-tile::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 9px;
+  height: 9px;
+  background: linear-gradient(135deg, transparent 50%, var(--nc-cyan, #3ef2ff) 50%);
+}
+.nc-tile.nc-foundation {
+  border-color: var(--nc-cyan, #3ef2ff);
+  box-shadow: inset 3px 0 0 var(--nc-cyan, #3ef2ff);
+}
+.nc-tile:hover {
+  transform: translateY(-1px) scale(1.06);
+  border-color: var(--nc-cyan, #3ef2ff);
+  box-shadow: 0 0 10px rgba(62, 242, 255, 0.4);
+  z-index: 3;
+}
+.nc-tile.nc-empty {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px dashed rgba(255, 42, 61, 0.55);
+  color: rgba(255, 42, 61, 0.75);
+  font-size: 0.75rem;
+}
+.nc-tile.nc-empty::after {
+  display: none;
+}
+.nc-tile.nc-empty:hover {
+  color: var(--nc-cyan, #3ef2ff);
+}
+.nc-tile.nc-need-foundation {
+  opacity: 0.55;
+}
+.nc-tile-size {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  font-size: 0.5rem;
+  color: var(--nc-yellow, #f3e600);
+}
+.nc-tile-eject {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 0.55rem;
+  color: var(--nc-red-hot, #ff4d5e);
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.nc-tile:hover .nc-tile-eject {
+  opacity: 1;
+}
+.nc-more {
+  align-self: center;
+  font-size: 0.6rem;
+  color: var(--nc-text-dim, #a8979b);
+}
+
+/* body */
+.nc-body-wrap {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+.nc-body-svg {
+  width: 100%;
+  height: 100%;
+  max-height: 380px;
+  overflow: visible;
+}
+.nc-body-svg .nc-body-img {
+  filter: drop-shadow(0 0 6px rgba(255, 42, 61, 0.65)) drop-shadow(0 0 18px rgba(255, 80, 40, 0.35));
+  opacity: 0.86;
+  animation: nc-body-flicker 6s infinite;
+}
+.nc-body-svg .nc-body-scan {
+  animation: nc-body-scanmove 0.8s linear infinite;
+}
+.nc-body-svg .nc-body-sweep,
+.nc-body-svg .nc-body-sweepline {
+  animation: nc-body-sweep 4.2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+.nc-body-svg .nc-floor ellipse {
+  animation: nc-floor-dash 2.4s linear infinite;
+}
+.nc-body-svg .nc-floor ellipse + ellipse {
+  animation: nc-pulse 2s ease-in-out infinite;
+}
+.nc-body-svg .nc-body-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: nc-ring-spin 40s linear infinite;
+}
+.nc-body-svg .nc-body-halo2 {
+  animation: nc-pulse 3s ease-in-out infinite;
+}
+.nc-body-svg .nc-heart-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: nc-heart-ping 1.2s ease-out infinite;
+}
+.nc-body-count {
+  margin-top: 2px;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  color: var(--nc-cyan, #3ef2ff);
+  opacity: 0.8;
+}
+@keyframes nc-body-flicker {
+  0%,
+  93%,
+  100% {
+    opacity: 0.86;
+  }
+  94% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  96% {
+    opacity: 0.6;
+  }
+}
+@keyframes nc-body-scanmove {
+  to {
+    transform: translateY(8px);
+  }
+}
+@keyframes nc-floor-dash {
+  to {
+    stroke-dashoffset: -72;
+  }
+}
+@keyframes nc-ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nc-heart-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes nc-body-sweep {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1500px);
+    opacity: 0;
+  }
+}
+
+/* uninstalled strip */
+.nc-cyber-inv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 42, 61, 0.45);
+  padding-top: 4px;
+  min-width: 0;
+}
+.nc-inv-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--nc-red-hot, #ff4d5e);
+  white-space: nowrap;
+}
+.nc-inv-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
+.nc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 6px 1px 2px;
+  font-family: var(--nc-font-body, "Jost", sans-serif);
+  font-size: 0.72rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(62, 242, 255, 0.35);
+  color: var(--nc-text, #f2e9ea);
+}
+.nc-chip img {
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+.nc-chip:hover {
+  border-color: var(--nc-cyan, #3ef2ff);
+  color: var(--nc-cyan, #3ef2ff);
+}
+.nc-dim {
+  opacity: 0.5;
+}
+
+/* install picker dialog */
+.nc-pick-dialog .nc-pick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.nc-pick-dialog .nc-pick {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+.nc-pick-dialog .nc-pick img {
+  border: none;
+}
+.nc-pick-dialog .nc-pick small {
+  opacity: 0.6;
+  margin-left: auto;
+}
+
+/* ---------------------------------------------------------------------
+   Cyberpsychosis alert overlay
+   --------------------------------------------------------------------- */
+#nc-psycho-alert {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle, rgba(255, 0, 30, 0.25), rgba(40, 0, 6, 0.75));
+  animation: nc-psycho-flash 4.2s ease-out forwards;
+}
+#nc-psycho-alert .nc-psycho-box {
+  text-align: center;
+  font-family: var(--nc-font-hud, "Tektur", sans-serif);
+  color: #fff;
+  padding: 18px 40px;
+  border: 2px solid #ff2a3d;
+  background: rgba(10, 0, 3, 0.8);
+  box-shadow: 0 0 40px rgba(255, 42, 61, 0.8);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  animation: nc-glitch 0.18s steps(2) 12;
+}
+#nc-psycho-alert .nc-psycho-title {
+  font-size: 2.6rem;
+  letter-spacing: 0.18em;
+  color: #ff2a3d;
+  text-shadow: 3px 0 0 rgba(62, 242, 255, 0.8), -3px 0 0 rgba(255, 0, 80, 0.8);
+}
+#nc-psycho-alert .nc-psycho-name {
+  font-size: 1.3rem;
+  color: #3ef2ff;
+  letter-spacing: 0.1em;
+}
+@keyframes nc-psycho-flash {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  15%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* fit inside the sheet: scroll when the window is short */
+.tab.cyberware-tab.nc-hud-mode {
+  overflow-y: auto;
+}
+.nc-cyberhud {
+  height: auto;
+  min-height: 100%;
+}
+.nc-cyber-stage {
+  min-height: 300px;
+}
+.nc-cyber-inv {
+  position: relative;
+  z-index: 2;
+  background: rgba(8, 6, 10, 0.75);
+}
+.nc-inv-list {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.nc-chip {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.nc-body-svg .nc-body {
+  stroke-width: 1.4;
+}

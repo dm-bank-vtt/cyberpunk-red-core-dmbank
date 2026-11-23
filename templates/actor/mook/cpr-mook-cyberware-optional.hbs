@@ -14,7 +14,7 @@
     (
   {{/if~}}
   {{~#each cyberware.system.installedItems.list as |id|~}}
-    {{> "systems/cyberpunk-red-core/templates/actor/mook/cpr-mook-cyberware-optional.hbs" (cprMergeForPartialArg "actor,cyberware" ../actor (cprGetOwnedItem ../actor id))}}
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mook/cpr-mook-cyberware-optional.hbs" (cprMergeForPartialArg "actor,cyberware" ../actor (cprGetOwnedItem ../actor id))}}
   {{~/each}}
   {{~#if (cprCompare cyberware.system.hasInstalled)~}}
     )

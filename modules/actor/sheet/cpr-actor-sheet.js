@@ -15,7 +15,7 @@ import { ContainerUtils } from "../../item/mixins/cpr-container.js";
  * is used for common code between Mook sheets and Character sheets.
  * @extends {ActorSheet}
  */
-export default class CPRActorSheet extends ActorSheet {
+export default class CPRActorSheet extends foundry.appv1.sheets.ActorSheet {
   /**
    * We extend the constructor to initialize data structures used for tracking parts of the sheet
    * being collapsed or opened, such as skill categories. These structures are later loaded from
@@ -103,7 +103,7 @@ export default class CPRActorSheet extends ActorSheet {
 
     cprData.enrichedHTML = [];
     if (this.actor.type !== "container") {
-      cprData.enrichedHTML.systemInformationNotes = await TextEditor.enrichHTML(
+      cprData.enrichedHTML.systemInformationNotes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         this.actor.system.information.notes,
         {
           async: true,
@@ -111,7 +111,7 @@ export default class CPRActorSheet extends ActorSheet {
       );
     }
     if (this.actor.type === "demon") {
-      cprData.enrichedHTML.systemNotes = await TextEditor.enrichHTML(
+      cprData.enrichedHTML.systemNotes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         this.actor.system.notes,
         {
           async: true,
@@ -120,80 +120,80 @@ export default class CPRActorSheet extends ActorSheet {
     }
     if (this.actor.type === "character") {
       cprData.enrichedHTML.systemLifepathCulturalOrigin =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.culturalOrigin, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.culturalOrigin, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathLanguages =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.languages, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.languages, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathPersonality =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.personality, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.personality, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathClothingStyle =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.clothingStyle, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.clothingStyle, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathHairStyle =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.hairStyle, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.hairStyle, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathAffectations =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.affectations, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.affectations, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathValueMost =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.valueMost, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.valueMost, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathAboutPeople =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.aboutPeople, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.aboutPeople, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathValuedPerson =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.valuedPerson, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.valuedPerson, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathValuedPossession =
-        await TextEditor.enrichHTML(
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
           this.actor.system.lifepath.valuedPossession,
           { async: true }
         );
       cprData.enrichedHTML.systemLifepathFamilyBackground =
-        await TextEditor.enrichHTML(
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
           this.actor.system.lifepath.familyBackground,
           { async: true }
         );
       cprData.enrichedHTML.systemLifepathChildhoodEnvironment =
-        await TextEditor.enrichHTML(
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
           this.actor.system.lifepath.childhoodEnvironment,
           { async: true }
         );
       cprData.enrichedHTML.systemLifepathFamilyCrisis =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.familyCrisis, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.familyCrisis, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathLifeGoals =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.lifeGoals, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.lifeGoals, {
           async: true,
         });
       cprData.enrichedHTML.systemLifepathRoleLifepath =
-        await TextEditor.enrichHTML(this.actor.system.lifepath.roleLifepath, {
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.lifepath.roleLifepath, {
           async: true,
         });
-      cprData.enrichedHTML.systemLifepathFriends = await TextEditor.enrichHTML(
+      cprData.enrichedHTML.systemLifepathFriends = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         this.actor.system.lifepath.friends,
         {
           async: true,
         }
       );
       cprData.enrichedHTML.systemLifepathTragicLoveAffairs =
-        await TextEditor.enrichHTML(
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
           this.actor.system.lifepath.tragicLoveAffairs,
           { async: true }
         );
-      cprData.enrichedHTML.systemLifepathEnemies = await TextEditor.enrichHTML(
+      cprData.enrichedHTML.systemLifepathEnemies = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         this.actor.system.lifepath.enemies,
         {
           async: true,
@@ -255,8 +255,9 @@ export default class CPRActorSheet extends ActorSheet {
         uuid: e.uuid,
         img: e.img,
         usage: e.usage,
+        isSuppressed: e.isSuppressed,
         system: {
-          isSuppressed: e.system.isSuppressed,
+          isSuppressed: e.isSuppressed,
         },
         disabled: e.disabled,
       };
@@ -269,12 +270,12 @@ export default class CPRActorSheet extends ActorSheet {
       ) {
         // Get effects with no changes and display in the Permanent Effects category.
         // This is a rare case where a user makes an effect but doesn't add any changes.
-        if (e.changes.length === 0 && !e.disabled && !e.system.isSuppressed) {
+        if (e.changes.length === 0 && !e.disabled && !e.isSuppressed) {
           categories.permanent.effects.push(simplifiedEffect);
         }
 
         // Get situational, non-disabled effects.
-        if (!e.disabled && !e.system.isSuppressed) {
+        if (!e.disabled && !e.isSuppressed) {
           const situationalMods = CPRMod.getAllModifiers([e]).filter(
             (m) => m.isSituational
           );
@@ -287,7 +288,7 @@ export default class CPRActorSheet extends ActorSheet {
         }
 
         // Get inactive (disabled or suppressed) effects.
-        if (e.disabled || e.system.isSuppressed) {
+        if (e.disabled || e.isSuppressed) {
           // The second argument in the following function is set to true, so that it gets disabled modifiers.
           simplifiedEffect.changes = CPRMod.getAllModifiers([e], true);
           categories.inactive.effects.push(simplifiedEffect);
@@ -800,7 +801,7 @@ export default class CPRActorSheet extends ActorSheet {
       // Only update if we aren't deleting the item.  Item deletion is handled in this._deleteOwnedItem()
       if (actionType !== "delete") {
         this.actor.updateEmbeddedDocuments("Item", [
-          { _id: item.id, system: item.system },
+          { _id: item.id, ...SystemUtils.SystemChanges(item) },
         ]);
       }
     }
@@ -872,7 +873,10 @@ export default class CPRActorSheet extends ActorSheet {
    */
   _updateOwnedItemProp(item, prop, value) {
     foundry.utils.setProperty(item, prop, value);
-    this._updateOwnedItem(item);
+    // Foundry V14: send the changed path explicitly (see _updateOwnedItem).
+    return this.actor.updateEmbeddedDocuments("Item", [
+      { _id: item.id, [prop]: value },
+    ]);
   }
 
   /**
@@ -884,10 +888,14 @@ export default class CPRActorSheet extends ActorSheet {
    * @returns - the updated object (document) or array of entities
    */
   _updateOwnedItem(item) {
+    // Foundry V14: send only the changed paths (see SystemUtils.SystemChanges).
+    const changes = SystemUtils.SystemChanges(item);
+    if (Object.keys(changes).length === 0) return Promise.resolve([]);
     return this.actor.updateEmbeddedDocuments("Item", [
-      { _id: item.id, system: item.system },
+      { _id: item.id, ...changes },
     ]);
   }
+
 
   /**
    * Render the item card (chat message) when ctrl-click happens on an item link, or display
@@ -1208,7 +1216,7 @@ export default class CPRActorSheet extends ActorSheet {
     for (const injury of table.results) {
       if (
         this.actor.itemTypes.criticalInjury.filter(
-          (i) => i.name === injury.text
+          (i) => i.name === SystemUtils.GetTableResultText(injury)
         ).length > 0
       ) {
         hurts += 1;
@@ -1232,7 +1240,7 @@ export default class CPRActorSheet extends ActorSheet {
         return;
       }
       // find the critical injury item that turned up in the roll
-      const injuryName = res.results[0].text;
+      const injuryName = SystemUtils.GetTableResultText(res.results[0]);
       injury = await SystemUtils.GetCompendiumDoc(injuryCompName, injuryName);
       if (!injury) {
         SystemUtils.DisplayMessage(
@@ -1478,14 +1486,14 @@ export default class CPRActorSheet extends ActorSheet {
    * @returns {null}
    */
   async _onDrop(event) {
-    const dragData = TextEditor.getDragEventData(event);
+    const dragData = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
     return dragData.type === "Item"
       ? this._cprOnItemDrop(event)
       : super._onDrop(event);
   }
 
   async _cprOnItemDrop(event) {
-    const dragData = TextEditor.getDragEventData(event);
+    const dragData = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
     let sourceActor;
     const sourceItem = fromUuidSync(dragData.uuid);
     if (sourceItem.type === "cyberware" && sourceItem.system?.isInstalled) {

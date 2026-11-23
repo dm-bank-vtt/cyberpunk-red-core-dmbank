@@ -101,6 +101,102 @@ export default class CPRSystemUtils {
   }
 
   /**
+   * Foundry V14: a document's `system` DataModel serializes from its stored source, so code that
+   * mutates `doc.system` locally and then sends `{system: doc.system}` loses every change.
+   * This returns the changed schema values as flattened update paths ("system.foo.bar": value).
+   *
+   * @static
+   * @param {Document} doc - an Item or Actor whose `system` was mutated locally
+   * @returns {Object} - update data, e.g. {"system.magazine.value": 10}
+   */
+  static SystemChanges(doc) {
+    const toPlain = (value) => {
+      if (value instanceof Set) return Array.from(value, toPlain);
+      if (Array.isArray(value)) return value.map(toPlain);
+      if (value instanceof foundry.abstract.DataModel) return value.toObject();
+      if (value && typeof value === "object" && value.constructor === Object) {
+        const out = {};
+        for (const [k, v] of Object.entries(value)) out[k] = toPlain(v);
+        return out;
+      }
+      return value;
+    };
+    const fields = doc?.system?.schema?.fields ?? {};
+    const current = {};
+    for (const key of Object.keys(fields)) current[key] = toPlain(doc.system[key]);
+    const before = foundry.utils.flattenObject(doc?._source?.system ?? {});
+    const after = foundry.utils.flattenObject(current);
+    const changes = {};
+    for (const [key, value] of Object.entries(after)) {
+      if (JSON.stringify(before[key]) !== JSON.stringify(value)) {
+        changes[`system.${key}`] = value;
+      }
+    }
+    return changes;
+  }
+
+  /**
+   * Return the current roll mode using the legacy names ("publicroll", "gmroll", "blindroll",
+   * "selfroll"). Foundry V14 replaced the "core.rollMode" setting with "core.messageMode",
+   * which uses different names ("public", "gm", "blind", "self", "ic").
+   *
+   * @static
+   * @returns {String}
+   */
+  static GetRollMode() {
+    const toLegacy = {
+      public: "publicroll",
+      ic: "publicroll",
+      ooc: "publicroll",
+      gm: "gmroll",
+      blind: "blindroll",
+      self: "selfroll",
+    };
+    if (game.settings.settings.has("core.messageMode")) {
+      const mode = game.settings.get("core", "messageMode");
+      return toLegacy[mode] ?? mode;
+    }
+    return game.settings.get("core", "rollMode");
+  }
+
+  /**
+   * Convert a legacy roll mode name to a Foundry V14 message mode name.
+   *
+   * @static
+   * @param {String} rollMode
+   * @returns {String}
+   */
+  static RollModeToMessageMode(rollMode) {
+    const toMessageMode = {
+      publicroll: "public",
+      roll: "public",
+      gmroll: "gm",
+      blindroll: "blind",
+      selfroll: "self",
+    };
+    return toMessageMode[rollMode] ?? rollMode;
+  }
+
+  /**
+   * Return the text of a RollTable result. Foundry V13+ replaced TableResult#text with
+   * TableResult#name (document results) and TableResult#description (text results).
+   *
+   * @static
+   * @param {TableResult} result
+   * @returns {String}
+   */
+  static GetTableResultText(result) {
+    if (!result) return "";
+    const strip = (value) =>
+      typeof value === "string" ? value.replace(/<[^>]*>/g, "").trim() : "";
+    const legacy = strip(result._source?.text);
+    if (result.type === "text") {
+      return strip(result.description) || strip(result.name) || legacy;
+    }
+    return strip(result.name) || strip(result.description) || legacy;
+  }
+
+  /**
    * Set the selected theme
    *
    * @static
@@ -243,7 +339,7 @@ export default class CPRSystemUtils {
         if (result.type === "text") {
           const { range } = result;
           const key = `${range[0]}_${range[1]}`;
-          const dv = result.text;
+          const dv = CPRSystemUtils.GetTableResultText(result);
           dvSetting.table[key.toString()] = dv;
         }
       }
@@ -352,7 +448,11 @@ export default class CPRSystemUtils {
    *
    */
   static Format(string, object) {
-    return game.i18n.format(string, object);
+    // Foundry V14 merged i18n.format() into i18n.localize(string, data).
+    if (typeof game.i18n.format === "function") {
+      return game.i18n.format(string, object);
+    }
+    return game.i18n.localize(string, object);
   }
 
   /**

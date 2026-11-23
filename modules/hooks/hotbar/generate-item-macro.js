@@ -27,10 +27,10 @@ const hotbarHooks = () => {
       name: `${game.user.name} - ${document.name}`, // Prepend the user's name to prevent duplicates with different permissions.
       type: "script",
       img: document.img,
-      command: `Hotbar.toggleDocumentSheet("${document.uuid}")`,
+      command: `foundry.applications.ui.Hotbar.toggleDocumentSheet("${document.uuid}")`,
     };
     let macro = null;
-    let command = `Hotbar.toggleDocumentSheet("${document.uuid}")`;
+    let command = `foundry.applications.ui.Hotbar.toggleDocumentSheet("${document.uuid}")`;
     switch (data.type) {
       case "Item":
         {

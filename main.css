@@ -4829,3 +4829,57 @@ section {
 .editor-content {
   padding: 0.313rem;
 }
+
+/* Foundry V13/V14: ApplicationV2 Active Effect sheet */
+.cpr-active-effect-sheet .window-content {
+  overflow-y: auto;
+}
+.cpr-active-effect-sheet .sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cpr-active-effect-sheet .sheet-header .effect-icon {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  border: none;
+  cursor: pointer;
+  object-fit: contain;
+}
+.cpr-active-effect-sheet .sheet-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.25rem 0;
+}
+.cpr-active-effect-sheet .sheet-tabs .item {
+  cursor: pointer;
+}
+.cpr-active-effect-sheet .sheet-tabs .item.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.cpr-active-effect-sheet .sheet-footer button {
+  width: 100%;
+}
+
+/* Foundry V13/V14: core CSS lives in cascade layers, so the system's unlayered generic rules
+   (.flexcol, .flexrow, ...) were overriding core's "hide inactive tab" and ".hidden" rules.
+   That made every sidebar tab render at the same time. Restore the core behaviour. */
+.tab[data-tab]:not(.active) {
+  display: none;
+}
+:is(.flexrow, .flexcol, .flex-center, .flex-nowrap, .flex-space-between).hidden {
+  display: none;
+}
+
+/* Foundry V13/V14: an active tab container whose class matches the inner layout class
+   (e.g. "tab fight-tab" wrapping "div.fight-tab") picked up that grid layout too and squeezed
+   the real content into the first column. Tab containers are plain blocks. */
+.actor-sheet .right-content-section > .tab.active,
+.actor-sheet .bottom-content-section > .tab.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

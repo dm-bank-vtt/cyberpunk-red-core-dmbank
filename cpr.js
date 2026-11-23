@@ -24,6 +24,7 @@ import preloadHandlebarsTemplates from "./modules/system/preload-templates.js";
 import registerHandlebarsHelpers from "./modules/system/register-helpers.js";
 import overrideRulerFunctions from "./modules/system/overrides.js";
 import initalizeAPI from "./modules/api/initialize.js";
+import registerDmBank from "./modules/dmbank/index.js";
 
 // System settings
 import registerSystemSettings from "./modules/system/settings.js";
@@ -57,7 +58,22 @@ Hooks.once("init", async () => {
   LOGGER.log("THANK YOU TO EVERYONE WHO HELPED!!!!");
   LOGGER.credits();
   // Removes "Default Actor Sheet" option from sheet style selection and prevents users from breaking blackICE, containers, and demons
-  Actors.unregisterSheet("core", ActorSheet);
+  const { Actors, Items } = foundry.documents.collections;
+  const { DocumentSheetConfig } = foundry.applications.apps;
+  const unregisterCoreSheets = (collection, classes) => {
+    for (const cls of classes) {
+      if (!cls) continue;
+      try {
+        collection.unregisterSheet("core", cls);
+      } catch (err) {
+        LOGGER.debug(err);
+      }
+    }
+  };
+  unregisterCoreSheets(Actors, [
+    foundry.appv1?.sheets?.ActorSheet,
+    foundry.applications.sheets?.ActorSheetV2,
+  ]);
   // Register Actor Sheet Application Classes
   Actors.registerSheet(game.system.id, CPRCharacterActorSheet, {
     label: SystemUtils.Localize("CPR.sheets.characterSheet"),
@@ -94,7 +110,10 @@ Hooks.once("init", async () => {
   });
 
   // Register Item Sheet Application Classes
-  Items.unregisterSheet("core", ItemSheet);
+  unregisterCoreSheets(Items, [
+    foundry.appv1?.sheets?.ItemSheet,
+    foundry.applications.sheets?.ItemSheetV2,
+  ]);
   Items.registerSheet(game.system.id, CPRItemSheet, {
     types: [
       "ammo",
@@ -166,9 +185,6 @@ Hooks.once("init", async () => {
   CONFIG.Item.dataModels.skill = SkillDataModel;
   CONFIG.Item.dataModels.vehicle = VehicleDataModel;
   CONFIG.Item.dataModels.weapon = WeaponDataModel;
-
-  // Turn legacy tranferral for active effects off. Necessary for v11.
-  CONFIG.ActiveEffect.legacyTransferral = false;
 
   // Make System fonts available to Foundry
   CONFIG.fontDefinitions.Jost = {
@@ -300,6 +316,18 @@ Hooks.once("ready", async () => {
 
   // Handle Migration.
   const MR = game.cpr.MigrationRunner;
+
+  // DM Bank: a brand-new world keeps the default "newCprWorld" forever upstream, so
+  // a later migration script would skip it. Record the latest data model instead.
+  if (settings.get(game.system.id, "dataModelVersion") === "newCprWorld") {
+    await settings.set(
+      game.system.id,
+      "dataModelVersion",
+      MR.newDataModelVersion
+    );
+    LOGGER.log(`New world: dataModelVersion set to ${MR.newDataModelVersion}`);
+  }
+
   // If no migrations needed, return;
   if (!MR.needsMigration) return;
   // `migrateWorld` returns true on successful migration
@@ -330,3 +358,4 @@ Hooks.once("ready", async () => {
 });
 
 registerHooks();
+registerDmBank();

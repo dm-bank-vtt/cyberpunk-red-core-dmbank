@@ -22,7 +22,7 @@ const Loadable = function Loadable() {
     this.system.ammoVariety = ammoList;
     if (this.actor) {
       this.actor.updateEmbeddedDocuments("Item", [
-        { _id: this.id, system: this.system },
+        { _id: this.id, ...SystemUtils.SystemChanges(this) },
       ]);
     }
     return this.update({ "system.ammoVariety": ammoList });

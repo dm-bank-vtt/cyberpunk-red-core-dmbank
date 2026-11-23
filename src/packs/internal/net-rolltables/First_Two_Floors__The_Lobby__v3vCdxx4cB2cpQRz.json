@@ -3,149 +3,183 @@
   "description": "Table for rolling for the first two floors of a NET architecture, as detailed on page 211.",
   "displayRoll": false,
   "formula": "1d6",
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Dice.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Dice.svg",
   "name": "First Two Floors (The Lobby)",
   "replacement": true,
   "results": [
     {
       "_id": "4YivN2GxxMcEqbgg",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         1,
         1
       ],
-      "text": "File DV6",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461085,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461085,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "File DV6",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.4YivN2GxxMcEqbgg"
     },
     {
       "_id": "FpwuD8HqL7vOlAWa",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         2,
         2
       ],
-      "text": "Password DV6",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461089,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461089,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Password DV6",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.FpwuD8HqL7vOlAWa"
     },
     {
       "_id": "tYTXoUQbjehYaI3x",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         3,
         3
       ],
-      "text": "Password DV8",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461090,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461090,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Password DV8",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.tYTXoUQbjehYaI3x"
     },
     {
       "_id": "LkWlmvoF1VzQGvjk",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         4,
         4
       ],
-      "text": "Skunk",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461091,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461091,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Skunk",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.LkWlmvoF1VzQGvjk"
     },
     {
       "_id": "nJbRxD9bzSS0gPje",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         5,
         5
       ],
-      "text": "Wisp",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461092,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461092,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Wisp",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.nJbRxD9bzSS0gPje"
     },
     {
       "_id": "Lj9LliNyTtYbMUI1",
-      "documentCollection": "",
-      "documentId": null,
       "drawn": false,
       "img": "icons/svg/d20-black.svg",
       "range": [
         6,
         6
       ],
-      "text": "Killer",
       "type": "text",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228461087,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228461087,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "description": "Killer",
+      "name": "",
+      "flags": {},
       "_key": "!tables.results!v3vCdxx4cB2cpQRz.Lj9LliNyTtYbMUI1"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461093,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461093,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!v3vCdxx4cB2cpQRz"
 }

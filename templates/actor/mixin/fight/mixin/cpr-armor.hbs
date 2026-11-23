@@ -33,7 +33,7 @@
   --}}
 
   {{#if (cprCompare this.system.isHeadLocation "&&" this.system.isBodyLocation) }}
-    {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
       cssLoc=1
       armorId=this.id
       armorLocation="head"
@@ -46,7 +46,7 @@
       armorActiveTip=(localize "CPR.actorSheets.commonActions.makeHeadArmorActive")
       armorCurrent=actor.system.externalData.currentArmorHead.id
     }}
-    {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
       cssLoc="2"
       armorId=this.id
       armorLocation="body"
@@ -60,7 +60,7 @@
       armorCurrent=actor.system.externalData.currentArmorBody.id
     }}
   {{else if this.system.isHeadLocation}}
-    {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
       cssLoc="1"
       armorId=this.id
       armorLocation="head"
@@ -74,7 +74,7 @@
       armorCurrent=actor.system.externalData.currentArmorHead.id
     }}
   {{else if this.system.isBodyLocation}}
-    {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
       cssLoc="1"
       armorId=this.id
       armorLocation="body"
@@ -88,7 +88,7 @@
       armorCurrent=actor.system.externalData.currentArmorBody.id
     }}
   {{else}}
-    {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/fight/mixin/cpr-armor-location.hbs"
       cssLoc="1"
       armorId=this.id
       armorLocation="shield"

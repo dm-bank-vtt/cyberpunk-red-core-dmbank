@@ -1,6 +1,7 @@
 /* eslint-disable max-classes-per-file */
 
 import CPR from "../system/config.js";
+import CPRActiveEffect from "../cpr-active-effect.js";
 import SystemUtils from "../utils/cpr-systemUtils.js";
 
 export default class CPRMod {
@@ -11,20 +12,19 @@ export default class CPRMod {
    * @constructor
    */
   constructor(effect, change) {
-    const index = effect.changes.indexOf(change); // Index of change on the effect.
+    const index = CPRActiveEffect.getChanges(effect).indexOf(change); // Index of change on the effect.
     // We do optional chaining on the next few because some items may not have flags.${game.system.id}.situational or .cats defined.
-    this.category = effect.flags[game.system.id].changes.cats?.[index]; // Category of the change. This comes from Zyzyx's work.
+    const changeFlags = effect.flags?.[game.system.id]?.changes;
+    this.category = changeFlags?.cats?.[index]; // Category of the change. This comes from Zyzyx's work.
     // New flag to determine if the mod is situational or permanent. If it's situational, should it be on by default?
-    this.isSituational =
-      effect.flags[game.system.id].changes.situational?.[index].isSituational;
+    this.isSituational = changeFlags?.situational?.[index]?.isSituational;
     // If it's situational, should it be on by default?
-    this.onByDefault =
-      effect.flags[game.system.id].changes.situational?.[index].onByDefault; // S
+    this.onByDefault = changeFlags?.situational?.[index]?.onByDefault; // S
     this.id = `${change.key}-${effect.id}`; // We enforce one change key per effect, so this should always be a unique ID.
     this.source = effect.name;
     this.value = Number.parseInt(change.value, 10);
     this.key = change.key;
-    this.changeMode = change.mode; // Right now, only ADD (const = 2) is supported. Change modes come from Foundry)
+    this.changeMode = CPRActiveEffect.getChangeMode(change); // Right now, only ADD (const = 2) is supported. Change modes come from Foundry)
   }
 
   /**
@@ -38,8 +38,8 @@ export default class CPRMod {
     const allModifiers = [];
     effects.forEach((effect) => {
       // Ignore suppressed/disabled effects, unless getDisabled = true. In that case, get all.
-      if ((!effect.system.isSuppressed && !effect.disabled) || getDisabled) {
-        effect.changes.forEach((change, index) => {
+      if ((!effect.isSuppressed && !effect.disabled) || getDisabled) {
+        CPRActiveEffect.getChanges(effect).forEach((change, index) => {
           const mod = new CPRMod(effect, change, index);
           allModifiers.push(mod);
         });

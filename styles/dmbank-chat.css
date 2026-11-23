@@ -1,0 +1,468 @@
+/* =====================================================================
+   Cyberpunk RED Core - DM Bank :: sidebar, chat panel and messages
+   ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   Players: only Chat + Settings in the sidebar
+   --------------------------------------------------------------------- */
+body.nc-hide-sidebar #sidebar-tabs li:has(> button[data-tab]:not([data-tab="chat"]):not([data-tab="settings"])) {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------------------
+   Sidebar frame
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] #sidebar-tabs button.ui-control {
+  background: rgba(8, 7, 11, 0.78);
+  border: 1px solid rgba(255, 42, 61, 0.35);
+  color: var(--nc-text-dim);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+  transition: color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+html[data-cpr-theme="nightcity"] #sidebar-tabs button.ui-control:hover {
+  color: var(--nc-cyan);
+  box-shadow: inset 0 0 10px var(--nc-cyan-soft);
+}
+html[data-cpr-theme="nightcity"] #sidebar-tabs button.ui-control.active,
+html[data-cpr-theme="nightcity"] #sidebar-tabs button.ui-control[aria-pressed="true"] {
+  color: #fff;
+  background: linear-gradient(135deg, var(--nc-red), var(--nc-red-deep));
+  box-shadow: 0 0 12px var(--nc-red-glow);
+  border-color: var(--nc-red);
+}
+html[data-cpr-theme="nightcity"] #sidebar-content {
+  background: linear-gradient(180deg, rgba(10, 8, 12, 0.82), rgba(5, 5, 8, 0.78));
+  border: 1px solid rgba(255, 42, 61, 0.35);
+  border-radius: 0;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(255, 42, 61, 0.06);
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] #sidebar-content .directory-header,
+html[data-cpr-theme="nightcity"] #sidebar-content .directory-footer {
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] #sidebar-content .header-actions button,
+html[data-cpr-theme="nightcity"] #sidebar-content .directory-footer button,
+html[data-cpr-theme="nightcity"] #settings button,
+html[data-cpr-theme="nightcity"] #settings a.button {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--nc-red-line);
+  color: var(--nc-text);
+  border-radius: 0;
+  font-family: var(--nc-font-hud);
+  letter-spacing: 0.04em;
+}
+html[data-cpr-theme="nightcity"] #sidebar-content .header-actions button:hover,
+html[data-cpr-theme="nightcity"] #settings button:hover,
+html[data-cpr-theme="nightcity"] #settings a.button:hover {
+  background: var(--nc-red-soft);
+  border-color: var(--nc-red);
+  box-shadow: 0 0 10px var(--nc-red-soft);
+}
+html[data-cpr-theme="nightcity"] #sidebar-content search input,
+html[data-cpr-theme="nightcity"] #sidebar-content input[type="search"] {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--nc-red-line);
+  border-radius: 0;
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] #settings h4.divider {
+  color: var(--nc-red-hot);
+  font-family: var(--nc-font-hud);
+  letter-spacing: 0.12em;
+}
+
+/* ---------------------------------------------------------------------
+   Chat panel layout (expanded chat tab)
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] #chat .chat-scroll {
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 4px),
+    linear-gradient(180deg, rgba(255, 42, 61, 0.05), transparent 30%);
+}
+html[data-cpr-theme="nightcity"] #chat .chat-form,
+html[data-cpr-theme="nightcity"] .chat-popout .chat-form {
+  position: relative;
+  margin: 6px 4px 4px;
+  padding: 8px 8px 8px 22px;
+  background: linear-gradient(180deg, rgba(20, 8, 12, 0.9), rgba(6, 6, 9, 0.92));
+  border: 1px solid var(--nc-red);
+  box-shadow: 0 0 14px rgba(255, 42, 61, 0.25), inset 0 0 18px rgba(255, 42, 61, 0.08);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+/* the grey "rail" on the left side of the card */
+html[data-cpr-theme="nightcity"] #chat .chat-form::before,
+html[data-cpr-theme="nightcity"] .chat-popout .chat-form::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  bottom: 10px;
+  width: 9px;
+  background: linear-gradient(180deg, #8c8486, #5e5759);
+  clip-path: polygon(0 0, 100% 8px, 100% 30%, 40% calc(30% + 6px), 40% calc(70% - 6px), 100% 70%, 100% calc(100% - 8px), 0 100%);
+  opacity: 0.85;
+}
+
+/* identity card */
+#nc-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+  font-family: var(--nc-font-hud, "Tektur", sans-serif);
+}
+#nc-identity[hidden] {
+  display: none;
+}
+#nc-identity .nc-id-rail {
+  display: none;
+}
+#nc-identity .nc-id-name {
+  border: 1px solid var(--nc-red, #ff2a3d);
+  padding: 4px 10px;
+  background: rgba(255, 42, 61, 0.08);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+}
+#nc-identity .nc-id-name-text {
+  display: block;
+  color: var(--nc-cyan, #3ef2ff);
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 10px rgba(62, 242, 255, 0.55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#nc-identity .nc-id-role {
+  color: var(--nc-cyan, #3ef2ff);
+  opacity: 0.85;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 2px 10px 0;
+}
+#nc-identity .nc-id-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  font-size: 0.62rem;
+  color: var(--nc-text-dim, #a8979b);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+#nc-identity .nc-id-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--nc-user-color, #3ef2ff);
+  box-shadow: 0 0 6px var(--nc-user-color, #3ef2ff);
+}
+#nc-identity .nc-id-link {
+  margin-left: auto;
+  color: #4dff9a;
+  animation: nc-pulse 2s ease-in-out infinite;
+}
+
+/* input box */
+html[data-cpr-theme="nightcity"] #chat-message {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 42, 61, 0.55);
+  border-radius: 0;
+  color: var(--nc-text);
+  font-family: var(--nc-font-body);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+}
+html[data-cpr-theme="nightcity"] #chat-message:focus-within {
+  border-color: var(--nc-cyan);
+  box-shadow: 0 0 10px var(--nc-cyan-soft);
+}
+html[data-cpr-theme="nightcity"] #chat-message .editor-menu,
+html[data-cpr-theme="nightcity"] #chat-message .menu-container {
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--nc-text);
+  border-color: rgba(255, 42, 61, 0.3);
+}
+
+/* message mode buttons + controls */
+html[data-cpr-theme="nightcity"] #chat-controls {
+  margin-top: 6px;
+}
+html[data-cpr-theme="nightcity"] #message-modes button.ui-control,
+html[data-cpr-theme="nightcity"] #chat-controls .control-buttons button.ui-control {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 42, 61, 0.35);
+  color: var(--nc-text-dim);
+  border-radius: 0;
+}
+html[data-cpr-theme="nightcity"] #message-modes button.ui-control:hover,
+html[data-cpr-theme="nightcity"] #chat-controls .control-buttons button.ui-control:hover {
+  color: var(--nc-cyan);
+  border-color: var(--nc-cyan);
+}
+html[data-cpr-theme="nightcity"] #message-modes button.ui-control[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--nc-red), var(--nc-red-deep));
+  color: #fff;
+  border-color: var(--nc-red);
+  box-shadow: 0 0 10px var(--nc-red-glow);
+}
+
+/* ---------------------------------------------------------------------
+   Messages: shared
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .chat-log .chat-message {
+  position: relative;
+  color: var(--nc-text);
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 8px 6px;
+}
+html[data-cpr-theme="nightcity"] .chat-log .chat-message .message-header {
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .chat-log .chat-message .message-metadata,
+html[data-cpr-theme="nightcity"] .chat-log .chat-message .message-timestamp {
+  color: var(--nc-text-dim);
+  font-family: var(--nc-font-hud);
+  font-size: 0.65rem;
+}
+
+/* ---------------------------------------------------------------------
+   INCOMING TRANSMISSION (plain messages)
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission {
+  padding: 10px 12px 8px 26px !important;
+  background: linear-gradient(180deg, rgba(56, 38, 38, 0.92), rgba(38, 26, 27, 0.92)) !important;
+  border: 1px solid #e0484d !important;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+  animation: nc-call-in 0.45s cubic-bezier(0.2, 0.9, 0.2, 1) both;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 10px;
+  background: linear-gradient(180deg, #9a9294, #6c6567);
+  clip-path: polygon(0 0, 100% 8px, 100% 30%, 45% calc(30% + 6px), 45% calc(70% - 6px), 100% 70%, 100% calc(100% - 8px), 0 100%);
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission .nc-tx-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ff5a4f;
+  font-family: var(--nc-font-hud);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig {
+  display: inline-flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 10px;
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig i {
+  width: 3px;
+  background: #ff5a4f;
+  animation: nc-sig 1.2s ease-in-out infinite;
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig i:nth-child(1) {
+  height: 3px;
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig i:nth-child(2) {
+  height: 5px;
+  animation-delay: 0.15s;
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig i:nth-child(3) {
+  height: 7px;
+  animation-delay: 0.3s;
+}
+html[data-cpr-theme="nightcity"] .nc-tx-sig i:nth-child(4) {
+  height: 10px;
+  animation-delay: 0.45s;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission .message-header {
+  align-items: center;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission .message-sender {
+  color: var(--nc-cyan);
+  font-family: var(--nc-font-hud);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 8px rgba(62, 242, 255, 0.35);
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission .nc-tx-icon {
+  margin-right: 6px;
+  color: var(--nc-cyan);
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission .message-content {
+  color: #efe3e3;
+  padding-top: 4px;
+  margin-top: 4px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.18);
+  font-size: 0.95rem;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission.whisper {
+  border-color: #b06bff !important;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-transmission.whisper .nc-tx-label {
+  color: #c99bff;
+}
+
+/* ---------------------------------------------------------------------
+   Roll cards: translucent hologram
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo {
+  padding: 6px 8px !important;
+  background: linear-gradient(160deg, rgba(20, 10, 16, 0.55), rgba(5, 8, 12, 0.45)) !important;
+  border: 1px solid rgba(255, 42, 61, 0.55) !important;
+  backdrop-filter: blur(3px);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  animation: nc-call-in 0.35s ease-out both;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .message-sender {
+  color: var(--nc-text);
+  font-family: var(--nc-font-hud);
+  letter-spacing: 0.04em;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .cpr-block {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 42, 61, 0.55) !important;
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .rollcard-top .cpr-block {
+  background: linear-gradient(90deg, rgba(255, 42, 61, 0.28), rgba(0, 0, 0, 0.3)) !important;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .d10-number-div,
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .d10-number-div *,
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .rollcard .text-massive,
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .damage-total,
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .roll-total {
+  color: var(--nc-cyan) !important;
+  font-family: var(--nc-font-hud);
+  text-shadow: 0 0 10px var(--nc-cyan-glow), 0 0 22px rgba(62, 242, 255, 0.3);
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .nc-holo-die {
+  filter: invert(1) sepia(1) saturate(6) hue-rotate(140deg) brightness(1.15) drop-shadow(0 0 6px rgba(62, 242, 255, 0.85));
+  opacity: 0.88;
+  animation: nc-holo-die 3.2s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .d10-dice-div {
+  position: relative;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .d10-dice-div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(180deg, rgba(62, 242, 255, 0.18) 0 1px, transparent 1px 3px);
+  mix-blend-mode: screen;
+  animation: nc-scan 0.5s linear infinite;
+}
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .text-success,
+html[data-cpr-theme="nightcity"] .chat-message.nc-holo .success {
+  color: #4dff9a !important;
+}
+
+@keyframes nc-holo-die {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.9;
+  }
+  45% {
+    transform: translateY(-2px) rotate(-4deg);
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  52% {
+    opacity: 0.9;
+  }
+}
+@keyframes nc-call-in {
+  0% {
+    opacity: 0;
+    transform: translateX(24px);
+    filter: brightness(2);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@keyframes nc-sig {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Notifications (sidebar collapsed): same look, slightly smaller
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] #chat-notifications .chat-message {
+  max-width: 320px;
+  margin-left: auto;
+}
+html[data-cpr-theme="nightcity"] #chat-notifications #chat-message {
+  background: rgba(8, 6, 10, 0.85);
+}
+
+/* order inside the chat card: identity -> input -> message modes */
+html[data-cpr-theme="nightcity"] #chat .chat-form,
+html[data-cpr-theme="nightcity"] .chat-popout .chat-form {
+  display: flex;
+  flex-direction: column;
+}
+html[data-cpr-theme="nightcity"] .chat-form #nc-identity {
+  order: 1;
+}
+html[data-cpr-theme="nightcity"] .chat-form #chat-message {
+  order: 2;
+}
+html[data-cpr-theme="nightcity"] .chat-form #chat-controls {
+  order: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html[data-cpr-theme="nightcity"] .chat-form .jump-to-bottom {
+  order: 0;
+}
+
+/* Cyberpsychosis chat card */
+.nc-psycho-card {
+  border: 1px solid #ff2a3d;
+  background: rgba(60, 0, 8, 0.55);
+  padding: 6px 8px;
+}
+.nc-psycho-card-title {
+  font-family: var(--nc-font-hud, "Tektur", sans-serif);
+  color: #ff2a3d;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-shadow: 2px 0 0 rgba(62, 242, 255, 0.6);
+}

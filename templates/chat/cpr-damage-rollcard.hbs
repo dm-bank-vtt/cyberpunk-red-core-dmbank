@@ -46,14 +46,14 @@
             {{#if (cprCompare dieFace "===" 6) }}
               {{#if ../criticalCard }}
                 <img class="{{cprDiceSizeImageClass ../formula}}"
-                     src="systems/cyberpunk-red-core/icons/dice/red/d6_{{dieFace}}_preem.svg"/>
+                     src="systems/cyberpunk-red-core-dmbank/icons/dice/red/d6_{{dieFace}}_preem.svg"/>
               {{else}}
                 <img class="{{cprDiceSizeImageClass ../formula}}"
-                     src="systems/cyberpunk-red-core/icons/dice/black/d6_{{dieFace}}.svg"/>
+                     src="systems/cyberpunk-red-core-dmbank/icons/dice/black/d6_{{dieFace}}.svg"/>
               {{/if}}
             {{else}}
               <img class="{{cprDiceSizeImageClass ../formula}}"
-                   src="systems/cyberpunk-red-core/icons/dice/black/d6_{{dieFace}}.svg"/>
+                   src="systems/cyberpunk-red-core-dmbank/icons/dice/black/d6_{{dieFace}}.svg"/>
             {{/if}}
           {{/each}}
         </div>
@@ -88,7 +88,7 @@
           {{/if}}
           <div class="d6-data-details hide">
             {{#if (cprCompare mods.length "||" additionalMods.length) }}
-              {{> "systems/cyberpunk-red-core/templates/chat/cpr-rollcard-modifiers.hbs" this}}
+              {{> "systems/cyberpunk-red-core-dmbank/templates/chat/cpr-rollcard-modifiers.hbs" this}}
             {{/if}}
           </div>
         </div>

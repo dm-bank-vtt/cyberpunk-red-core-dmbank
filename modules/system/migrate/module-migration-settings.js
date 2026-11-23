@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import SystemUtils from "../../utils/cpr-systemUtils.js";
 
-export default class ModuleMigrationSettings extends FormApplication {
+export default class ModuleMigrationSettings extends foundry.appv1.api.FormApplication {
   /**
    * set up default things like the html template and window size
    *

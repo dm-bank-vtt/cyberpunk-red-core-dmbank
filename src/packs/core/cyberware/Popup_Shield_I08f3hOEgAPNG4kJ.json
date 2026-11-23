@@ -2,14 +2,14 @@
   "_id": "I08f3hOEgAPNG4kJ",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/popup_shield.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/cyberware/popup_shield.svg",
   "name": "Popup Shield",
   "system": {
     "ammoVariety": [],
@@ -23,7 +23,7 @@
     "core": false,
     "damage": "1d6",
     "description": {
-      "value": "<p>\n  A foldable bulletproof shield that can be drawn or concealed easily. Can't\n  hold anything with this hand while activated.\n</p>\n<blockquote>\n  <p>\n    Add\n    @UUID[Compendium.cyberpunk-red-core.core_armor.Item.Bg1YEeF25HhfrzOG]{Bullet\n    Proof Shield} to inventory to manage shield HP.\n  </p>\n</blockquote>\n"
+      "value": "<p>\n  A foldable bulletproof shield that can be drawn or concealed easily. Can't\n  hold anything with this hand while activated.\n</p>\n<blockquote>\n  <p>\n    Add\n    @UUID[Compendium.cyberpunk-red-core-dmbank.core_armor.Item.Bg1YEeF25HhfrzOG]{Bullet\n    Proof Shield} to inventory to manage shield HP.\n  </p>\n</blockquote>\n"
     },
     "dvTable": "",
     "favorite": false,
@@ -76,11 +76,20 @@
   },
   "type": "cyberware",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460858,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460858,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!I08f3hOEgAPNG4kJ"
 }

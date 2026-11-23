@@ -1,0 +1,36 @@
+# System Package release (SPEC §17.8). The Module repos use release.yml; this one adds the
+# pack build and handles stable tags only. All steps and checks live in scripts/release.sh.
+name: Release System Package
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the file list diffs against the upstream-v0.92.4 tag
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build and check system.json + system.zip
+        run: bash scripts/release.sh "$GITHUB_REF_NAME"
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/system.json build/system.zip \
+            --title "DM Bank Night City Edition ${GITHUB_REF_NAME#v}" \
+            --notes-file build/notes.md \
+            --latest \
+            --verify-tag

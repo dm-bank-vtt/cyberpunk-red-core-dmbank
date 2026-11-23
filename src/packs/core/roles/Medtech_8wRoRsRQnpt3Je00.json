@@ -2,14 +2,14 @@
   "_id": "8wRoRsRQnpt3Je00",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 38,
         "previous": "33"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/default/Default_Role.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/default/Default_Role.svg",
   "name": "Medtech",
   "system": {
     "abilities": [
@@ -101,11 +101,20 @@
   },
   "type": "role",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460900,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460900,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!8wRoRsRQnpt3Je00"
 }

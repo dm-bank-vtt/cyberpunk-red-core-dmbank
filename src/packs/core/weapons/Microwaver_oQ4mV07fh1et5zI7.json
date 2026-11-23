@@ -2,14 +2,14 @@
   "_id": "oQ4mV07fh1et5zI7",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/weapons/microwaver.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/microwaver.svg",
   "name": "Microwaver",
   "system": {
     "ammoVariety": [
@@ -25,7 +25,7 @@
     "critFailEffect": "jammed",
     "damage": "0",
     "description": {
-      "value": "<p>\n  An Exotic Very Heavy Pistol. Causes cyberware or electrical components to be\n  rendered inoperable for a minute unless the target passes a\n  <strong>DV15 Cybertech Check</strong>.\n</p>\n<p>\n  <em\n    >Select target token and use\n    @UUID[Compendium.cyberpunk-red-core.other_macros.Macro.z8NN97JkdZUUFYud]{Get\n    EMP'd Items} to determine what items are affected.</em\n  >\n</p>\n"
+      "value": "<p>\n  An Exotic Very Heavy Pistol. Causes cyberware or electrical components to be\n  rendered inoperable for a minute unless the target passes a\n  <strong>DV15 Cybertech Check</strong>.\n</p>\n<p>\n  <em\n    >Select target token and use\n    @UUID[Compendium.cyberpunk-red-core-dmbank.other_macros.Macro.z8NN97JkdZUUFYud]{Get\n    EMP'd Items} to determine what items are affected.</em\n  >\n</p>\n"
     },
     "dvTable": "DV Pistol",
     "equipped": "owned",
@@ -70,11 +70,20 @@
   },
   "type": "weapon",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460951,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460951,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!oQ4mV07fh1et5zI7"
 }

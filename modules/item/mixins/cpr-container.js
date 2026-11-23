@@ -283,7 +283,7 @@ const Container = function Container() {
         : !!(await this.installWorldItems(itemList, installedItems));
 
     // Rerender items directory for world items.
-    if (!this.isEmbedded) ui.sidebar.tabs.items.render(true);
+    if (!this.isEmbedded) ui.items.render();
     return update;
   };
 
@@ -440,7 +440,7 @@ const Container = function Container() {
     });
 
     // Rerender items directory for world items.
-    if (!this.isEmbedded) ui.sidebar.tabs.items.render(true);
+    if (!this.isEmbedded) ui.items.render();
     return updates;
   };
 
@@ -597,7 +597,7 @@ const Container = function Container() {
       flags,
       "system.installedItems.list": newInstalledList,
     });
-    ui.sidebar.tabs.items.render(true);
+    ui.items.render();
   };
 
   /**

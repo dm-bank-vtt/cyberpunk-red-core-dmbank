@@ -1,3 +1,4 @@
+import SystemUtils from "../utils/cpr-systemUtils.js";
 /**
  * We use custom chat cards for dice rolls, so we have to override the dice card behaviours
  * provided by 3rd party dice rollers. We currently support Dice So Nice! and DDDice.
@@ -24,7 +25,7 @@ export default class DiceHandler {
   static async _passRoll(roll, rollModeOverride) {
     let whisper = null;
     let blind = false;
-    const rollMode = rollModeOverride || game.settings.get("core", "rollMode");
+    const rollMode = rollModeOverride || SystemUtils.GetRollMode();
     switch (rollMode) {
       case "blindroll": {
         // GM only

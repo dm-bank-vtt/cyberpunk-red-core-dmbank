@@ -10,7 +10,11 @@ const PauseAnimation = () => {
    * @public
    * @memberof hookEvents
    */
+  // "renderPause" for Foundry V12 and older, "renderGamePause" for V13+.
   Hooks.on("renderPause", () => {
+    enablePauseAnimation();
+  });
+  Hooks.on("renderGamePause", () => {
     enablePauseAnimation();
   });
 };

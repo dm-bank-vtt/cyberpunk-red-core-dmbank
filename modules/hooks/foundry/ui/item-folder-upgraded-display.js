@@ -1,6 +1,17 @@
 import SystemUtils from "../../../utils/cpr-systemUtils.js";
 
 /**
+ * Foundry V13+ uses `data-entry-id` on sidebar directory entries, older versions used
+ * `data-document-id`. Support both.
+ *
+ * @param {HTMLElement} element
+ * @returns {String|undefined}
+ */
+function _getEntryId(element) {
+  return element?.dataset?.entryId ?? element?.dataset?.documentId;
+}
+
+/**
  * This function is the thing that actually puts the list together in `prepareSubList()`. It works
  * recursively, calling itself if child items also have installed items.
  *
@@ -63,7 +74,8 @@ function recursiveHTML(parentItem, topLevelId, level = 0) {
  * @returns {String} - HTML of the element's install tree
  */
 function _prepareSubList(element) {
-  const item = game.items.get(element.dataset.documentId);
+  const item = game.items.get(_getEntryId(element));
+  if (!item) return "";
   // Only create a dropdown if the item has installed items & is not itself installed.
   if (item.system.hasInstalled && !item.system.isInstalled) {
     const showInstallFlag = game.user.getFlag(
@@ -100,7 +112,7 @@ function _prepareSubList(element) {
  * @returns {String} - HTML for the chevron button.
  */
 function _prepareChevron(element) {
-  const itemID = element.dataset.documentId;
+  const itemID = _getEntryId(element);
   const showInstallFlag = game.user.getFlag(
     game.system.id,
     "showInstalledList"
@@ -131,7 +143,11 @@ function _renderViewOnlyItemSheet(event) {
  */
 function _toggleInstalledVisibility(event) {
   // Step 1: Prepare data
-  const itemId = SystemUtils.GetEventDatum(event, "data-document-id");
+  const entryElement = event.currentTarget.closest(
+    "[data-entry-id], [data-document-id]"
+  );
+  const itemId = _getEntryId(entryElement);
+  if (!itemId) return;
 
   // Step 2: Toggle the icon rotation to indicate state change.
   const iconElement = event.currentTarget.querySelector("i");
@@ -140,7 +156,9 @@ function _toggleInstalledVisibility(event) {
   }
 
   // Step 3: Identify the HTML elements in the sub-list involved in the toggling.
-  const installedRow = $(event.currentTarget.closest(".directory-list")).find(
+  const installedRow = $(
+    event.currentTarget.closest(".directory-list") ?? document
+  ).find(
     `div[data-items-wrapper-for-parent="${itemId}"]`
   );
 
@@ -166,41 +184,55 @@ function _toggleInstalledVisibility(event) {
  *
  */
 const renderItemDirHooks = () => {
-  Hooks.on("renderItemDirectory", (_, html) => {
-    const itemElements = html.find("li.item");
+  Hooks.on("renderItemDirectory", (_, element) => {
+    // Foundry V13+ passes an HTMLElement, older versions passed jQuery.
+    const html = $(element);
+    const itemElements = html
+      .find("li.item, li.directory-item.entry, li.directory-item.document")
+      .filter((__, el) => _getEntryId(el) !== undefined && !el.matches(".folder"));
 
-    const hiddenElements = itemElements.filter((__, element) => {
-      const item = game.items.get(element.dataset.documentId);
-      return item.system.isInstalled;
+    const hiddenElements = itemElements.filter((__, el) => {
+      const item = game.items.get(_getEntryId(el));
+      return item?.system?.isInstalled;
     });
-    hiddenElements.toggleClass("directory-item-hidden");
+    hiddenElements.addClass("directory-item-hidden");
 
     // Get elements that represent items which have other items installed in them.
-    const itemsWithInstalledElements = itemElements.filter((__, element) => {
-      const item = game.items.get(element.dataset.documentId);
-      return item.system.hasInstalled;
+    const itemsWithInstalledElements = itemElements.filter((__, el) => {
+      const item = game.items.get(_getEntryId(el));
+      return item?.system?.hasInstalled;
     });
 
     // Append the list to each element that represents an item with installed items.
-    for (const element of Array.from(itemsWithInstalledElements)) {
+    for (const el of Array.from(itemsWithInstalledElements)) {
+      // Partial re-renders can call this hook again on an already decorated list.
+      if ($(el).children(".toggle-install-list-button").length) continue;
       // Prepare the chevron icon (whether or not it should be in the open or closed position).
-      const chevronIcon = _prepareChevron(element);
+      const chevronIcon = _prepareChevron(el);
       // Append the chevron icon to the parent item.
-      $(element).append(chevronIcon);
+      $(el).append(chevronIcon);
 
       // Prepare the html for the install tree.
-      const installedListHTML = _prepareSubList(element);
+      const installedListHTML = _prepareSubList(el);
       // Append the installed list to every parent element.
-      $(element).after(installedListHTML);
+      $(el).after(installedListHTML);
     }
 
     // Give each item in the sublist an event listener for viewing sheets.
     html
       .find(".sub-list")
-      .on("click", ".item-view", (event) => _renderViewOnlyItemSheet(event));
+      .off("click.cpr")
+      .on("click.cpr", ".item-view", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        _renderViewOnlyItemSheet(event);
+      });
 
     // Give each button an event listener for toggling display of the install tree.
-    itemElements.on("click", ".toggle-install-list-button", (event) => {
+    itemElements.off("click.cpr");
+    itemElements.on("click.cpr", ".toggle-install-list-button", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
       _toggleInstalledVisibility(event);
     });
   });

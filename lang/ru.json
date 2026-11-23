@@ -1072,8 +1072,6 @@
   "CPR.module.dsn.colorsetRed": "Кровь на хроме",
   "CPR.module.dsn.colorsetYellow": "Мокруха",
   "CPR.module.dsn.groupName": "Cyberpunk RED",
-  "CPR.module.dsn.themeBrandedLogo": "Q-Workshop (с логотипами)",
-  "CPR.module.dsn.themeNumbersOnly": "Q-Workshop (с числами)",
   "CPR.mookSheet.criticalInjuries": "Критические ранения",
   "CPR.mookSheet.criticalInjuryRoll": "Бросить на критическое ранение",
   "CPR.mookSheet.deathSave.hoverCriticalInjuryPenalty": "Штраф от критического ранения",

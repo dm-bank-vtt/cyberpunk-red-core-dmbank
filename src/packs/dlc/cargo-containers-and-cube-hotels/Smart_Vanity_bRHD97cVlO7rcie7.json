@@ -2,14 +2,14 @@
   "_id": "bRHD97cVlO7rcie7",
   "effects": [],
   "flags": {
-    "cyberpunk-red-core": {
+    "cyberpunk-red-core-dmbank": {
       "_migration": {
         "current": 33,
         "previous": "24"
       }
     }
   },
-  "img": "systems/cyberpunk-red-core/icons/compendium/cargo-containers-and-cube-hotels/smart-vanity.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/cargo-containers-and-cube-hotels/smart-vanity.svg",
   "name": "Smart Vanity",
   "system": {
     "amount": 1,
@@ -46,11 +46,20 @@
   },
   "type": "gear",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460994,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460994,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
   },
   "_key": "!items!bRHD97cVlO7rcie7"
 }

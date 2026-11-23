@@ -1,6 +1,6 @@
 {{#if cyberware.system.core }}
   {{#each cyberware.system.installedItems.list as |id| }}
-    {{> "systems/cyberpunk-red-core/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-optional-content.hbs" (cprMergeForPartialArg "actor,cyberware,depth" ../actor (cprGetOwnedItem ../actor id) 0)}}
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-optional-content.hbs" (cprMergeForPartialArg "actor,cyberware,depth" ../actor (cprGetOwnedItem ../actor id) 0)}}
   {{/each}}
 {{else}}
   <li class="item flexrow"
@@ -22,19 +22,19 @@
     <div class="item-detail cyberware-actions text-nowrap">
       {{#unless (cprListContains "fashionware,cyberwareInternal,cyberwareExternal" cyberware.system.type)}}
         {{!-- INSTALL ACTION --}}
-        {{> "systems/cyberpunk-red-core/templates/actor/mixin/actions/cpr-uninstall-glyph.hbs" cyberware}}
+        {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/actions/cpr-uninstall-glyph.hbs" cyberware}}
         {{!-- ITEM MANAGEMENT --}}
         {{#if isUpgraded }}
-          {{> "systems/cyberpunk-red-core/templates/actor/mixin/actions/cpr-upgrade-glyph.hbs"}}
+          {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/actions/cpr-upgrade-glyph.hbs"}}
         {{else}}
           {{#unless (cprIsEmpty (cprFilter (cprFilter actor.itemTypes.itemUpgrade "type" "cyberware") "system.isInstalled" false))}}
-            {{> "systems/cyberpunk-red-core/templates/actor/mixin/actions/cpr-upgrade-glyph.hbs"}}
+            {{> "systems/cyberpunk-red-core-dmbank/templates/actor/mixin/actions/cpr-upgrade-glyph.hbs"}}
           {{/unless}}
         {{/if}}
       {{/unless}}
     </div>
   </li>
   {{#each cyberware.system.installedItems.list as |id| }}
-    {{> "systems/cyberpunk-red-core/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-optional-content.hbs" (cprMergeForPartialArg "actor,cyberware,depth" ../actor (cprGetOwnedItem ../actor id) 1)}}
+    {{> "systems/cyberpunk-red-core-dmbank/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-optional-content.hbs" (cprMergeForPartialArg "actor,cyberware,depth" ../actor (cprGetOwnedItem ../actor id) 1)}}
   {{/each}}
 {{/if}}

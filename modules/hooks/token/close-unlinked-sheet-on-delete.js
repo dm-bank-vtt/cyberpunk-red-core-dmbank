@@ -12,7 +12,9 @@ const CloseUnlinkedSheetOnDelete = () => {
   Hooks.on("deleteToken", (tokenDocument) => {
     if (!tokenDocument.isLinked) {
       const tokenId = tokenDocument.id;
-      const actorId = tokenDocument.actor.id;
+      const actorId = tokenDocument.actor?.id;
+      const sheet = tokenDocument.actor?._sheet ?? null;
+      if (sheet?.rendered) sheet.close();
       const currentWindows = Object.values(ui.windows);
       currentWindows.forEach((window) => {
         if (window.id === `actor-${actorId}-${tokenId}`) {

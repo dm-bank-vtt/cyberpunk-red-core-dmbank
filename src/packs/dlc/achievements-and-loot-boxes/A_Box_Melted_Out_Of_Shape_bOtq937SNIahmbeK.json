@@ -9,253 +9,318 @@
   "results": [
     {
       "_id": "fABg1vUrxkxVFiXh",
-      "documentCollection": "cyberpunk-red-core.dlc_black-chrome-plus",
-      "documentId": "ZWoM763wXSI3njJA",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome-plus/scavenged-armor.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome-plus/scavenged-armor.svg",
       "range": [
         1,
         1
       ],
-      "text": "Scavenged Armor",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460982,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460982,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Scavenged Armor",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_black-chrome-plus.Item.ZWoM763wXSI3njJA",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.fABg1vUrxkxVFiXh"
     },
     {
       "_id": "4kibUUAHR3AIsfNo",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "IJhN5QHmu4hAJxLo",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/grenade_incendiary.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/grenade_incendiary.png",
       "range": [
         2,
         2
       ],
-      "text": "Grenade (Incendiary)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Grenade (Incendiary)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.IJhN5QHmu4hAJxLo",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.4kibUUAHR3AIsfNo"
     },
     {
       "_id": "3TasXLmE9oieBVdw",
-      "documentCollection": "cyberpunk-red-core.black-chrome_cyberware",
-      "documentId": "MfNQoF64u5w8cK7A",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/neo-soviet-cyberarm.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/black-chrome/neo-soviet-cyberarm.svg",
       "range": [
         3,
         3
       ],
-      "text": "Neo-Soviet Cyberarm",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460980,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460980,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Neo-Soviet Cyberarm",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.black-chrome_cyberware.Item.MfNQoF64u5w8cK7A",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.3TasXLmE9oieBVdw"
     },
     {
       "_id": "EecXu96GFBGINFti",
-      "documentCollection": "cyberpunk-red-core.dlc_the-12-days-of-gunmas",
-      "documentId": "poMp4coxB8SORzvi",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/AssaultRifle_poor.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/AssaultRifle_poor.svg",
       "range": [
         4,
         4
       ],
-      "text": "ST-5 Assault Rifle",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "ST-5 Assault Rifle",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_the-12-days-of-gunmas.Item.poMp4coxB8SORzvi",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.EecXu96GFBGINFti"
     },
     {
       "_id": "uCN8IKzSfQcwODf8",
-      "documentCollection": "cyberpunk-red-core.dlc_black-chrome-plus",
-      "documentId": "5boGB9jFKUJ9cSMR",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/AssaultRifle.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/AssaultRifle.svg",
       "range": [
         5,
         5
       ],
-      "text": "SurvivalMaster",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460985,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460985,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "SurvivalMaster",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.dlc_black-chrome-plus.Item.5boGB9jFKUJ9cSMR",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.uCN8IKzSfQcwODf8"
     },
     {
       "_id": "pUmneVMNecBD6xLc",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "qA9wmNHuGLsxBtRB",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_rubber.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/rifle_rubber.png",
       "range": [
         4,
         4
       ],
-      "text": "Rifle (Rubber)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460982,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460982,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Rifle (Rubber)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.qA9wmNHuGLsxBtRB",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.pUmneVMNecBD6xLc"
     },
     {
       "_id": "VYOkYZW8dWTw78J6",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "qA9wmNHuGLsxBtRB",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_rubber.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/rifle_rubber.png",
       "range": [
         5,
         5
       ],
-      "text": "Rifle (Rubber)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460982,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460982,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Rifle (Rubber)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.qA9wmNHuGLsxBtRB",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.VYOkYZW8dWTw78J6"
     },
     {
       "_id": "gW46vRTu751ecurO",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "J3NfMgRdqoUwFDDs",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_basic.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/rifle_basic.png",
       "range": [
         4,
         4
       ],
-      "text": "Rifle (Basic)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460981,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460981,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Rifle (Basic)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.J3NfMgRdqoUwFDDs",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.gW46vRTu751ecurO"
     },
     {
       "_id": "c882saQgR5Rml9cq",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "J3NfMgRdqoUwFDDs",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/rifle_basic.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/rifle_basic.png",
       "range": [
         5,
         5
       ],
-      "text": "Rifle (Basic)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460981,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460981,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Rifle (Basic)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.J3NfMgRdqoUwFDDs",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.c882saQgR5Rml9cq"
     },
     {
       "_id": "eD54BZDsA1AmnI7r",
-      "documentCollection": "cyberpunk-red-core.core_weapons",
-      "documentId": "qAqYtbD1yFgQNelR",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/flamethrower.svg",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/weapons/flamethrower.svg",
       "range": [
         6,
         6
       ],
-      "text": "Flamethrower",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460977,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460977,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Flamethrower",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_weapons.Item.qAqYtbD1yFgQNelR",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.eD54BZDsA1AmnI7r"
     },
     {
       "_id": "rfMkakfZl1fgqRNA",
-      "documentCollection": "cyberpunk-red-core.core_ammo",
-      "documentId": "MdA5gBfCKbBuHGof",
       "drawn": false,
-      "img": "systems/cyberpunk-red-core/icons/compendium/ammo/shotgun_shell_incendiary.png",
+      "img": "systems/cyberpunk-red-core-dmbank/icons/compendium/ammo/shotgun_shell_incendiary.png",
       "range": [
         6,
         6
       ],
-      "text": "Shotgun Shell (Incendiary)",
-      "type": "pack",
+      "type": "document",
       "weight": 1,
       "_stats": {
-        "coreVersion": 12,
+        "coreVersion": "14.368",
         "createdTime": 1775228460983,
         "lastModifiedBy": "00CPRCBuildBot00",
         "modifiedTime": 1775228460983,
-        "systemVersion": "v0.92.4"
+        "systemVersion": "v0.92.4",
+        "systemId": "cyberpunk-red-core-dmbank",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
+      "name": "Shotgun Shell (Incendiary)",
+      "documentUuid": "Compendium.cyberpunk-red-core-dmbank.core_ammo.Item.MdA5gBfCKbBuHGof",
+      "description": "",
+      "flags": {},
       "_key": "!tables.results!bOtq937SNIahmbeK.rfMkakfZl1fgqRNA"
     }
   ],
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228460987,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228460987,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!tables!bOtq937SNIahmbeK"
 }

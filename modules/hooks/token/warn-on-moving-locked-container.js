@@ -12,7 +12,7 @@ const WarnOnMovingLockedContainer = () => {
    * @param {object} data                 - A trimmed object with the data being updated
    */
   Hooks.on("preUpdateToken", (tokenDocument, data) => {
-    if (tokenDocument.actor.type === "container" && !game.user.isGM) {
+    if (tokenDocument.actor?.type === "container" && !game.user.isGM) {
       // Defined x and/or y properties indicate the token is attempting to move
       // to a new coordinate location. this indicates a moved token, so we check
       // the permissions.

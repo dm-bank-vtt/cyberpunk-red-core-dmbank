@@ -1,16 +1,27 @@
 {
   "_id": "UoK1EaiRmqtwDuXh",
   "command": "// Get all selected tokens\nconst allTokens = canvas.tokens.controlled;\nconst validActors = [\"character\", \"mook\"];\n\nif (allTokens.length === 0) {\n  return ui.notifications.warn(game.i18n.localize(\"CPR.macro.noTokenSelected\"));\n}\n\nallTokens.forEach((token) => {\n  console.debug(`CPR MACRO | Speedheal | Token: ${token.name}`);\n  let actor = token.actor;\n\n  if (validActors.includes(actor.type)) {\n    // Actor data\n    const maxHp = actor.system.derivedStats.hp.max;\n    const currentHp = actor.system.derivedStats.hp.value;\n    const body = actor.system.stats.body.value;\n    const will = actor.system.stats.will.value;\n\n    // Calculate the speedheal value and cap if greater than the missing HP\n    const speedheal = body + will;\n    const missingHp = maxHp - currentHp;\n    const hpGain = speedheal > missingHp ? missingHp : speedheal;\n\n    // Apply to Actor\n    actor.update({\"system.derivedStats.hp.value\": currentHp + hpGain});\n\n    message = `<strong>${token.document.name}</strong><p>Used a Speedheal and regained <b>${hpGain}</b> HP.</p>`;\n    ChatMessage.create({ content: message });\n  }\n});",
-  "img": "systems/cyberpunk-red-core/icons/macros/speedheal.svg",
+  "img": "systems/cyberpunk-red-core-dmbank/icons/macros/speedheal.svg",
   "name": "Speedheal",
   "scope": "global",
   "type": "script",
   "_stats": {
-    "coreVersion": 12,
+    "coreVersion": "14.368",
     "createdTime": 1775228461229,
     "lastModifiedBy": "00CPRCBuildBot00",
     "modifiedTime": 1775228461229,
-    "systemVersion": "v0.92.4"
+    "systemVersion": "v0.92.4",
+    "systemId": "cyberpunk-red-core-dmbank",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
+  "author": null,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
   "_key": "!macros!UoK1EaiRmqtwDuXh"
 }

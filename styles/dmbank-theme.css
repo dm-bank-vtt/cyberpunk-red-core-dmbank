@@ -1,0 +1,403 @@
+/* =====================================================================
+   Cyberpunk RED Core - DM Bank :: "Night City" theme
+   Red / black with cyan accents, glass panels, animated HUD effects.
+   Everything is scoped to html[data-cpr-theme="nightcity"].
+   ===================================================================== */
+
+html[data-cpr-theme="nightcity"] {
+  /* --- palette --- */
+  --nc-red: #ff2a3d;
+  --nc-red-hot: #ff4d5e;
+  --nc-red-deep: #8a0618;
+  --nc-red-glow: rgba(255, 42, 61, 0.55);
+  --nc-red-soft: rgba(255, 42, 61, 0.16);
+  --nc-red-line: rgba(255, 42, 61, 0.45);
+  --nc-cyan: #3ef2ff;
+  --nc-cyan-soft: rgba(62, 242, 255, 0.14);
+  --nc-cyan-glow: rgba(62, 242, 255, 0.55);
+  --nc-yellow: #f3e600;
+  --nc-black: #050608;
+  --nc-ink: #0b0c11;
+  --nc-glass: rgba(9, 8, 13, 0.52);
+  --nc-glass-strong: rgba(9, 8, 13, 0.86);
+  --nc-glass-light: rgba(26, 20, 28, 0.55);
+  --nc-row-a: rgba(255, 255, 255, 0.025);
+  --nc-row-b: rgba(255, 42, 61, 0.07);
+  --nc-text: #f2e9ea;
+  --nc-text-dim: #a8979b;
+  --nc-font-hud: "Tektur", "Jost", sans-serif;
+  --nc-font-body: "Jost", sans-serif;
+  --nc-cut: 14px;
+
+  /* --- map the system's own theme variables onto the palette --- */
+  --cpr-background-window: var(--nc-glass);
+  --cpr-background-box: rgba(255, 255, 255, 0.03);
+  --cpr-background-border: var(--nc-red-line);
+  --cpr-background-header: var(--nc-black);
+  --cpr-background-pill: rgba(0, 0, 0, 0.75);
+  --cpr-background-row-even: var(--nc-row-a);
+  --cpr-background-row-odd: var(--nc-row-b);
+  --cpr-background-tab-active: var(--nc-red);
+  --cpr-background-tab-inactive: rgba(0, 0, 0, 0.7);
+  --cpr-background-tab-underlay: var(--nc-red-deep);
+  --cpr-background-chat-card: var(--nc-glass);
+  --cpr-background-chat-card-block: var(--nc-red);
+  --cpr-background-chat-card-block-before: rgba(255, 255, 255, 0.06);
+  --cpr-background-chat-border: var(--nc-red-line);
+  --cpr-background-chat: rgba(0, 0, 0, 0.6);
+  --cpr-background-foundry-input: rgba(0, 0, 0, 0.55);
+  --cpr-background-foundry-button: rgba(0, 0, 0, 0.55);
+  --cpr-background-foundry-hover: var(--nc-red);
+  --cpr-background-code: rgba(255, 255, 255, 0.08);
+  --cpr-background-content-link: rgba(62, 242, 255, 0.12);
+  --cpr-background-cyberdeck-section-header: var(--nc-red-soft);
+  --cpr-background-dialog-border: var(--nc-red-line);
+  --cpr-background-dialog-selected: var(--nc-red-soft);
+  --cpr-background-dialog-hr-gradient-start: transparent;
+  --cpr-background-dialog-hr-gradient-middle: var(--nc-red);
+  --cpr-background-dialog-hr-gradient-end: transparent;
+  --cpr-background-editor-header: rgba(0, 0, 0, 0.6);
+  --cpr-background-editor-button: rgba(255, 255, 255, 0.08);
+  --cpr-background-editor-button-selected: var(--nc-red-soft);
+  --cpr-background-journal-blockquote: rgba(255, 255, 255, 0.05);
+  --cpr-background-toggle-unchecked: #2b2a30;
+  --cpr-background-toggle-checked: var(--nc-red);
+  --cpr-background-progress: var(--nc-glass-light);
+  --cpr-background-progress-border: var(--nc-red-line);
+  --cpr-background-item-dir-installed-header: rgba(255, 42, 61, 0.12);
+  --cpr-item-dir-border: var(--nc-red-line);
+  --cpr-text-normal: var(--nc-text);
+  --cpr-text-window: var(--nc-text);
+  --cpr-text-header: var(--nc-text);
+  --cpr-text-header-line: var(--nc-red);
+  --cpr-text-header-line-box: var(--nc-cyan);
+  --cpr-text-header-arrow: var(--nc-red);
+  --cpr-text-pill: var(--nc-cyan);
+  --cpr-text-tab-normal: var(--nc-text);
+  --cpr-text-tab-highlight: var(--nc-yellow);
+  --cpr-text-icon-normal: var(--nc-text-dim);
+  --cpr-text-icon-dimmed: #5c5357;
+  --cpr-text-icon-highlight: var(--nc-cyan);
+  --cpr-text-input: var(--nc-text);
+  --cpr-text-foundry-input: var(--nc-text);
+  --cpr-text-foundry-hint: var(--nc-text-dim);
+  --cpr-text-foundry-hover: var(--nc-cyan);
+  --cpr-text-hint: var(--nc-text-dim);
+  --cpr-text-mook-normal: var(--nc-text);
+  --cpr-text-chat-normal: var(--nc-text);
+  --cpr-text-chat-success: #4dff9a;
+  --cpr-text-chat-failure: var(--nc-red-hot);
+  --cpr-text-editor-header: var(--nc-text);
+  --cpr-text-editor-button: var(--nc-text);
+  --cpr-text-dir-list: var(--nc-text);
+  --cpr-text-content-link-icon: var(--nc-cyan);
+  --cpr-text-journal-table-header: var(--nc-text);
+  --cpr-icon-actor-image-overlay: var(--nc-cyan);
+  --cpr-icon-actor-image-overlay-border: var(--nc-red);
+}
+
+/* ---------------------------------------------------------------------
+   Keyframes
+   --------------------------------------------------------------------- */
+@keyframes nc-boot {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 49.5%, 100% 49.5%, 100% 50.5%, 0 50.5%);
+    filter: brightness(3) saturate(0);
+  }
+  18% {
+    opacity: 1;
+    clip-path: polygon(0 49.5%, 100% 49.5%, 100% 50.5%, 0 50.5%);
+    filter: brightness(2.2) saturate(0.4);
+  }
+  45% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    filter: brightness(1.6) hue-rotate(-12deg);
+  }
+  55% {
+    opacity: 0.55;
+  }
+  62% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+    filter: brightness(1.2);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    filter: none;
+  }
+}
+@keyframes nc-boot-sweep {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(900%);
+    opacity: 0;
+  }
+}
+@keyframes nc-boot-items {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes nc-scan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 6px;
+  }
+}
+@keyframes nc-scan-bar {
+  0% {
+    top: -12%;
+  }
+  100% {
+    top: 112%;
+  }
+}
+@keyframes nc-border-run {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+@keyframes nc-flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  80%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22% {
+    opacity: 0.45;
+  }
+  81% {
+    opacity: 0.75;
+  }
+}
+@keyframes nc-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes nc-glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  60% {
+    transform: translate(-1px, 0);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes nc-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Generic windows (V1 + V2): dark glass, red frame, cut corners
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .window-app,
+html[data-cpr-theme="nightcity"] .application:not(.sidebar-tab):not(#sidebar *):not(.chat-popout),
+html[data-cpr-theme="nightcity"] .application.sidebar-popout {
+  --background: var(--nc-glass);
+  background: var(--nc-glass);
+  color: var(--nc-text);
+  border: 1px solid var(--nc-red-line);
+  border-radius: 0;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 0 18px rgba(255, 42, 61, 0.22),
+    0 18px 40px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px) saturate(150%);
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--nc-cut)) 0,
+    100% var(--nc-cut),
+    100% 100%,
+    var(--nc-cut) 100%,
+    0 calc(100% - var(--nc-cut))
+  );
+}
+html[data-cpr-theme="nightcity"] .window-app .window-header,
+html[data-cpr-theme="nightcity"] .application .window-header {
+  background: linear-gradient(90deg, rgba(255, 42, 61, 0.35), rgba(0, 0, 0, 0.55) 45%, rgba(0, 0, 0, 0.75));
+  border-bottom: 1px solid var(--nc-red);
+  color: var(--nc-text);
+  font-family: var(--nc-font-hud);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: relative;
+}
+html[data-cpr-theme="nightcity"] .window-app .window-header::after,
+html[data-cpr-theme="nightcity"] .application .window-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--nc-cyan), transparent 30%, transparent 70%, var(--nc-red-hot), transparent);
+  background-size: 200% 100%;
+  animation: nc-border-run 4s linear infinite;
+  pointer-events: none;
+}
+html[data-cpr-theme="nightcity"] .window-app .window-header .window-title,
+html[data-cpr-theme="nightcity"] .application .window-header .window-title {
+  color: var(--nc-text);
+  text-shadow: 0 0 8px var(--nc-red-glow);
+}
+html[data-cpr-theme="nightcity"] .window-app .window-header a,
+html[data-cpr-theme="nightcity"] .window-app .window-header button,
+html[data-cpr-theme="nightcity"] .application .window-header button {
+  color: var(--nc-text-dim);
+}
+html[data-cpr-theme="nightcity"] .window-app .window-header a:hover,
+html[data-cpr-theme="nightcity"] .application .window-header button:hover {
+  color: var(--nc-cyan);
+  text-shadow: 0 0 6px var(--nc-cyan-glow);
+}
+html[data-cpr-theme="nightcity"] .window-app .window-content,
+html[data-cpr-theme="nightcity"] .application .window-content {
+  background: transparent;
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .window-app input,
+html[data-cpr-theme="nightcity"] .window-app select,
+html[data-cpr-theme="nightcity"] .window-app textarea,
+html[data-cpr-theme="nightcity"] .application input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html[data-cpr-theme="nightcity"] .application select,
+html[data-cpr-theme="nightcity"] .application textarea {
+  color: var(--nc-text);
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 42, 61, 0.35);
+}
+html[data-cpr-theme="nightcity"] .window-app input:focus,
+html[data-cpr-theme="nightcity"] .window-app select:focus,
+html[data-cpr-theme="nightcity"] .application input:focus,
+html[data-cpr-theme="nightcity"] .application select:focus {
+  outline: none;
+  border-color: var(--nc-cyan);
+  box-shadow: 0 0 0 1px var(--nc-cyan-soft), 0 0 8px var(--nc-cyan-soft);
+}
+html[data-cpr-theme="nightcity"] .window-app option,
+html[data-cpr-theme="nightcity"] .application option {
+  background: var(--nc-ink);
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .window-app button,
+html[data-cpr-theme="nightcity"] .application .window-content button,
+html[data-cpr-theme="nightcity"] .application footer button {
+  color: var(--nc-text);
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--nc-red-line);
+  border-radius: 0;
+  font-family: var(--nc-font-hud);
+  letter-spacing: 0.04em;
+}
+html[data-cpr-theme="nightcity"] .window-app button:hover,
+html[data-cpr-theme="nightcity"] .application .window-content button:hover,
+html[data-cpr-theme="nightcity"] .application footer button:hover {
+  background: var(--nc-red-soft);
+  border-color: var(--nc-red);
+  box-shadow: 0 0 10px var(--nc-red-soft);
+}
+html[data-cpr-theme="nightcity"] .window-app ::-webkit-scrollbar-thumb,
+html[data-cpr-theme="nightcity"] .application ::-webkit-scrollbar-thumb {
+  background: var(--nc-red-deep);
+  border: none;
+}
+html[data-cpr-theme="nightcity"] .window-app *,
+html[data-cpr-theme="nightcity"] .application * {
+  scrollbar-color: var(--nc-red-deep) transparent;
+}
+
+/* Boot-up ("Move in") animation used by sheets and dialogs */
+html[data-cpr-theme="nightcity"] .nc-boot {
+  animation: nc-boot 0.75s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+html[data-cpr-theme="nightcity"] .nc-boot .window-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 14%;
+  z-index: 50;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(62, 242, 255, 0.28) 70%, rgba(255, 255, 255, 0.6) 96%, transparent);
+  animation: nc-boot-sweep 0.9s ease-out 0.15s both;
+}
+
+/* ---------------------------------------------------------------------
+   Directories / compendium windows (fixes white-on-white text)
+   --------------------------------------------------------------------- */
+html[data-cpr-theme="nightcity"] .directory-list .directory-item {
+  border-bottom: 1px solid rgba(255, 42, 61, 0.14);
+}
+html[data-cpr-theme="nightcity"] .directory-list .directory-item.document:hover,
+html[data-cpr-theme="nightcity"] .directory-list .directory-item.entry:hover {
+  background: linear-gradient(90deg, var(--nc-red-soft), transparent 80%);
+  box-shadow: inset 2px 0 0 var(--nc-red);
+}
+html[data-cpr-theme="nightcity"] .directory-list .entry-name,
+html[data-cpr-theme="nightcity"] .directory-list .directory-item h3,
+html[data-cpr-theme="nightcity"] .directory-list .folder-header {
+  color: var(--nc-text);
+}
+html[data-cpr-theme="nightcity"] .directory-list .directory-item .thumbnail {
+  border: 1px solid rgba(255, 42, 61, 0.35);
+  background: rgba(0, 0, 0, 0.6);
+}
+html[data-cpr-theme="nightcity"] .directory-list .folder > .folder-header {
+  background: linear-gradient(90deg, rgba(255, 42, 61, 0.28), rgba(0, 0, 0, 0.35));
+  border-left: 3px solid var(--nc-red);
+  font-family: var(--nc-font-hud);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Default (light) theme: keep directory text readable on the white window */
+html[data-cpr-theme="default"] .window-app .window-content .entry-name,
+html[data-cpr-theme="default"] .application .window-content .entry-name,
+html[data-cpr-theme="default"] .window-app .window-content .directory-list,
+html[data-cpr-theme="default"] .application .window-content .directory-list {
+  color: var(--cpr-text-normal);
+}
