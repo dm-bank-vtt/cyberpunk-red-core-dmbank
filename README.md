@@ -38,6 +38,26 @@ The rules automation, compendia and sheets of the original system, ported to Fou
 
   ![Token HUD and combat tracker](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-7.webp)
 
+- **NET ARCHITECT**: the GM builds a NET Architecture floor by floor, from presets, a saved library or the core random tables.
+
+  ![NET ARCHITECT: build the NET floor by floor](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-12.webp)
+
+- **NET RUN**: Netrunning plays out over the board, with the NET Actions, the architecture floors and the GM's run controls on screen.
+
+  ![NET RUN: Netrunning on the board](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-8.webp)
+
+- **NET DECK and NET MARKET**: build the cyberdeck from program cards and buy programs when the GM opens the shop.
+
+  ![NET DECK and NET MARKET program shop](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-9.webp)
+
+- **Roll request**: the GM calls for a skill or stat check and everyone rolls on the same hologram screen.
+
+  ![Roll request: hologram group checks](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-10.webp)
+
+- **Combat HUD**: a shortcut bar for weapons, quick-use items, Evasion and Luck, with ammo, fire modes and range rings.
+
+  ![Combat HUD shortcut bar](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-11.webp)
+
 Also: Humanity automation (EMP follows Humanity, with an optional Cyberpsychosis takeover), a Night City theme, and the fix for values that Foundry V14 never saved (skill levels, equip state, ammo, item amounts, cyberdeck rez, armor tracking). Most DM Bank features have a switch in Configure Settings.
 
 ## Install
