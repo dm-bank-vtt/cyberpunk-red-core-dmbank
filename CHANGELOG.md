@@ -4,7 +4,7 @@ All notable changes to DM Bank Night City Edition are listed here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/).
 The in-game changelog compendium is upstream's and is not updated for this fork.
 
-## 1.0.0 - YYYY-MM-DD
+## 1.0.0 - 2026-11-24
 
 ### Based on
 
@@ -45,3 +45,4 @@ The in-game changelog compendium is upstream's and is not updated for this fork.
 - New worlds only. Worlds from the official Cyberpunk RED Core can't be moved yet; don't edit `world.json` by hand.
 - Modules made only for `cyberpunk-red-core` don't show in worlds using this system until their authors add `cyberpunk-red-core-dmbank` to their manifest.
 - Actor and item sheets are still ApplicationV1.
+- Tested on Foundry V14 (build 368). Foundry V13 is supported but this release was not tested on it yet.

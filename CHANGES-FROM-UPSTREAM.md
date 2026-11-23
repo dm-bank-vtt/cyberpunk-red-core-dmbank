@@ -2,7 +2,7 @@
 
 DM Bank Night City Edition is a modified version of **Cyberpunk RED Core v0.92.4** by The Project Red Team
 (https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core, released 2026-04-03), as the GNU GPL v3 §5(a) asks.
-Modified by DM Bank; this summary was written on 2026-11-23, and the first release is YYYY-MM-DD.
+Modified by DM Bank; this summary was written on 2026-11-23, and the first release is 2026-11-24.
 Later changes are listed per version in `CHANGELOG.md`.
 
 The copy of this file inside each release zip ends with a generated list of every file added (A),

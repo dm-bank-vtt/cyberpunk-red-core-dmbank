@@ -6,7 +6,7 @@
 >
 > This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. Cyberpunk is a registered trademark of CD PROJEKT S.A.
 >
-> This is an unofficial fork of Cyberpunk RED Core v0.92.4 by The Project Red Team (https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), modified by DM Bank (first release YYYY-MM-DD). It is not affiliated with or endorsed by The Project Red Team. Licensed under the GNU GPL v3; see [LICENSE](LICENSE). Third-party art, icons, maps and fonts are credited in [CREDITS-UPSTREAM.md](CREDITS-UPSTREAM.md) under their own terms. You need the Cyberpunk RED core rulebook to play.
+> This is an unofficial fork of Cyberpunk RED Core v0.92.4 by The Project Red Team (https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), modified by DM Bank (first release 2026-11-24). It is not affiliated with or endorsed by The Project Red Team. Licensed under the GNU GPL v3; see [LICENSE](LICENSE). Third-party art, icons, maps and fonts are credited in [CREDITS-UPSTREAM.md](CREDITS-UPSTREAM.md) under their own terms. You need the Cyberpunk RED core rulebook to play.
 
 ![DM Bank Night City Edition](https://dm-bank-vtt.com/media/cyberpunk-red-core-dmbank/banner-1.webp)
 
@@ -48,7 +48,7 @@ In Foundry: **Game Systems → Install System**, paste this into **Manifest URL*
 https://github.com/dm-bank-vtt/cyberpunk-red-core-dmbank/releases/latest/download/system.json
 ```
 
-Then create a **new world** with DM Bank Night City Edition. Foundry V13 and V14 are supported.
+Then create a **new world** with DM Bank Night City Edition. Foundry V13 and V14 are supported; 1.0.0 was tested on V14 (build 368) and not yet on V13, so please report anything that breaks there.
 
 Page: https://dm-bank-vtt.com/modules/cyberpunk-red-core-dmbank/
 

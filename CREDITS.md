@@ -46,4 +46,4 @@ DM Bank Night City Edition is unofficial content provided under the Homebrew Con
 
 This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. Cyberpunk is a registered trademark of CD PROJEKT S.A.
 
-This is an unofficial fork of Cyberpunk RED Core v0.92.4 by The Project Red Team (https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), modified by DM Bank (first release YYYY-MM-DD). It is not affiliated with or endorsed by The Project Red Team. Licensed under the GNU GPL v3; see LICENSE. Third-party art, icons, maps and fonts are credited in CREDITS-UPSTREAM.md under their own terms. You need the Cyberpunk RED core rulebook to play.
+This is an unofficial fork of Cyberpunk RED Core v0.92.4 by The Project Red Team (https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), modified by DM Bank (first release 2026-11-24). It is not affiliated with or endorsed by The Project Red Team. Licensed under the GNU GPL v3; see LICENSE. Third-party art, icons, maps and fonts are credited in CREDITS-UPSTREAM.md under their own terms. You need the Cyberpunk RED core rulebook to play.
